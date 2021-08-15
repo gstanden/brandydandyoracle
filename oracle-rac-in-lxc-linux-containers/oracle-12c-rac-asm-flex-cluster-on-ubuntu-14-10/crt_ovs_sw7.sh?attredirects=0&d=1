@@ -1,0 +1,28 @@
+#!/bin/bash
+
+ovs-vsctl add-br sw7
+ip link set up dev sw7
+ip addr add 192.213.39.1/24 dev sw7
+ip route replace 192.213.39.0/24 dev sw7
+ifconfig sw7 192.213.39.1 netmask 255.255.255.0
+
+# INTIF="sw3"
+# EXTIF="wlan0"
+# echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# clear existing iptable rules, set a default policy
+# iptables -P INPUT ACCEPT
+# iptables -F INPUT 
+# iptables -P OUTPUT ACCEPT
+# iptables -F OUTPUT 
+# iptables -P FORWARD DROP
+# iptables -F FORWARD 
+# iptables -t nat -F
+
+# set forwarding and nat rules
+# iptables -A FORWARD -i $EXTIF -o $INTIF -j ACCEPT
+# iptables -A FORWARD -i $INTIF -o $EXTIF -j ACCEPT
+# iptables -t nat -A POSTROUTING -o $EXTIF -j MASQUERADE
+
+# service isc-dhcp-server start
+

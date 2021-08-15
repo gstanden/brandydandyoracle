@@ -1,0 +1,7 @@
+chkconfig avahi-daemon off
+chkconfig ntpd on
+chkconfig sendmail off
+service avahi-daemon stop
+yum install bind-utils
+
+

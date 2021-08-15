@@ -1,0 +1,152 @@
+
+blacklist {
+    devnode      "sd[a]$"
+    wwid         "3500a07510c0af069"
+    device {
+        vendor   "ATA"
+        product  "Crucial_CT1024M5"
+        revision "MU01"
+    }
+    wwid         "1ATA_Wintec_JM612_128G_ExpressCard_SSD_WT612-128G2300000424"
+    device {
+        vendor   "ATA"
+        product  "WintecJM612128"
+        revision "18"
+    }
+}
+defaults {
+    user_friendly_names  yes
+}
+devices {
+    device {
+    vendor               "SCST_FIO"
+    product              "asm*"
+    revision             "310"
+    path_grouping_policy group_by_serial
+    getuid_callout       "/lib/udev/scsi_id --whitelisted --device=/dev/%n"
+    hardware_handler     "0"
+    features             "1 queue_if_no_path"
+    fast_io_fail_tmo     5
+    dev_loss_tmo         30
+    failback             immediate
+    rr_weight            uniform
+    no_path_retry        fail
+    path_checker         tur
+    rr_min_io            4
+    path_selector        "round-robin 0"
+    }
+}
+multipaths {
+     multipath {
+         wwid 26264323066643130
+         alias asm_systemdg_01
+     }
+     multipath {
+         wwid 23839633735353839
+         alias asm_systemdg_02
+     }
+     multipath {
+         wwid 23961363563646665
+         alias asm_systemdg_03
+     }
+     multipath {
+         wwid 23632613631306637
+         alias asm_data1_01
+     }
+     multipath {
+         wwid 23536343162383665
+         alias asm_data1_02
+     }
+     multipath {
+         wwid 23435653332303139
+         alias asm_data1_03
+     }
+     multipath {
+         wwid 26439316534636434
+         alias asm_fra_01
+     }
+     multipath {
+         wwid 26564663965343464
+         alias asm_fra_02
+     }
+     multipath {
+         wwid 26665356237633361
+         alias asm_fra_03
+     }
+     multipath {
+         wwid 26337626235343531
+         alias asm_iops_01
+     }
+     multipath {
+         wwid 26633356366636338
+         alias asm_iops_02
+     }
+     multipath {
+         wwid 26530666536346266
+         alias asm_iops_03
+     }
+     multipath {
+         wwid 23961393361646661
+         alias asm_iops_04
+     }
+     multipath {
+         wwid 23839333133353864
+         alias asm_iops_05
+     }
+     multipath {
+         wwid 26264643639643134
+         alias asm_iops_06
+     }
+     multipath {
+         wwid 26165373430353633
+         alias asm_iops_07
+     }
+     multipath {
+         wwid 23439306430663965
+         alias asm_iops_08
+     }
+     multipath {
+         wwid 23561616639376539
+         alias asm_iops_09
+     }
+     multipath {
+         wwid 23731353835653538
+         alias asm_iops_10
+     }
+     multipath {
+         wwid 23632666163363266
+         alias asm_iops_11
+     }
+     multipath {
+         wwid 23366386565393563
+         alias asm_data1_04
+     }
+     multipath {
+         wwid 23633326333623133
+         alias asm_undotbs01_1
+     }
+     multipath {
+         wwid 2313065623232612d
+         alias asm_undotbs02_1
+     }
+     multipath {
+         wwid 26463346231383932
+         alias asm_undotbs03_1
+     }
+     multipath {
+         wwid 26335346261303538
+         alias asm_undotbs04_1
+     }
+     multipath {
+         wwid 23138306530616530
+         alias asm_undotbs05_1
+     }
+     multipath {
+         wwid 23761326338336439
+         alias asm_undotbs06_1
+     }
+     multipath {
+         wwid 23662333663373238
+         alias asm_test_01
+     }
+}

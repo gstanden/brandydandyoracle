@@ -1,0 +1,13 @@
+#!/bin/bash
+ovsBr='sw6'
+sudo ovs-vsctl del-port ${ovsBr} $5
+function CheckPortExists
+{
+sudo ovs-vsctl show | grep \"$5\" | grep Port | sed 's/^[ \t]*//;s/[ \t]*$//' | cut -f2 -d' ' | sed 's/"//g'
+}
+PortExists=$(CheckPortExists)
+if [ "$PortExists" = "$5" ]
+then
+sudo ovs-vsctl del-port ${ovsBr} $5
+fi
+

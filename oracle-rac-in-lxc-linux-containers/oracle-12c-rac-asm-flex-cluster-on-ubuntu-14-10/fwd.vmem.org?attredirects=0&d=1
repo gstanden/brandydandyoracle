@@ -1,0 +1,17 @@
+$ORIGIN .
+$TTL 86400			; time-to-live in seconds
+vmem.org		IN SOA	W520.vmem.org. postmaster.vmem.org. (
+				1412261100 ; serial
+				60         ; refresh (1 minute)
+				1800       ; retry (30 minutes)
+				604800     ; expire (1 week)
+				86400      ; minimum (1 day)
+				)
+			NS	W520.vmem.org.
+$ORIGIN vmem.org.
+_sflow._udp		TXT	"txtvers=1" "polling=20" "sampling=512"
+			SRV	0 0 6343 W520
+W520			A	10.207.39.1
+lxc1-gns-vip.vmem.org.	A	10.207.39.3
+$ORIGIN gns1.vmem.org.
+@	IN		NS	lxc1-gns-vip.vmem.org.

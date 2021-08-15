@@ -1,0 +1,829 @@
+Host is Ubuntu 14.10
+No release specified with -R, defaulting to 6.5
+Create configuration file /var/lib/lxc/lxcora01/config
+Yum installing release 6.5 for x86_64
+Setting up Install Process
+Resolving Dependencies
+--> Running transaction check
+---> Package chkconfig.x86_64 0:1.3.49.3-2.el6_4.1 will be installed
+--> Processing Dependency: libc.so.6(GLIBC_2.2.5)(64bit) for package: chkconfig-1.3.49.3-2.el6_4.1.x86_64
+--> Processing Dependency: libc.so.6(GLIBC_2.8)(64bit) for package: chkconfig-1.3.49.3-2.el6_4.1.x86_64
+--> Processing Dependency: libpopt.so.0(LIBPOPT_0)(64bit) for package: chkconfig-1.3.49.3-2.el6_4.1.x86_64
+--> Processing Dependency: rtld(GNU_HASH) for package: chkconfig-1.3.49.3-2.el6_4.1.x86_64
+--> Processing Dependency: libc.so.6(GLIBC_2.3.4)(64bit) for package: chkconfig-1.3.49.3-2.el6_4.1.x86_64
+--> Processing Dependency: libc.so.6(GLIBC_2.4)(64bit) for package: chkconfig-1.3.49.3-2.el6_4.1.x86_64
+--> Processing Dependency: libc.so.6(GLIBC_2.3)(64bit) for package: chkconfig-1.3.49.3-2.el6_4.1.x86_64
+--> Processing Dependency: libpopt.so.0()(64bit) for package: chkconfig-1.3.49.3-2.el6_4.1.x86_64
+--> Processing Dependency: libc.so.6()(64bit) for package: chkconfig-1.3.49.3-2.el6_4.1.x86_64
+---> Package dhclient.x86_64 12:4.1.1-38.P1.0.1.el6 will be installed
+--> Processing Dependency: dhcp-common = 12:4.1.1-38.P1.0.1.el6 for package: 12:dhclient-4.1.1-38.P1.0.1.el6.x86_64
+--> Processing Dependency: grep for package: 12:dhclient-4.1.1-38.P1.0.1.el6.x86_64
+--> Processing Dependency: coreutils for package: 12:dhclient-4.1.1-38.P1.0.1.el6.x86_64
+--> Processing Dependency: /bin/bash for package: 12:dhclient-4.1.1-38.P1.0.1.el6.x86_64
+--> Processing Dependency: /bin/sh for package: 12:dhclient-4.1.1-38.P1.0.1.el6.x86_64
+--> Processing Dependency: libcap-ng.so.0()(64bit) for package: 12:dhclient-4.1.1-38.P1.0.1.el6.x86_64
+---> Package initscripts.x86_64 0:9.03.40-2.0.1.el6 will be installed
+--> Processing Dependency: upstart >= 0.6.0 for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: udev >= 125-1 for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: util-linux-ng >= 2.16 for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: sysvinit-tools >= 2.87 for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: ethtool >= 1.8-2 for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: /sbin/fuser for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: /sbin/arping for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: cpio for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: /usr/sbin/groupadd for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: /bin/find for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: /sbin/ip for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: /sbin/blkid for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: /bin/sed for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: net-tools for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: /sbin/sysctl for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: /bin/awk for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: module-init-tools for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: oracle-logos for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: mingetty for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: /sbin/pidof for package: initscripts-9.03.40-2.0.1.el6.x86_64
+--> Processing Dependency: libglib-2.0.so.0()(64bit) for package: initscripts-9.03.40-2.0.1.el6.x86_64
+---> Package openssh-clients.x86_64 0:5.3p1-94.el6 will be installed
+--> Processing Dependency: openssh = 5.3p1-94.el6 for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libnss3.so(NSS_3.4)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libnss3.so(NSS_3.9.3)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libnss3.so(NSS_3.5)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libnss3.so(NSS_3.9)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libcrypto.so.10(libcrypto.so.10)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libcrypto.so.10(OPENSSL_1.0.1)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libnss3.so(NSS_3.2)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libnss3.so(NSS_3.6)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libnss3.so(NSS_3.3)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libnss3.so(NSS_3.9.2)(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libfipscheck.so.1()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libk5crypto.so.3()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libkrb5.so.3()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libselinux.so.1()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libedit.so.0()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libcom_err.so.2()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libplc4.so()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libgssapi_krb5.so.2()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libz.so.1()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libcrypto.so.10()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libnss3.so()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+--> Processing Dependency: libncurses.so.5()(64bit) for package: openssh-clients-5.3p1-94.el6.x86_64
+---> Package openssh-server.x86_64 0:5.3p1-94.el6 will be installed
+--> Processing Dependency: pam >= 1.0.1-3 for package: openssh-server-5.3p1-94.el6.x86_64
+--> Processing Dependency: libpam.so.0(LIBPAM_1.0)(64bit) for package: openssh-server-5.3p1-94.el6.x86_64
+--> Processing Dependency: libaudit.so.1()(64bit) for package: openssh-server-5.3p1-94.el6.x86_64
+--> Processing Dependency: libwrap.so.0()(64bit) for package: openssh-server-5.3p1-94.el6.x86_64
+--> Processing Dependency: libpam.so.0()(64bit) for package: openssh-server-5.3p1-94.el6.x86_64
+---> Package oraclelinux-release.x86_64 6:6Server-5.0.2 will be installed
+--> Processing Dependency: redhat-release-server for package: 6:oraclelinux-release-6Server-5.0.2.x86_64
+---> Package passwd.x86_64 0:0.77-4.el6_2.2 will be installed
+--> Processing Dependency: libuser.so.1()(64bit) for package: passwd-0.77-4.el6_2.2.x86_64
+---> Package policycoreutils.x86_64 0:2.0.83-19.39.0.1.el6 will be installed
+--> Processing Dependency: libselinux-utils >= 2.0.90-3 for package: policycoreutils-2.0.83-19.39.0.1.el6.x86_64
+--> Processing Dependency: libsepol >= 2.0.41-3 for package: policycoreutils-2.0.83-19.39.0.1.el6.x86_64
+--> Processing Dependency: checkpolicy for package: policycoreutils-2.0.83-19.39.0.1.el6.x86_64
+--> Processing Dependency: libsemanage.so.1(LIBSEMANAGE_1.0)(64bit) for package: policycoreutils-2.0.83-19.39.0.1.el6.x86_64
+--> Processing Dependency: /usr/bin/diff for package: policycoreutils-2.0.83-19.39.0.1.el6.x86_64
+--> Processing Dependency: rpm for package: policycoreutils-2.0.83-19.39.0.1.el6.x86_64
+--> Processing Dependency: libdbus-1.so.3()(64bit) for package: policycoreutils-2.0.83-19.39.0.1.el6.x86_64
+--> Processing Dependency: libdbus-glib-1.so.2()(64bit) for package: policycoreutils-2.0.83-19.39.0.1.el6.x86_64
+--> Processing Dependency: libsemanage.so.1()(64bit) for package: policycoreutils-2.0.83-19.39.0.1.el6.x86_64
+--> Processing Dependency: libsepol.so.1()(64bit) for package: policycoreutils-2.0.83-19.39.0.1.el6.x86_64
+---> Package rootfiles.noarch 0:8.1-6.1.el6 will be installed
+---> Package rsyslog.x86_64 0:5.8.10-8.0.1.el6 will be installed
+--> Processing Dependency: logrotate >= 3.5.2 for package: rsyslog-5.8.10-8.0.1.el6.x86_64
+--> Processing Dependency: libgcc_s.so.1(GCC_3.0)(64bit) for package: rsyslog-5.8.10-8.0.1.el6.x86_64
+--> Processing Dependency: libgcc_s.so.1(GCC_3.3.1)(64bit) for package: rsyslog-5.8.10-8.0.1.el6.x86_64
+--> Processing Dependency: libgcc_s.so.1()(64bit) for package: rsyslog-5.8.10-8.0.1.el6.x86_64
+---> Package vim-minimal.x86_64 2:7.2.411-1.8.el6 will be installed
+--> Processing Dependency: libacl.so.1(ACL_1.0)(64bit) for package: 2:vim-minimal-7.2.411-1.8.el6.x86_64
+--> Processing Dependency: libacl.so.1()(64bit) for package: 2:vim-minimal-7.2.411-1.8.el6.x86_64
+---> Package yum.noarch 0:3.2.29-40.0.1.el6 will be installed
+--> Processing Dependency: python(abi) = 2.6 for package: yum-3.2.29-40.0.1.el6.noarch
+--> Processing Dependency: python-urlgrabber >= 3.9.0-8 for package: yum-3.2.29-40.0.1.el6.noarch
+--> Processing Dependency: python >= 2.4 for package: yum-3.2.29-40.0.1.el6.noarch
+--> Processing Dependency: yum-metadata-parser >= 1.1.0 for package: yum-3.2.29-40.0.1.el6.noarch
+--> Processing Dependency: python-iniparse for package: yum-3.2.29-40.0.1.el6.noarch
+--> Processing Dependency: python-sqlite for package: yum-3.2.29-40.0.1.el6.noarch
+--> Processing Dependency: pygpgme for package: yum-3.2.29-40.0.1.el6.noarch
+--> Processing Dependency: rpm-python for package: yum-3.2.29-40.0.1.el6.noarch
+--> Processing Dependency: /usr/bin/python for package: yum-3.2.29-40.0.1.el6.noarch
+--> Running transaction check
+---> Package audit-libs.x86_64 0:2.2-2.el6 will be installed
+---> Package bash.x86_64 0:4.1.2-15.el6_4 will be installed
+---> Package checkpolicy.x86_64 0:2.0.22-1.el6 will be installed
+---> Package coreutils.x86_64 0:8.4-31.0.1.el6 will be installed
+--> Processing Dependency: coreutils-libs = 8.4-31.0.1.el6 for package: coreutils-8.4-31.0.1.el6.x86_64
+--> Processing Dependency: libattr for package: coreutils-8.4-31.0.1.el6.x86_64
+--> Processing Dependency: libattr.so.1(ATTR_1.1)(64bit) for package: coreutils-8.4-31.0.1.el6.x86_64
+--> Processing Dependency: ncurses for package: coreutils-8.4-31.0.1.el6.x86_64
+--> Processing Dependency: gmp for package: coreutils-8.4-31.0.1.el6.x86_64
+--> Processing Dependency: libcap for package: coreutils-8.4-31.0.1.el6.x86_64
+--> Processing Dependency: /sbin/install-info for package: coreutils-8.4-31.0.1.el6.x86_64
+--> Processing Dependency: libcap.so.2()(64bit) for package: coreutils-8.4-31.0.1.el6.x86_64
+--> Processing Dependency: libattr.so.1()(64bit) for package: coreutils-8.4-31.0.1.el6.x86_64
+--> Processing Dependency: libgmp.so.3()(64bit) for package: coreutils-8.4-31.0.1.el6.x86_64
+---> Package cpio.x86_64 0:2.10-11.el6_3 will be installed
+---> Package dbus-glib.x86_64 0:0.86-6.el6_4 will be installed
+--> Processing Dependency: libexpat.so.1()(64bit) for package: dbus-glib-0.86-6.el6_4.x86_64
+---> Package dbus-libs.x86_64 1:1.2.24-7.0.1.el6_3 will be installed
+---> Package dhcp-common.x86_64 12:4.1.1-38.P1.0.1.el6 will be installed
+---> Package diffutils.x86_64 0:2.8.1-28.el6 will be installed
+---> Package ethtool.x86_64 2:3.5-1.el6 will be installed
+---> Package findutils.x86_64 1:4.4.2-6.el6 will be installed
+---> Package fipscheck-lib.x86_64 0:1.2.0-7.el6 will be installed
+--> Processing Dependency: /usr/bin/fipscheck for package: fipscheck-lib-1.2.0-7.el6.x86_64
+---> Package gawk.x86_64 0:3.1.7-10.el6 will be installed
+---> Package glib2.x86_64 0:2.26.1-3.el6 will be installed
+--> Processing Dependency: shared-mime-info for package: glib2-2.26.1-3.el6.x86_64
+--> Processing Dependency: libfam.so.0()(64bit) for package: glib2-2.26.1-3.el6.x86_64
+---> Package glibc.x86_64 0:2.12-1.132.el6 will be installed
+--> Processing Dependency: glibc-common = 2.12-1.132.el6 for package: glibc-2.12-1.132.el6.x86_64
+--> Processing Dependency: libfreebl3.so(NSSRAWHASH_3.12.3)(64bit) for package: glibc-2.12-1.132.el6.x86_64
+--> Processing Dependency: basesystem for package: glibc-2.12-1.132.el6.x86_64
+--> Processing Dependency: libfreebl3.so()(64bit) for package: glibc-2.12-1.132.el6.x86_64
+---> Package grep.x86_64 0:2.6.3-4.el6 will be installed
+--> Processing Dependency: libpcre.so.0()(64bit) for package: grep-2.6.3-4.el6.x86_64
+---> Package iproute.x86_64 0:2.6.32-31.el6 will be installed
+--> Processing Dependency: iptables >= 1.4.5 for package: iproute-2.6.32-31.el6.x86_64
+--> Processing Dependency: libdb-4.7.so()(64bit) for package: iproute-2.6.32-31.el6.x86_64
+--> Processing Dependency: libxtables.so.4()(64bit) for package: iproute-2.6.32-31.el6.x86_64
+---> Package iputils.x86_64 0:20071127-17.el6_4.2 will be installed
+--> Processing Dependency: libidn.so.11(LIBIDN_1.0)(64bit) for package: iputils-20071127-17.el6_4.2.x86_64
+--> Processing Dependency: libidn.so.11()(64bit) for package: iputils-20071127-17.el6_4.2.x86_64
+---> Package krb5-libs.x86_64 0:1.10.3-10.el6_4.6 will be installed
+--> Processing Dependency: libkeyutils.so.1(KEYUTILS_0.3)(64bit) for package: krb5-libs-1.10.3-10.el6_4.6.x86_64
+--> Processing Dependency: libkeyutils.so.1()(64bit) for package: krb5-libs-1.10.3-10.el6_4.6.x86_64
+---> Package libacl.x86_64 0:2.2.49-6.el6 will be installed
+---> Package libcap-ng.x86_64 0:0.6.4-3.el6_0.1 will be installed
+---> Package libcom_err.x86_64 0:1.42.8-1.0.1.el6 will be installed
+---> Package libedit.x86_64 0:2.11-4.20080712cvs.1.el6 will be installed
+---> Package libgcc.x86_64 0:4.4.7-4.el6 will be installed
+---> Package libselinux.x86_64 0:2.0.94-5.3.el6_4.1 will be installed
+---> Package libselinux-utils.x86_64 0:2.0.94-5.3.el6_4.1 will be installed
+---> Package libsemanage.x86_64 0:2.0.43-4.2.el6 will be installed
+--> Processing Dependency: bzip2-libs for package: libsemanage-2.0.43-4.2.el6.x86_64
+--> Processing Dependency: libustr-1.0.so.1(USTR_1.0)(64bit) for package: libsemanage-2.0.43-4.2.el6.x86_64
+--> Processing Dependency: libustr-1.0.so.1(USTR_1.0.1)(64bit) for package: libsemanage-2.0.43-4.2.el6.x86_64
+--> Processing Dependency: libustr-1.0.so.1()(64bit) for package: libsemanage-2.0.43-4.2.el6.x86_64
+--> Processing Dependency: libbz2.so.1()(64bit) for package: libsemanage-2.0.43-4.2.el6.x86_64
+---> Package libsepol.x86_64 0:2.0.41-4.el6 will be installed
+---> Package libuser.x86_64 0:0.56.13-5.el6 will be installed
+--> Processing Dependency: libldap-2.4.so.2()(64bit) for package: libuser-0.56.13-5.el6.x86_64
+---> Package logrotate.x86_64 0:3.7.8-17.el6 will be installed
+---> Package mingetty.x86_64 0:1.08-5.el6 will be installed
+---> Package module-init-tools.x86_64 0:3.9-21.0.1.el6_4 will be installed
+--> Processing Dependency: binutils for package: module-init-tools-3.9-21.0.1.el6_4.x86_64
+---> Package ncurses-libs.x86_64 0:5.7-3.20090208.el6 will be installed
+--> Processing Dependency: ncurses-base = 5.7-3.20090208.el6 for package: ncurses-libs-5.7-3.20090208.el6.x86_64
+---> Package net-tools.x86_64 0:1.60-110.el6_2 will be installed
+---> Package nspr.x86_64 0:4.10.0-1.el6 will be installed
+---> Package nss.x86_64 0:3.15.1-15.0.1.el6 will be installed
+--> Processing Dependency: nss-softokn(x86-64) >= 3.14.3 for package: nss-3.15.1-15.0.1.el6.x86_64
+--> Processing Dependency: nss-util >= 3.15.1 for package: nss-3.15.1-15.0.1.el6.x86_64
+--> Processing Dependency: libnssutil3.so(NSSUTIL_3.15)(64bit) for package: nss-3.15.1-15.0.1.el6.x86_64
+--> Processing Dependency: libnssutil3.so(NSSUTIL_3.12.3)(64bit) for package: nss-3.15.1-15.0.1.el6.x86_64
+--> Processing Dependency: nss-system-init for package: nss-3.15.1-15.0.1.el6.x86_64
+--> Processing Dependency: libnssutil3.so(NSSUTIL_3.14)(64bit) for package: nss-3.15.1-15.0.1.el6.x86_64
+--> Processing Dependency: libnssutil3.so(NSSUTIL_3.12)(64bit) for package: nss-3.15.1-15.0.1.el6.x86_64
+--> Processing Dependency: libnssutil3.so(NSSUTIL_3.13)(64bit) for package: nss-3.15.1-15.0.1.el6.x86_64
+--> Processing Dependency: libnssutil3.so(NSSUTIL_3.12.5)(64bit) for package: nss-3.15.1-15.0.1.el6.x86_64
+--> Processing Dependency: libnssutil3.so()(64bit) for package: nss-3.15.1-15.0.1.el6.x86_64
+--> Processing Dependency: libsoftokn3.so()(64bit) for package: nss-3.15.1-15.0.1.el6.x86_64
+---> Package openssh.x86_64 0:5.3p1-94.el6 will be installed
+---> Package openssl.x86_64 0:1.0.1e-15.el6 will be installed
+--> Processing Dependency: ca-certificates >= 2008-5 for package: openssl-1.0.1e-15.el6.x86_64
+--> Processing Dependency: make for package: openssl-1.0.1e-15.el6.x86_64
+---> Package oracle-logos.noarch 0:60.0.14-1.0.1.el6 will be installed
+---> Package pam.x86_64 0:1.1.1-17.el6 will be installed
+--> Processing Dependency: cracklib-dicts >= 2.8 for package: pam-1.1.1-17.el6.x86_64
+--> Processing Dependency: cracklib for package: pam-1.1.1-17.el6.x86_64
+--> Processing Dependency: libcrack.so.2()(64bit) for package: pam-1.1.1-17.el6.x86_64
+---> Package popt.x86_64 0:1.13-7.el6 will be installed
+---> Package procps.x86_64 0:3.2.8-25.el6 will be installed
+---> Package psmisc.x86_64 0:22.6-15.el6_0.1 will be installed
+---> Package pygpgme.x86_64 0:0.1-18.20090824bzr68.el6 will be installed
+--> Processing Dependency: libgpgme.so.11(GPGME_1.1)(64bit) for package: pygpgme-0.1-18.20090824bzr68.el6.x86_64
+--> Processing Dependency: libgpgme.so.11(GPGME_1.0)(64bit) for package: pygpgme-0.1-18.20090824bzr68.el6.x86_64
+--> Processing Dependency: libgpgme.so.11()(64bit) for package: pygpgme-0.1-18.20090824bzr68.el6.x86_64
+--> Processing Dependency: libpython2.6.so.1.0()(64bit) for package: pygpgme-0.1-18.20090824bzr68.el6.x86_64
+---> Package python.x86_64 0:2.6.6-51.el6 will be installed
+---> Package python-iniparse.noarch 0:0.3.1-2.1.el6 will be installed
+---> Package python-urlgrabber.noarch 0:3.9.1-9.el6 will be installed
+--> Processing Dependency: python-pycurl for package: python-urlgrabber-3.9.1-9.el6.noarch
+---> Package redhat-release-server.x86_64 1:6Server-6.5.0.1.0.1.el6 will be installed
+---> Package rpm.x86_64 0:4.8.0-37.el6 will be installed
+--> Processing Dependency: curl for package: rpm-4.8.0-37.el6.x86_64
+--> Processing Dependency: db4-utils for package: rpm-4.8.0-37.el6.x86_64
+--> Processing Dependency: librpm.so.1()(64bit) for package: rpm-4.8.0-37.el6.x86_64
+--> Processing Dependency: liblua-5.1.so()(64bit) for package: rpm-4.8.0-37.el6.x86_64
+--> Processing Dependency: libelf.so.1()(64bit) for package: rpm-4.8.0-37.el6.x86_64
+--> Processing Dependency: librpmbuild.so.1()(64bit) for package: rpm-4.8.0-37.el6.x86_64
+--> Processing Dependency: librpmio.so.1()(64bit) for package: rpm-4.8.0-37.el6.x86_64
+--> Processing Dependency: liblzma.so.0()(64bit) for package: rpm-4.8.0-37.el6.x86_64
+--> Processing Dependency: libmagic.so.1()(64bit) for package: rpm-4.8.0-37.el6.x86_64
+---> Package rpm-python.x86_64 0:4.8.0-37.el6 will be installed
+---> Package sed.x86_64 0:4.2.1-10.el6 will be installed
+---> Package shadow-utils.x86_64 2:4.1.4.2-13.el6 will be installed
+--> Processing Dependency: setup for package: 2:shadow-utils-4.1.4.2-13.el6.x86_64
+---> Package sysvinit-tools.x86_64 0:2.87-5.dsf.el6 will be installed
+---> Package tcp_wrappers-libs.x86_64 0:7.6-57.el6 will be installed
+---> Package udev.x86_64 0:147-2.51.0.1.el6 will be installed
+--> Processing Dependency: MAKEDEV >= 3.11 for package: udev-147-2.51.0.1.el6.x86_64
+--> Processing Dependency: hwdata for package: udev-147-2.51.0.1.el6.x86_64
+--> Processing Dependency: libusb-0.1.so.4()(64bit) for package: udev-147-2.51.0.1.el6.x86_64
+---> Package upstart.x86_64 0:0.6.5-12.el6_4.1 will be installed
+--> Processing Dependency: libnih-dbus.so.1(LIBNIH_DBUS_1_0)(64bit) for package: upstart-0.6.5-12.el6_4.1.x86_64
+--> Processing Dependency: libnih.so.1(LIBNIH_1_0)(64bit) for package: upstart-0.6.5-12.el6_4.1.x86_64
+--> Processing Dependency: libnih.so.1()(64bit) for package: upstart-0.6.5-12.el6_4.1.x86_64
+--> Processing Dependency: libnih-dbus.so.1()(64bit) for package: upstart-0.6.5-12.el6_4.1.x86_64
+---> Package util-linux-ng.x86_64 0:2.17.2-12.14.el6 will be installed
+--> Processing Dependency: libuuid = 2.17.2-12.14.el6 for package: util-linux-ng-2.17.2-12.14.el6.x86_64
+--> Processing Dependency: libblkid = 2.17.2-12.14.el6 for package: util-linux-ng-2.17.2-12.14.el6.x86_64
+--> Processing Dependency: libuuid.so.1(UUID_1.0)(64bit) for package: util-linux-ng-2.17.2-12.14.el6.x86_64
+--> Processing Dependency: libblkid.so.1(BLKID_1.0)(64bit) for package: util-linux-ng-2.17.2-12.14.el6.x86_64
+--> Processing Dependency: libutempter.so.0(UTEMPTER_1.1)(64bit) for package: util-linux-ng-2.17.2-12.14.el6.x86_64
+--> Processing Dependency: libblkid.so.1(BLKID_2.15)(64bit) for package: util-linux-ng-2.17.2-12.14.el6.x86_64
+--> Processing Dependency: libblkid.so.1(BLKID_2.17)(64bit) for package: util-linux-ng-2.17.2-12.14.el6.x86_64
+--> Processing Dependency: libutempter.so.0()(64bit) for package: util-linux-ng-2.17.2-12.14.el6.x86_64
+--> Processing Dependency: libblkid.so.1()(64bit) for package: util-linux-ng-2.17.2-12.14.el6.x86_64
+--> Processing Dependency: libuuid.so.1()(64bit) for package: util-linux-ng-2.17.2-12.14.el6.x86_64
+---> Package yum-metadata-parser.x86_64 0:1.1.2-16.el6 will be installed
+--> Processing Dependency: libxml2.so.2(LIBXML2_2.4.30)(64bit) for package: yum-metadata-parser-1.1.2-16.el6.x86_64
+--> Processing Dependency: libxml2.so.2()(64bit) for package: yum-metadata-parser-1.1.2-16.el6.x86_64
+--> Processing Dependency: libsqlite3.so.0()(64bit) for package: yum-metadata-parser-1.1.2-16.el6.x86_64
+---> Package zlib.x86_64 0:1.2.3-29.el6 will be installed
+--> Running transaction check
+---> Package MAKEDEV.x86_64 0:3.24-6.el6 will be installed
+---> Package basesystem.noarch 0:10.0-4.0.1.el6 will be installed
+--> Processing Dependency: filesystem for package: basesystem-10.0-4.0.1.el6.noarch
+---> Package binutils.x86_64 0:2.20.51.0.2-5.36.el6 will be installed
+---> Package bzip2-libs.x86_64 0:1.0.5-7.el6_0 will be installed
+---> Package ca-certificates.noarch 0:2013.1.94-65.0.el6 will be installed
+--> Processing Dependency: p11-kit-trust >= 0.18.4-2 for package: ca-certificates-2013.1.94-65.0.el6.noarch
+--> Processing Dependency: p11-kit >= 0.18.4-2 for package: ca-certificates-2013.1.94-65.0.el6.noarch
+---> Package coreutils-libs.x86_64 0:8.4-31.0.1.el6 will be installed
+---> Package cracklib.x86_64 0:2.8.16-4.el6 will be installed
+--> Processing Dependency: gzip for package: cracklib-2.8.16-4.el6.x86_64
+---> Package cracklib-dicts.x86_64 0:2.8.16-4.el6 will be installed
+---> Package curl.x86_64 0:7.19.7-37.el6_4 will be installed
+--> Processing Dependency: libcurl = 7.19.7-37.el6_4 for package: curl-7.19.7-37.el6_4.x86_64
+--> Processing Dependency: libssh2.so.1()(64bit) for package: curl-7.19.7-37.el6_4.x86_64
+--> Processing Dependency: libcurl.so.4()(64bit) for package: curl-7.19.7-37.el6_4.x86_64
+---> Package db4.x86_64 0:4.7.25-18.el6_4 will be installed
+---> Package db4-utils.x86_64 0:4.7.25-18.el6_4 will be installed
+---> Package elfutils-libelf.x86_64 0:0.152-1.el6 will be installed
+---> Package expat.x86_64 0:2.0.1-11.el6_2 will be installed
+---> Package file-libs.x86_64 0:5.04-15.el6 will be installed
+---> Package fipscheck.x86_64 0:1.2.0-7.el6 will be installed
+---> Package gamin.x86_64 0:0.1.10-9.el6 will be installed
+---> Package glibc-common.x86_64 0:2.12-1.132.el6 will be installed
+--> Processing Dependency: tzdata >= 2003a for package: glibc-common-2.12-1.132.el6.x86_64
+---> Package gmp.x86_64 0:4.3.1-7.el6_2.2 will be installed
+--> Processing Dependency: libstdc++.so.6(CXXABI_1.3)(64bit) for package: gmp-4.3.1-7.el6_2.2.x86_64
+--> Processing Dependency: libstdc++.so.6(GLIBCXX_3.4.11)(64bit) for package: gmp-4.3.1-7.el6_2.2.x86_64
+--> Processing Dependency: libstdc++.so.6(GLIBCXX_3.4)(64bit) for package: gmp-4.3.1-7.el6_2.2.x86_64
+--> Processing Dependency: libstdc++.so.6()(64bit) for package: gmp-4.3.1-7.el6_2.2.x86_64
+---> Package gpgme.x86_64 0:1.1.8-3.el6 will be installed
+--> Processing Dependency: gnupg2 for package: gpgme-1.1.8-3.el6.x86_64
+--> Processing Dependency: libpth.so.20()(64bit) for package: gpgme-1.1.8-3.el6.x86_64
+--> Processing Dependency: libgpg-error.so.0()(64bit) for package: gpgme-1.1.8-3.el6.x86_64
+---> Package hwdata.noarch 0:0.233-9.1.el6 will be installed
+---> Package info.x86_64 0:4.13a-8.el6 will be installed
+---> Package iptables.x86_64 0:1.4.7-11.0.1.el6 will be installed
+---> Package keyutils-libs.x86_64 0:1.4-4.el6 will be installed
+---> Package libattr.x86_64 0:2.4.44-7.el6 will be installed
+---> Package libblkid.x86_64 0:2.17.2-12.14.el6 will be installed
+---> Package libcap.x86_64 0:2.16-5.5.el6 will be installed
+---> Package libidn.x86_64 0:1.18-2.el6 will be installed
+---> Package libnih.x86_64 0:1.0.1-7.el6 will be installed
+---> Package libusb.x86_64 0:0.1.12-23.el6 will be installed
+---> Package libutempter.x86_64 0:1.1.5-4.1.el6 will be installed
+---> Package libuuid.x86_64 0:2.17.2-12.14.el6 will be installed
+---> Package libxml2.x86_64 0:2.7.6-14.0.1.el6 will be installed
+---> Package lua.x86_64 0:5.1.4-4.1.el6 will be installed
+--> Processing Dependency: libreadline.so.6()(64bit) for package: lua-5.1.4-4.1.el6.x86_64
+---> Package make.x86_64 1:3.81-20.el6 will be installed
+---> Package ncurses.x86_64 0:5.7-3.20090208.el6 will be installed
+---> Package ncurses-base.x86_64 0:5.7-3.20090208.el6 will be installed
+---> Package nss-softokn.x86_64 0:3.14.3-9.el6 will be installed
+---> Package nss-softokn-freebl.x86_64 0:3.14.3-9.el6 will be installed
+---> Package nss-sysinit.x86_64 0:3.15.1-15.0.1.el6 will be installed
+---> Package nss-util.x86_64 0:3.15.1-3.el6 will be installed
+---> Package openldap.x86_64 0:2.4.23-32.el6_4.1 will be installed
+--> Processing Dependency: nss-tools for package: openldap-2.4.23-32.el6_4.1.x86_64
+--> Processing Dependency: libsasl2.so.2()(64bit) for package: openldap-2.4.23-32.el6_4.1.x86_64
+---> Package pcre.x86_64 0:7.8-6.el6 will be installed
+---> Package python-libs.x86_64 0:2.6.6-51.el6 will be installed
+--> Processing Dependency: libffi.so.5()(64bit) for package: python-libs-2.6.6-51.el6.x86_64
+--> Processing Dependency: libgdbm.so.2()(64bit) for package: python-libs-2.6.6-51.el6.x86_64
+---> Package python-pycurl.x86_64 0:7.19.0-8.el6 will be installed
+---> Package rpm-libs.x86_64 0:4.8.0-37.el6 will be installed
+---> Package setup.noarch 0:2.8.14-20.el6_4.1 will be installed
+---> Package shared-mime-info.x86_64 0:0.70-4.el6 will be installed
+--> Processing Dependency: /usr/bin/pkg-config for package: shared-mime-info-0.70-4.el6.x86_64
+--> Processing Dependency: pkgconfig for package: shared-mime-info-0.70-4.el6.x86_64
+---> Package sqlite.x86_64 0:3.6.20-1.el6 will be installed
+---> Package ustr.x86_64 0:1.0.4-9.1.el6 will be installed
+---> Package xz-libs.x86_64 0:4.999.9-0.3.beta.20091007git.el6 will be installed
+--> Running transaction check
+---> Package cyrus-sasl-lib.x86_64 0:2.1.23-13.el6_3.1 will be installed
+---> Package filesystem.x86_64 0:2.4.30-3.el6 will be installed
+---> Package gdbm.x86_64 0:1.8.0-36.el6 will be installed
+---> Package gnupg2.x86_64 0:2.0.14-6.el6_4 will be installed
+--> Processing Dependency: libgcrypt.so.11(GCRYPT_1.2)(64bit) for package: gnupg2-2.0.14-6.el6_4.x86_64
+--> Processing Dependency: pinentry for package: gnupg2-2.0.14-6.el6_4.x86_64
+--> Processing Dependency: libgcrypt.so.11()(64bit) for package: gnupg2-2.0.14-6.el6_4.x86_64
+---> Package gzip.x86_64 0:1.3.12-19.el6_4 will be installed
+--> Processing Dependency: less for package: gzip-1.3.12-19.el6_4.x86_64
+---> Package libcurl.x86_64 0:7.19.7-37.el6_4 will be installed
+---> Package libffi.x86_64 0:3.0.5-3.2.el6 will be installed
+---> Package libgpg-error.x86_64 0:1.7-4.el6 will be installed
+---> Package libssh2.x86_64 0:1.4.2-1.el6 will be installed
+---> Package libstdc++.x86_64 0:4.4.7-4.el6 will be installed
+---> Package nss-tools.x86_64 0:3.15.1-15.0.1.el6 will be installed
+---> Package p11-kit.x86_64 0:0.18.5-2.el6 will be installed
+--> Processing Dependency: libtasn1.so.3(LIBTASN1_0_3)(64bit) for package: p11-kit-0.18.5-2.el6.x86_64
+--> Processing Dependency: libtasn1.so.3()(64bit) for package: p11-kit-0.18.5-2.el6.x86_64
+---> Package p11-kit-trust.x86_64 0:0.18.5-2.el6 will be installed
+---> Package pkgconfig.x86_64 1:0.23-9.1.el6 will be installed
+---> Package pth.x86_64 0:2.0.7-9.3.el6 will be installed
+---> Package readline.x86_64 0:6.0-4.el6 will be installed
+---> Package tzdata.noarch 0:2013g-1.el6 will be installed
+--> Running transaction check
+---> Package less.x86_64 0:436-10.el6 will be installed
+--> Processing Dependency: groff for package: less-436-10.el6.x86_64
+---> Package libgcrypt.x86_64 0:1.4.5-11.el6_4 will be installed
+---> Package libtasn1.x86_64 0:2.3-3.el6_2.1 will be installed
+---> Package pinentry.x86_64 0:0.7.6-6.el6 will be installed
+--> Running transaction check
+---> Package groff.x86_64 0:1.18.1.4-21.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package              Arch   Version                          Repository   Size
+================================================================================
+Installing:
+ chkconfig            x86_64 1.3.49.3-2.el6_4.1               ol6_u5_base 158 k
+ dhclient             x86_64 12:4.1.1-38.P1.0.1.el6           ol6_u5_base 317 k
+ initscripts          x86_64 9.03.40-2.0.1.el6                ol6_u5_base 940 k
+ openssh-clients      x86_64 5.3p1-94.el6                     ol6_u5_base 401 k
+ openssh-server       x86_64 5.3p1-94.el6                     ol6_u5_base 311 k
+ oraclelinux-release  x86_64 6:6Server-5.0.2                  ol6_u5_base  22 k
+ passwd               x86_64 0.77-4.el6_2.2                   ol6_u5_base  89 k
+ policycoreutils      x86_64 2.0.83-19.39.0.1.el6             ol6_u5_base 648 k
+ rootfiles            noarch 8.1-6.1.el6                      ol6_u5_base 6.3 k
+ rsyslog              x86_64 5.8.10-8.0.1.el6                 ol6_u5_base 649 k
+ vim-minimal          x86_64 2:7.2.411-1.8.el6                ol6_u5_base 363 k
+ yum                  noarch 3.2.29-40.0.1.el6                ol6_u5_base 995 k
+Installing for dependencies:
+ MAKEDEV              x86_64 3.24-6.el6                       ol6_u5_base  88 k
+ audit-libs           x86_64 2.2-2.el6                        ol6_u5_base  60 k
+ basesystem           noarch 10.0-4.0.1.el6                   ol6_u5_base 4.3 k
+ bash                 x86_64 4.1.2-15.el6_4                   ol6_u5_base 904 k
+ binutils             x86_64 2.20.51.0.2-5.36.el6             ol6_u5_base 2.8 M
+ bzip2-libs           x86_64 1.0.5-7.el6_0                    ol6_u5_base  36 k
+ ca-certificates      noarch 2013.1.94-65.0.el6               ol6_u5_base 1.1 M
+ checkpolicy          x86_64 2.0.22-1.el6                     ol6_u5_base 189 k
+ coreutils            x86_64 8.4-31.0.1.el6                   ol6_u5_base 3.0 M
+ coreutils-libs       x86_64 8.4-31.0.1.el6                   ol6_u5_base  49 k
+ cpio                 x86_64 2.10-11.el6_3                    ol6_u5_base 191 k
+ cracklib             x86_64 2.8.16-4.el6                     ol6_u5_base  70 k
+ cracklib-dicts       x86_64 2.8.16-4.el6                     ol6_u5_base 3.6 M
+ curl                 x86_64 7.19.7-37.el6_4                  ol6_u5_base 193 k
+ cyrus-sasl-lib       x86_64 2.1.23-13.el6_3.1                ol6_u5_base 135 k
+ db4                  x86_64 4.7.25-18.el6_4                  ol6_u5_base 562 k
+ db4-utils            x86_64 4.7.25-18.el6_4                  ol6_u5_base 130 k
+ dbus-glib            x86_64 0.86-6.el6_4                     ol6_u5_base 169 k
+ dbus-libs            x86_64 1:1.2.24-7.0.1.el6_3             ol6_u5_base 126 k
+ dhcp-common          x86_64 12:4.1.1-38.P1.0.1.el6           ol6_u5_base 141 k
+ diffutils            x86_64 2.8.1-28.el6                     ol6_u5_base 198 k
+ elfutils-libelf      x86_64 0.152-1.el6                      ol6_u5_base 169 k
+ ethtool              x86_64 2:3.5-1.el6                      ol6_u5_base 100 k
+ expat                x86_64 2.0.1-11.el6_2                   ol6_u5_base  76 k
+ file-libs            x86_64 5.04-15.el6                      ol6_u5_base 310 k
+ filesystem           x86_64 2.4.30-3.el6                     ol6_u5_base 1.0 M
+ findutils            x86_64 1:4.4.2-6.el6                    ol6_u5_base 447 k
+ fipscheck            x86_64 1.2.0-7.el6                      ol6_u5_base  14 k
+ fipscheck-lib        x86_64 1.2.0-7.el6                      ol6_u5_base 7.8 k
+ gamin                x86_64 0.1.10-9.el6                     ol6_u5_base 122 k
+ gawk                 x86_64 3.1.7-10.el6                     ol6_u5_base 774 k
+ gdbm                 x86_64 1.8.0-36.el6                     ol6_u5_base  28 k
+ glib2                x86_64 2.26.1-3.el6                     ol6_u5_base 1.6 M
+ glibc                x86_64 2.12-1.132.el6                   ol6_u5_base 3.8 M
+ glibc-common         x86_64 2.12-1.132.el6                   ol6_u5_base  14 M
+ gmp                  x86_64 4.3.1-7.el6_2.2                  ol6_u5_base 206 k
+ gnupg2               x86_64 2.0.14-6.el6_4                   ol6_u5_base 1.6 M
+ gpgme                x86_64 1.1.8-3.el6                      ol6_u5_base 144 k
+ grep                 x86_64 2.6.3-4.el6                      ol6_u5_base 228 k
+ groff                x86_64 1.18.1.4-21.el6                  ol6_u5_base 1.5 M
+ gzip                 x86_64 1.3.12-19.el6_4                  ol6_u5_base 115 k
+ hwdata               noarch 0.233-9.1.el6                    ol6_u5_base 1.2 M
+ info                 x86_64 4.13a-8.el6                      ol6_u5_base 177 k
+ iproute              x86_64 2.6.32-31.el6                    ol6_u5_base 364 k
+ iptables             x86_64 1.4.7-11.0.1.el6                 ol6_u5_base 252 k
+ iputils              x86_64 20071127-17.el6_4.2              ol6_u5_base 120 k
+ keyutils-libs        x86_64 1.4-4.el6                        ol6_u5_base  19 k
+ krb5-libs            x86_64 1.10.3-10.el6_4.6                ol6_u5_base 760 k
+ less                 x86_64 436-10.el6                       ol6_u5_base 106 k
+ libacl               x86_64 2.2.49-6.el6                     ol6_u5_base  23 k
+ libattr              x86_64 2.4.44-7.el6                     ol6_u5_base  15 k
+ libblkid             x86_64 2.17.2-12.14.el6                 ol6_u5_base 114 k
+ libcap               x86_64 2.16-5.5.el6                     ol6_u5_base  31 k
+ libcap-ng            x86_64 0.6.4-3.el6_0.1                  ol6_u5_base  21 k
+ libcom_err           x86_64 1.42.8-1.0.1.el6                 ol6_u5_base  36 k
+ libcurl              x86_64 7.19.7-37.el6_4                  ol6_u5_base 164 k
+ libedit              x86_64 2.11-4.20080712cvs.1.el6         ol6_u5_base  74 k
+ libffi               x86_64 3.0.5-3.2.el6                    ol6_u5_base  25 k
+ libgcc               x86_64 4.4.7-4.el6                      ol6_u5_base 100 k
+ libgcrypt            x86_64 1.4.5-11.el6_4                   ol6_u5_base 228 k
+ libgpg-error         x86_64 1.7-4.el6                        ol6_u5_base  59 k
+ libidn               x86_64 1.18-2.el6                       ol6_u5_base 205 k
+ libnih               x86_64 1.0.1-7.el6                      ol6_u5_base 137 k
+ libselinux           x86_64 2.0.94-5.3.el6_4.1               ol6_u5_base 107 k
+ libselinux-utils     x86_64 2.0.94-5.3.el6_4.1               ol6_u5_base  80 k
+ libsemanage          x86_64 2.0.43-4.2.el6                   ol6_u5_base 103 k
+ libsepol             x86_64 2.0.41-4.el6                     ol6_u5_base 128 k
+ libssh2              x86_64 1.4.2-1.el6                      ol6_u5_base 122 k
+ libstdc++            x86_64 4.4.7-4.el6                      ol6_u5_base 292 k
+ libtasn1             x86_64 2.3-3.el6_2.1                    ol6_u5_base 237 k
+ libusb               x86_64 0.1.12-23.el6                    ol6_u5_base  27 k
+ libuser              x86_64 0.56.13-5.el6                    ol6_u5_base 368 k
+ libutempter          x86_64 1.1.5-4.1.el6                    ol6_u5_base  22 k
+ libuuid              x86_64 2.17.2-12.14.el6                 ol6_u5_base  67 k
+ libxml2              x86_64 2.7.6-14.0.1.el6                 ol6_u5_base 799 k
+ logrotate            x86_64 3.7.8-17.el6                     ol6_u5_base  55 k
+ lua                  x86_64 5.1.4-4.1.el6                    ol6_u5_base 184 k
+ make                 x86_64 1:3.81-20.el6                    ol6_u5_base 388 k
+ mingetty             x86_64 1.08-5.el6                       ol6_u5_base  20 k
+ module-init-tools    x86_64 3.9-21.0.1.el6_4                 ol6_u5_base 463 k
+ ncurses              x86_64 5.7-3.20090208.el6               ol6_u5_base 267 k
+ ncurses-base         x86_64 5.7-3.20090208.el6               ol6_u5_base  60 k
+ ncurses-libs         x86_64 5.7-3.20090208.el6               ol6_u5_base 245 k
+ net-tools            x86_64 1.60-110.el6_2                   ol6_u5_base 268 k
+ nspr                 x86_64 4.10.0-1.el6                     ol6_u5_base 112 k
+ nss                  x86_64 3.15.1-15.0.1.el6                ol6_u5_base 820 k
+ nss-softokn          x86_64 3.14.3-9.el6                     ol6_u5_base 264 k
+ nss-softokn-freebl   x86_64 3.14.3-9.el6                     ol6_u5_base 157 k
+ nss-sysinit          x86_64 3.15.1-15.0.1.el6                ol6_u5_base  39 k
+ nss-tools            x86_64 3.15.1-15.0.1.el6                ol6_u5_base 356 k
+ nss-util             x86_64 3.15.1-3.el6                     ol6_u5_base  63 k
+ openldap             x86_64 2.4.23-32.el6_4.1                ol6_u5_base 265 k
+ openssh              x86_64 5.3p1-94.el6                     ol6_u5_base 257 k
+ openssl              x86_64 1.0.1e-15.el6                    ol6_u5_base 1.5 M
+ oracle-logos         noarch 60.0.14-1.0.1.el6                ol6_u5_base  12 M
+ p11-kit              x86_64 0.18.5-2.el6                     ol6_u5_base  93 k
+ p11-kit-trust        x86_64 0.18.5-2.el6                     ol6_u5_base  71 k
+ pam                  x86_64 1.1.1-17.el6                     ol6_u5_base 658 k
+ pcre                 x86_64 7.8-6.el6                        ol6_u5_base 194 k
+ pinentry             x86_64 0.7.6-6.el6                      ol6_u5_base  65 k
+ pkgconfig            x86_64 1:0.23-9.1.el6                   ol6_u5_base  70 k
+ popt                 x86_64 1.13-7.el6                       ol6_u5_base  38 k
+ procps               x86_64 3.2.8-25.el6                     ol6_u5_base 211 k
+ psmisc               x86_64 22.6-15.el6_0.1                  ol6_u5_base  80 k
+ pth                  x86_64 2.0.7-9.3.el6                    ol6_u5_base  85 k
+ pygpgme              x86_64 0.1-18.20090824bzr68.el6         ol6_u5_base  70 k
+ python               x86_64 2.6.6-51.el6                     ol6_u5_base  73 k
+ python-iniparse      noarch 0.3.1-2.1.el6                    ol6_u5_base  36 k
+ python-libs          x86_64 2.6.6-51.el6                     ol6_u5_base 5.3 M
+ python-pycurl        x86_64 7.19.0-8.el6                     ol6_u5_base  76 k
+ python-urlgrabber    noarch 3.9.1-9.el6                      ol6_u5_base  85 k
+ readline             x86_64 6.0-4.el6                        ol6_u5_base 178 k
+ redhat-release-server
+                      x86_64 1:6Server-6.5.0.1.0.1.el6        ol6_u5_base 2.6 k
+ rpm                  x86_64 4.8.0-37.el6                     ol6_u5_base 901 k
+ rpm-libs             x86_64 4.8.0-37.el6                     ol6_u5_base 312 k
+ rpm-python           x86_64 4.8.0-37.el6                     ol6_u5_base  56 k
+ sed                  x86_64 4.2.1-10.el6                     ol6_u5_base 215 k
+ setup                noarch 2.8.14-20.el6_4.1                ol6_u5_base 150 k
+ shadow-utils         x86_64 2:4.1.4.2-13.el6                 ol6_u5_base 896 k
+ shared-mime-info     x86_64 0.70-4.el6                       ol6_u5_base 208 k
+ sqlite               x86_64 3.6.20-1.el6                     ol6_u5_base 301 k
+ sysvinit-tools       x86_64 2.87-5.dsf.el6                   ol6_u5_base  59 k
+ tcp_wrappers-libs    x86_64 7.6-57.el6                       ol6_u5_base  62 k
+ tzdata               noarch 2013g-1.el6                      ol6_u5_base 457 k
+ udev                 x86_64 147-2.51.0.1.el6                 ol6_u5_base 348 k
+ upstart              x86_64 0.6.5-12.el6_4.1                 ol6_u5_base 176 k
+ ustr                 x86_64 1.0.4-9.1.el6                    ol6_u5_base  85 k
+ util-linux-ng        x86_64 2.17.2-12.14.el6                 ol6_u5_base 1.5 M
+ xz-libs              x86_64 4.999.9-0.3.beta.20091007git.el6 ol6_u5_base  89 k
+ yum-metadata-parser  x86_64 1.1.2-16.el6                     ol6_u5_base  26 k
+ zlib                 x86_64 1.2.3-29.el6                     ol6_u5_base  72 k
+
+Transaction Summary
+================================================================================
+Install     143 Packages
+
+Total download size: 82 M
+Installed size: 303 M
+Downloading Packages:
+--------------------------------------------------------------------------------
+Total                                           957 kB/s |  82 MB     01:27     
+Running Transaction Check
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : libgcc-4.4.7-4.el6.x86_64                                  1/143 
+  Installing : setup-2.8.14-20.el6_4.1.noarch                             2/143 
+  Installing : filesystem-2.4.30-3.el6.x86_64                             3/143 
+  Installing : basesystem-10.0-4.0.1.el6.noarch                           4/143 
+  Installing : tzdata-2013g-1.el6.noarch                                  5/143 
+  Installing : 1:redhat-release-server-6Server-6.5.0.1.0.1.el6.x86_64     6/143 
+  Installing : 12:dhcp-common-4.1.1-38.P1.0.1.el6.x86_64                  7/143 
+  Installing : ncurses-base-5.7-3.20090208.el6.x86_64                     8/143 
+  Installing : nss-softokn-freebl-3.14.3-9.el6.x86_64                     9/143 
+  Installing : glibc-common-2.12-1.132.el6.x86_64                        10/143 
+  Installing : glibc-2.12-1.132.el6.x86_64                               11/143 
+  Installing : ncurses-libs-5.7-3.20090208.el6.x86_64                    12/143 
+  Installing : bash-4.1.2-15.el6_4.x86_64                                13/143 
+  Installing : libattr-2.4.44-7.el6.x86_64                               14/143 
+  Installing : libcap-2.16-5.5.el6.x86_64                                15/143 
+  Installing : zlib-1.2.3-29.el6.x86_64                                  16/143 
+  Installing : info-4.13a-8.el6.x86_64                                   17/143 
+  Installing : nspr-4.10.0-1.el6.x86_64                                  18/143 
+  Installing : popt-1.13-7.el6.x86_64                                    19/143 
+  Installing : chkconfig-1.3.49.3-2.el6_4.1.x86_64                       20/143 
+  Installing : libacl-2.2.49-6.el6.x86_64                                21/143 
+  Installing : db4-4.7.25-18.el6_4.x86_64                                22/143 
+  Installing : audit-libs-2.2-2.el6.x86_64                               23/143 
+  Installing : nss-util-3.15.1-3.el6.x86_64                              24/143 
+  Installing : libcom_err-1.42.8-1.0.1.el6.x86_64                        25/143 
+  Installing : libsepol-2.0.41-4.el6.x86_64                              26/143 
+  Installing : libselinux-2.0.94-5.3.el6_4.1.x86_64                      27/143 
+  Installing : bzip2-libs-1.0.5-7.el6_0.x86_64                           28/143 
+  Installing : sed-4.2.1-10.el6.x86_64                                   29/143 
+  Installing : 2:shadow-utils-4.1.4.2-13.el6.x86_64                      30/143 
+  Installing : readline-6.0-4.el6.x86_64                                 31/143 
+  Installing : 1:dbus-libs-1.2.24-7.0.1.el6_3.x86_64                     32/143 
+  Installing : libstdc++-4.4.7-4.el6.x86_64                              33/143 
+  Installing : lua-5.1.4-4.1.el6.x86_64                                  34/143 
+  Installing : sqlite-3.6.20-1.el6.x86_64                                35/143 
+  Installing : libidn-1.18-2.el6.x86_64                                  36/143 
+  Installing : file-libs-5.04-15.el6.x86_64                              37/143 
+  Installing : xz-libs-4.999.9-0.3.beta.20091007git.el6.x86_64           38/143 
+  Installing : libgpg-error-1.7-4.el6.x86_64                             39/143 
+  Installing : elfutils-libelf-0.152-1.el6.x86_64                        40/143 
+  Installing : pcre-7.8-6.el6.x86_64                                     41/143 
+  Installing : grep-2.6.3-4.el6.x86_64                                   42/143 
+  Installing : gawk-3.1.7-10.el6.x86_64                                  43/143 
+  Installing : libxml2-2.7.6-14.0.1.el6.x86_64                           44/143 
+  Installing : pth-2.0.7-9.3.el6.x86_64                                  45/143 
+  Installing : libtasn1-2.3-3.el6_2.1.x86_64                             46/143 
+  Installing : p11-kit-0.18.5-2.el6.x86_64                               47/143 
+  Installing : libuuid-2.17.2-12.14.el6.x86_64                           48/143 
+  Installing : expat-2.0.1-11.el6_2.x86_64                               49/143 
+  Installing : sysvinit-tools-2.87-5.dsf.el6.x86_64                      50/143 
+  Installing : libblkid-2.17.2-12.14.el6.x86_64                          51/143 
+  Installing : p11-kit-trust-0.18.5-2.el6.x86_64                         52/143 
+  Installing : ca-certificates-2013.1.94-65.0.el6.noarch                 53/143 
+  Installing : libgcrypt-1.4.5-11.el6_4.x86_64                           54/143 
+  Installing : nss-softokn-3.14.3-9.el6.x86_64                           55/143 
+  Installing : gmp-4.3.1-7.el6_2.2.x86_64                                56/143 
+  Installing : libusb-0.1.12-23.el6.x86_64                               57/143 
+  Installing : libnih-1.0.1-7.el6.x86_64                                 58/143 
+  Installing : upstart-0.6.5-12.el6_4.1.x86_64                           59/143 
+  Installing : MAKEDEV-3.24-6.el6.x86_64                                 60/143 
+  Installing : libutempter-1.1.5-4.1.el6.x86_64                          61/143 
+  Installing : procps-3.2.8-25.el6.x86_64                                62/143 
+  Installing : libselinux-utils-2.0.94-5.3.el6_4.1.x86_64                63/143 
+  Installing : net-tools-1.60-110.el6_2.x86_64                           64/143 
+  Installing : psmisc-22.6-15.el6_0.1.x86_64                             65/143 
+  Installing : checkpolicy-2.0.22-1.el6.x86_64                           66/143 
+  Installing : 1:findutils-4.4.2-6.el6.x86_64                            67/143 
+  Installing : cyrus-sasl-lib-2.1.23-13.el6_3.1.x86_64                   68/143 
+  Installing : db4-utils-4.7.25-18.el6_4.x86_64                          69/143 
+  Installing : pinentry-0.7.6-6.el6.x86_64                               70/143 
+  Installing : diffutils-2.8.1-28.el6.x86_64                             71/143 
+  Installing : binutils-2.20.51.0.2-5.36.el6.x86_64                      72/143 
+  Installing : 1:make-3.81-20.el6.x86_64                                 73/143 
+  Installing : cpio-2.10-11.el6_3.x86_64                                 74/143 
+  Installing : 6:oraclelinux-release-6Server-5.0.2.x86_64                75/143 
+  Installing : ncurses-5.7-3.20090208.el6.x86_64                         76/143 
+  Installing : groff-1.18.1.4-21.el6.x86_64                              77/143 
+  Installing : less-436-10.el6.x86_64                                    78/143 
+  Installing : gzip-1.3.12-19.el6_4.x86_64                               79/143 
+  Installing : cracklib-2.8.16-4.el6.x86_64                              80/143 
+  Installing : cracklib-dicts-2.8.16-4.el6.x86_64                        81/143 
+  Installing : coreutils-libs-8.4-31.0.1.el6.x86_64                      82/143 
+  Installing : coreutils-8.4-31.0.1.el6.x86_64                           83/143 
+  Installing : pam-1.1.1-17.el6.x86_64                                   84/143 
+  Installing : module-init-tools-3.9-21.0.1.el6_4.x86_64                 85/143 
+  Installing : hwdata-0.233-9.1.el6.noarch                               86/143 
+  Installing : oracle-logos-60.0.14-1.0.1.el6.noarch                     87/143 
+  Installing : logrotate-3.7.8-17.el6.x86_64                             88/143 
+  Installing : nss-3.15.1-15.0.1.el6.x86_64                              89/143 
+  Installing : nss-sysinit-3.15.1-15.0.1.el6.x86_64                      90/143 
+  Installing : nss-tools-3.15.1-15.0.1.el6.x86_64                        91/143 
+  Installing : openldap-2.4.23-32.el6_4.1.x86_64                         92/143 
+  Installing : libedit-2.11-4.20080712cvs.1.el6.x86_64                   93/143 
+  Installing : ustr-1.0.4-9.1.el6.x86_64                                 94/143 
+  Installing : libsemanage-2.0.43-4.2.el6.x86_64                         95/143 
+  Installing : libffi-3.0.5-3.2.el6.x86_64                               96/143 
+  Installing : keyutils-libs-1.4-4.el6.x86_64                            97/143 
+  Installing : krb5-libs-1.10.3-10.el6_4.6.x86_64                        98/143 
+  Installing : openssl-1.0.1e-15.el6.x86_64                              99/143 
+  Installing : libssh2-1.4.2-1.el6.x86_64                               100/143 
+  Installing : libcurl-7.19.7-37.el6_4.x86_64                           101/143 
+  Installing : curl-7.19.7-37.el6_4.x86_64                              102/143 
+  Installing : rpm-libs-4.8.0-37.el6.x86_64                             103/143 
+  Installing : rpm-4.8.0-37.el6.x86_64                                  104/143 
+  Installing : gnupg2-2.0.14-6.el6_4.x86_64                             105/143 
+  Installing : gpgme-1.1.8-3.el6.x86_64                                 106/143 
+  Installing : fipscheck-lib-1.2.0-7.el6.x86_64                         107/143 
+  Installing : fipscheck-1.2.0-7.el6.x86_64                             108/143 
+  Installing : 1:pkgconfig-0.23-9.1.el6.x86_64                          109/143 
+  Installing : shared-mime-info-0.70-4.el6.x86_64                       110/143 
+warning: %post(shared-mime-info-0.70-4.el6.x86_64) scriptlet failed, exit status 127
+  Installing : glib2-2.26.1-3.el6.x86_64                                111/143 
+  Installing : gamin-0.1.10-9.el6.x86_64                                112/143 
+  Installing : dbus-glib-0.86-6.el6_4.x86_64                            113/143 
+  Installing : libuser-0.56.13-5.el6.x86_64                             114/143 
+  Installing : libcap-ng-0.6.4-3.el6_0.1.x86_64                         115/143 
+  Installing : 2:ethtool-3.5-1.el6.x86_64                               116/143 
+  Installing : gdbm-1.8.0-36.el6.x86_64                                 117/143 
+  Installing : python-2.6.6-51.el6.x86_64                               118/143 
+  Installing : python-libs-2.6.6-51.el6.x86_64                          119/143 
+  Installing : rpm-python-4.8.0-37.el6.x86_64                           120/143 
+  Installing : yum-metadata-parser-1.1.2-16.el6.x86_64                  121/143 
+  Installing : python-pycurl-7.19.0-8.el6.x86_64                        122/143 
+  Installing : python-urlgrabber-3.9.1-9.el6.noarch                     123/143 
+  Installing : pygpgme-0.1-18.20090824bzr68.el6.x86_64                  124/143 
+  Installing : python-iniparse-0.3.1-2.1.el6.noarch                     125/143 
+  Installing : tcp_wrappers-libs-7.6-57.el6.x86_64                      126/143 
+  Installing : mingetty-1.08-5.el6.x86_64                               127/143 
+  Installing : policycoreutils-2.0.83-19.39.0.1.el6.x86_64              128/143 
+  Installing : iptables-1.4.7-11.0.1.el6.x86_64                         129/143 
+  Installing : iproute-2.6.32-31.el6.x86_64                             130/143 
+  Installing : iputils-20071127-17.el6_4.2.x86_64                       131/143 
+  Installing : initscripts-9.03.40-2.0.1.el6.x86_64                     132/143 
+  Installing : util-linux-ng-2.17.2-12.14.el6.x86_64                    133/143 
+  Installing : udev-147-2.51.0.1.el6.x86_64                             134/143 
+  Installing : openssh-5.3p1-94.el6.x86_64                              135/143 
+  Installing : openssh-clients-5.3p1-94.el6.x86_64                      136/143 
+  Installing : openssh-server-5.3p1-94.el6.x86_64                       137/143 
+  Installing : 12:dhclient-4.1.1-38.P1.0.1.el6.x86_64                   138/143 
+  Installing : rsyslog-5.8.10-8.0.1.el6.x86_64                          139/143 
+  Installing : yum-3.2.29-40.0.1.el6.noarch                             140/143 
+  Installing : passwd-0.77-4.el6_2.2.x86_64                             141/143 
+  Installing : 2:vim-minimal-7.2.411-1.8.el6.x86_64                     142/143 
+  Installing : rootfiles-8.1-6.1.el6.noarch                             143/143 
+
+Installed:
+  chkconfig.x86_64 0:1.3.49.3-2.el6_4.1                                         
+  dhclient.x86_64 12:4.1.1-38.P1.0.1.el6                                        
+  initscripts.x86_64 0:9.03.40-2.0.1.el6                                        
+  openssh-clients.x86_64 0:5.3p1-94.el6                                         
+  openssh-server.x86_64 0:5.3p1-94.el6                                          
+  oraclelinux-release.x86_64 6:6Server-5.0.2                                    
+  passwd.x86_64 0:0.77-4.el6_2.2                                                
+  policycoreutils.x86_64 0:2.0.83-19.39.0.1.el6                                 
+  rootfiles.noarch 0:8.1-6.1.el6                                                
+  rsyslog.x86_64 0:5.8.10-8.0.1.el6                                             
+  vim-minimal.x86_64 2:7.2.411-1.8.el6                                          
+  yum.noarch 0:3.2.29-40.0.1.el6                                                
+
+Dependency Installed:
+  MAKEDEV.x86_64 0:3.24-6.el6                                                   
+  audit-libs.x86_64 0:2.2-2.el6                                                 
+  basesystem.noarch 0:10.0-4.0.1.el6                                            
+  bash.x86_64 0:4.1.2-15.el6_4                                                  
+  binutils.x86_64 0:2.20.51.0.2-5.36.el6                                        
+  bzip2-libs.x86_64 0:1.0.5-7.el6_0                                             
+  ca-certificates.noarch 0:2013.1.94-65.0.el6                                   
+  checkpolicy.x86_64 0:2.0.22-1.el6                                             
+  coreutils.x86_64 0:8.4-31.0.1.el6                                             
+  coreutils-libs.x86_64 0:8.4-31.0.1.el6                                        
+  cpio.x86_64 0:2.10-11.el6_3                                                   
+  cracklib.x86_64 0:2.8.16-4.el6                                                
+  cracklib-dicts.x86_64 0:2.8.16-4.el6                                          
+  curl.x86_64 0:7.19.7-37.el6_4                                                 
+  cyrus-sasl-lib.x86_64 0:2.1.23-13.el6_3.1                                     
+  db4.x86_64 0:4.7.25-18.el6_4                                                  
+  db4-utils.x86_64 0:4.7.25-18.el6_4                                            
+  dbus-glib.x86_64 0:0.86-6.el6_4                                               
+  dbus-libs.x86_64 1:1.2.24-7.0.1.el6_3                                         
+  dhcp-common.x86_64 12:4.1.1-38.P1.0.1.el6                                     
+  diffutils.x86_64 0:2.8.1-28.el6                                               
+  elfutils-libelf.x86_64 0:0.152-1.el6                                          
+  ethtool.x86_64 2:3.5-1.el6                                                    
+  expat.x86_64 0:2.0.1-11.el6_2                                                 
+  file-libs.x86_64 0:5.04-15.el6                                                
+  filesystem.x86_64 0:2.4.30-3.el6                                              
+  findutils.x86_64 1:4.4.2-6.el6                                                
+  fipscheck.x86_64 0:1.2.0-7.el6                                                
+  fipscheck-lib.x86_64 0:1.2.0-7.el6                                            
+  gamin.x86_64 0:0.1.10-9.el6                                                   
+  gawk.x86_64 0:3.1.7-10.el6                                                    
+  gdbm.x86_64 0:1.8.0-36.el6                                                    
+  glib2.x86_64 0:2.26.1-3.el6                                                   
+  glibc.x86_64 0:2.12-1.132.el6                                                 
+  glibc-common.x86_64 0:2.12-1.132.el6                                          
+  gmp.x86_64 0:4.3.1-7.el6_2.2                                                  
+  gnupg2.x86_64 0:2.0.14-6.el6_4                                                
+  gpgme.x86_64 0:1.1.8-3.el6                                                    
+  grep.x86_64 0:2.6.3-4.el6                                                     
+  groff.x86_64 0:1.18.1.4-21.el6                                                
+  gzip.x86_64 0:1.3.12-19.el6_4                                                 
+  hwdata.noarch 0:0.233-9.1.el6                                                 
+  info.x86_64 0:4.13a-8.el6                                                     
+  iproute.x86_64 0:2.6.32-31.el6                                                
+  iptables.x86_64 0:1.4.7-11.0.1.el6                                            
+  iputils.x86_64 0:20071127-17.el6_4.2                                          
+  keyutils-libs.x86_64 0:1.4-4.el6                                              
+  krb5-libs.x86_64 0:1.10.3-10.el6_4.6                                          
+  less.x86_64 0:436-10.el6                                                      
+  libacl.x86_64 0:2.2.49-6.el6                                                  
+  libattr.x86_64 0:2.4.44-7.el6                                                 
+  libblkid.x86_64 0:2.17.2-12.14.el6                                            
+  libcap.x86_64 0:2.16-5.5.el6                                                  
+  libcap-ng.x86_64 0:0.6.4-3.el6_0.1                                            
+  libcom_err.x86_64 0:1.42.8-1.0.1.el6                                          
+  libcurl.x86_64 0:7.19.7-37.el6_4                                              
+  libedit.x86_64 0:2.11-4.20080712cvs.1.el6                                     
+  libffi.x86_64 0:3.0.5-3.2.el6                                                 
+  libgcc.x86_64 0:4.4.7-4.el6                                                   
+  libgcrypt.x86_64 0:1.4.5-11.el6_4                                             
+  libgpg-error.x86_64 0:1.7-4.el6                                               
+  libidn.x86_64 0:1.18-2.el6                                                    
+  libnih.x86_64 0:1.0.1-7.el6                                                   
+  libselinux.x86_64 0:2.0.94-5.3.el6_4.1                                        
+  libselinux-utils.x86_64 0:2.0.94-5.3.el6_4.1                                  
+  libsemanage.x86_64 0:2.0.43-4.2.el6                                           
+  libsepol.x86_64 0:2.0.41-4.el6                                                
+  libssh2.x86_64 0:1.4.2-1.el6                                                  
+  libstdc++.x86_64 0:4.4.7-4.el6                                                
+  libtasn1.x86_64 0:2.3-3.el6_2.1                                               
+  libusb.x86_64 0:0.1.12-23.el6                                                 
+  libuser.x86_64 0:0.56.13-5.el6                                                
+  libutempter.x86_64 0:1.1.5-4.1.el6                                            
+  libuuid.x86_64 0:2.17.2-12.14.el6                                             
+  libxml2.x86_64 0:2.7.6-14.0.1.el6                                             
+  logrotate.x86_64 0:3.7.8-17.el6                                               
+  lua.x86_64 0:5.1.4-4.1.el6                                                    
+  make.x86_64 1:3.81-20.el6                                                     
+  mingetty.x86_64 0:1.08-5.el6                                                  
+  module-init-tools.x86_64 0:3.9-21.0.1.el6_4                                   
+  ncurses.x86_64 0:5.7-3.20090208.el6                                           
+  ncurses-base.x86_64 0:5.7-3.20090208.el6                                      
+  ncurses-libs.x86_64 0:5.7-3.20090208.el6                                      
+  net-tools.x86_64 0:1.60-110.el6_2                                             
+  nspr.x86_64 0:4.10.0-1.el6                                                    
+  nss.x86_64 0:3.15.1-15.0.1.el6                                                
+  nss-softokn.x86_64 0:3.14.3-9.el6                                             
+  nss-softokn-freebl.x86_64 0:3.14.3-9.el6                                      
+  nss-sysinit.x86_64 0:3.15.1-15.0.1.el6                                        
+  nss-tools.x86_64 0:3.15.1-15.0.1.el6                                          
+  nss-util.x86_64 0:3.15.1-3.el6                                                
+  openldap.x86_64 0:2.4.23-32.el6_4.1                                           
+  openssh.x86_64 0:5.3p1-94.el6                                                 
+  openssl.x86_64 0:1.0.1e-15.el6                                                
+  oracle-logos.noarch 0:60.0.14-1.0.1.el6                                       
+  p11-kit.x86_64 0:0.18.5-2.el6                                                 
+  p11-kit-trust.x86_64 0:0.18.5-2.el6                                           
+  pam.x86_64 0:1.1.1-17.el6                                                     
+  pcre.x86_64 0:7.8-6.el6                                                       
+  pinentry.x86_64 0:0.7.6-6.el6                                                 
+  pkgconfig.x86_64 1:0.23-9.1.el6                                               
+  popt.x86_64 0:1.13-7.el6                                                      
+  procps.x86_64 0:3.2.8-25.el6                                                  
+  psmisc.x86_64 0:22.6-15.el6_0.1                                               
+  pth.x86_64 0:2.0.7-9.3.el6                                                    
+  pygpgme.x86_64 0:0.1-18.20090824bzr68.el6                                     
+  python.x86_64 0:2.6.6-51.el6                                                  
+  python-iniparse.noarch 0:0.3.1-2.1.el6                                        
+  python-libs.x86_64 0:2.6.6-51.el6                                             
+  python-pycurl.x86_64 0:7.19.0-8.el6                                           
+  python-urlgrabber.noarch 0:3.9.1-9.el6                                        
+  readline.x86_64 0:6.0-4.el6                                                   
+  redhat-release-server.x86_64 1:6Server-6.5.0.1.0.1.el6                        
+  rpm.x86_64 0:4.8.0-37.el6                                                     
+  rpm-libs.x86_64 0:4.8.0-37.el6                                                
+  rpm-python.x86_64 0:4.8.0-37.el6                                              
+  sed.x86_64 0:4.2.1-10.el6                                                     
+  setup.noarch 0:2.8.14-20.el6_4.1                                              
+  shadow-utils.x86_64 2:4.1.4.2-13.el6                                          
+  shared-mime-info.x86_64 0:0.70-4.el6                                          
+  sqlite.x86_64 0:3.6.20-1.el6                                                  
+  sysvinit-tools.x86_64 0:2.87-5.dsf.el6                                        
+  tcp_wrappers-libs.x86_64 0:7.6-57.el6                                         
+  tzdata.noarch 0:2013g-1.el6                                                   
+  udev.x86_64 0:147-2.51.0.1.el6                                                
+  upstart.x86_64 0:0.6.5-12.el6_4.1                                             
+  ustr.x86_64 0:1.0.4-9.1.el6                                                   
+  util-linux-ng.x86_64 0:2.17.2-12.14.el6                                       
+  xz-libs.x86_64 0:4.999.9-0.3.beta.20091007git.el6                             
+  yum-metadata-parser.x86_64 0:1.1.2-16.el6                                     
+  zlib.x86_64 0:1.2.3-29.el6                                                    
+
+Complete!
+Rebuilding rpm database
+Patching container rootfs /var/lib/lxc/lxcora01/rootfs for Oracle Linux 6.5
+Configuring container for Oracle Linux 6.5
+Added container user:[1moracle[0m password:[1moracle[0m
+Added container user:[1mroot[0m password:[1mroot[0m
+Container : /var/lib/lxc/lxcora01/rootfs
+Config    : /var/lib/lxc/lxcora01/config
+Network   : eth0 (veth) on virbr0

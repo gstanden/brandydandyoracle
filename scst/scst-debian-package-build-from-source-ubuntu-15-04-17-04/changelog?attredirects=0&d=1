@@ -1,0 +1,5 @@
+scst (3.3.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Gilbert Standen <gilstanden@hotmail.com>  Sun, 16 Jul 2017 14:42:51 -0500

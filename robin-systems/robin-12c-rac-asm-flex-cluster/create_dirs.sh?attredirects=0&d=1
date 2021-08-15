@@ -1,0 +1,4 @@
+mkdir -p  /u00/app/12.1.0.2/grid
+mkdir -p /u00/app/oracle/product/12.1.0.2/db_1
+chown -R oracle:oinstall /u00
+chmod -R 775 /u00/

@@ -1,0 +1,4 @@
+#!/bin/bash
+ovsBr='sw1'
+ovs-vsctl add-port ${ovsBr} $5
+ovs-vsctl set port $5 tag=10

@@ -1,0 +1,100 @@
+#    Copyright 2015-2016 Gilbert Standen
+#    This file is part of orabuntu-lxc.
+
+#    Orabuntu-lxc is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+
+#    Orabuntu-lxc is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+
+#    You should have received a copy of the GNU General Public License
+#    along with orabuntu-lxc.  If not, see <http://www.gnu.org/licenses/>.
+
+#    v2.8 GLS 20151231
+#    v3.0 GLS 20160710
+
+#!/bin/bash
+
+# Create Target and Groups
+
+  function GetInitiatorName {
+  cat /etc/iscsi/initiatorname.iscsi | cut -f2 -d'='
+  }
+  InitiatorName=$(GetInitiatorName)
+
+  function GetHostName {
+  hostname -a
+  }
+  HostName=$(GetHostName)
+  echo $HostName
+
+  DATEYR=`date +"%Y"`
+  DATEMO=`date +"%m"`
+
+  echo $InitiatorName
+  echo $DATEYR
+  echo $DATEMO
+
+  scstadmin -add_target iqn.$DATEYR-$DATEMO.com.robinsystems:$HostName.san.asm.luns -driver iscsi
+  scstadmin -add_group lxc1 -driver iscsi -target iqn.$DATEYR-$DATEMO.com.robinsystems:$HostName.san.asm.luns
+  scstadmin -add_init $InitiatorName -driver iscsi -target iqn.$DATEYR-$DATEMO.com.robinsystems:$HostName.san.asm.luns -group lxc1
+  scstadmin -write_config /etc/scst.conf
+
+  echo ''
+  echo "======================================================"
+  echo "Verify that target, groups, and initiators are added  "
+  echo "Sleeping for 10 seconds...                            "
+  echo "======================================================"
+  echo ''
+
+  scstadmin -list_group
+
+# Open disk-backed devices for Oracle ASM diskgroup SYSTEMDG
+
+# scstadmin -open_dev asm_sysd1_00 -handler vdisk_blockio -attributes filename=/dev/vblock1,blocksize=512
+
+# Open disk-backed devices for Oracle ASM diskgroup DATA
+
+# scstadmin -open_dev asm_data1_00 -handler vdisk_blockio -attributes filename=/dev/vblock2,blocksize=512
+
+# Add LUNs for Oracle ASM diskgroups DATA and FRA to SCST iscsi target
+
+# scstadmin -add_lun 0 -driver iscsi -target iqn.$DATEYR-$DATEMO.com.robinsystems:$HostName.san.asm.luns -group lxc1 -device asm_sysd1_00
+# scstadmin -add_lun 1 -driver iscsi -target iqn.$DATEYR-$DATEMO.com.robinsystems:$HostName.san.asm.luns -group lxc1 -device asm_data1_00
+
+# Write SCST configuration to /etc/scst.conf file
+
+   scstadmin -write_config /etc/scst.conf
+
+# Enable SCST target for access
+
+  scstadmin -enable_target iqn.$DATEYR-$DATEMO.com.robinsystems:$HostName.san.asm.luns -driver iscsi
+  scstadmin -write_config /etc/scst.conf
+
+  sleep 2
+
+  echo "======================================================"
+  echo "Answer y here...                                      "
+  echo "======================================================"
+  
+  scstadmin -set_drv_attr iscsi -attributes enabled=1
+
+  sleep 2
+
+  scstadmin -write_config /etc/scst.conf
+
+  echo ''
+  echo "======================================================"
+  echo "Verify that SCST SAN is fully configured and ready    "
+  echo "Sleeping for 10 seconds...                            "
+  echo "======================================================"
+  echo ''
+
+  scstadmin -list_group
+
+
+

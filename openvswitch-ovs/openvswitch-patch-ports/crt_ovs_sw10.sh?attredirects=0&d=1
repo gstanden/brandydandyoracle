@@ -1,0 +1,85 @@
+#!/bin/bash
+
+  ip tuntap add g1 mode tap 
+# ip tuntap add a2 mode tap 
+# ip tuntap add a3 mode tap 
+
+  ip link set g1 up
+# ip link set a2 up
+# ip link set a3 up
+
+  ovs-vsctl --may-exist add-br sw10
+
+  ovs-vsctl --may-exist add-port sw10 g1
+# ovs-vsctl --may-exist add-port sw10 a2
+# ovs-vsctl --may-exist add-port sw10 a3
+
+  ip link set up dev sw10
+  ip addr add 10.21.70.253/24 dev sw10
+  ip route replace 10.21.70.0/24 dev sw10
+
+  ovs-vsctl set port sw10 trunks=10,11,12,13
+  ovs-vsctl set port sw10 tag=12
+
+  ovs-vsctl set port  g1 tag=12
+
+# GLS 20140825 Get active external interface dynamically at boot.  Tested & works with {wlan0, eth0, bnep0} on Ubuntu 14.04.1 Desktop x86_64.
+# GLS 20140825 Interface "bnep0" is Blackberry Z30 OS10 Bluetooth Tether.
+# GLs 20151219 Added enp / wlp to support Ubuntu 15.10 Wily Werewolf
+
+### BEGIN Get Active EXTIF Dynamcially. ###
+
+function GetInterface
+{
+ifconfig | egrep -B1 'inet' | egrep -A1 'enp|wlp|wlan|eth|bnep' | sed '$!N;s/\n/ /' | sed 's/  */ /g' | cut -f1,7 -d' ' | sed 's/ addr//' | head -1 | cut -f1 -d':'
+}
+Interface=$(GetInterface)
+function GetIP
+{
+ifconfig | grep -A1 $Interface | grep inet | sed '$!N;s/\n/ /' | sed 's/  */ /g' | cut -f3 -d' '
+}
+
+### END Get Active EXTIF Dynamically. ###
+
+echo '       IP: '$(GetIP)
+echo 'Interface: '$(GetInterface)
+
+INTIF="sw10"
+EXTIF=$(GetInterface)
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+### BEGIN manage iptables rules ###
+
+# clear existing iptable rules, set a default policy
+# When used by the sw1/sw10 combo, do NOT uncomment these lines.
+# The sw1 switch takes care of implementing these before sw10 runs.
+# iptables -P INPUT ACCEPT
+# iptables -F INPUT 
+# iptables -P OUTPUT ACCEPT
+# iptables -F OUTPUT 
+# iptables -P FORWARD DROP
+# iptables -F FORWARD 
+# iptables -t nat -F
+
+function CheckIptablesRulesCount {
+	iptables -S | grep FORWARD | grep sw10 | wc -l
+}
+IptablesRulesCount=$(CheckIptablesRulesCount)
+
+while [ $IptablesRulesCount -ne 0 ]
+do
+	iptables -D FORWARD -i $EXTIF -o $INTIF -j ACCEPT > /dev/null 2>&1
+	iptables -D FORWARD -i $INTIF -o $EXTIF -j ACCEPT > /dev/null 2>&1
+	IptablesRulesCount=$(CheckIptablesRulesCount)
+done
+
+# set forwarding and nat rules
+  iptables -A FORWARD -i $EXTIF -o $INTIF -j ACCEPT
+  iptables -A FORWARD -i $INTIF -o $EXTIF -j ACCEPT
+  iptables -t nat -A POSTROUTING -o $EXTIF -j MASQUERADE
+
+### END  manage iptables rules ###
+
+# service dhcpd restart # DNS and DHCP services have been moved to an LXC container.
+# service named restart # DNS and DHCP services have been moved to an LXC container.

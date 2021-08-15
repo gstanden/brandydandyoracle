@@ -1,0 +1,27 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+39.207.10.in-addr.arpa	IN SOA	vmem1.vmem.org. postmaster.vmem.org. (
+				1507261640 ; serial
+				3600       ; refresh (1 hour)
+				1800       ; retry (30 minutes)
+				604800     ; expire (1 week)
+				86400      ; minimum (1 day)
+				)
+			NS	vmem1.vmem.org.
+$ORIGIN 39.207.10.in-addr.arpa.
+1			PTR	vmem1.vmem.org.
+$TTL 3600	; 1 hour
+110			PTR	lxcora01.vmem.org.
+111			PTR	lxcora02.vmem.org.
+112			PTR	lxcora03.vmem.org.
+113			PTR	lxcora04.vmem.org.
+114			PTR	lxcora05.vmem.org.
+115			PTR	lxcora06.vmem.org.
+$TTL 86400	; 1 day
+3			PTR	lxc1-gns-vip.vmem.org.
+$TTL 3600	; 1 hour
+74			PTR	oracle651.vmem.org.vmem.org.
+81			PTR	vmem2.vmem.org.
+$TTL 86400	; 1 day
+39.207.10.in-addr.arpa	NS	vmem1.vmem.org.
+vmem1			A	10.207.39.1

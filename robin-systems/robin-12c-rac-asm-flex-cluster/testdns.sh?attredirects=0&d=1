@@ -1,0 +1,100 @@
+echo "================================"
+echo "google                          "
+echo "================================"
+nslookup google.com
+ping -c 3 google.com
+function CheckPing {
+ping -c 3 google.com | grep packet | cut -f1 -d'%' | cut -f6 -d' '
+}
+Ping=$(CheckPing)
+if [ $Ping -eq 0 ]
+then
+echo ''
+echo "================================"
+echo 'All Good (google)'
+echo "================================"
+else
+echo 'Packet Failure'
+fi
+sleep 3
+
+echo "================================"
+echo "stlns01                         "
+echo "================================"
+nslookup stlns01
+ping -c 3 stlns01
+function CheckPing {
+ping -c 3 stlns01 | grep packet | cut -f1 -d'%' | cut -f6 -d' '
+}
+Ping=$(CheckPing)
+if [ $Ping -eq 0 ]
+then
+echo ''
+echo "================================"
+echo 'All Good (stlns01)'
+echo "================================"
+else
+echo 'Packet Failure'
+fi
+sleep 2
+
+echo "================================"
+echo "vnode-39-116                    "
+echo "================================"
+nslookup vnode-39-116
+ping -c 3 vnode-39-116
+function CheckPing {
+ping -c 3 vnode-39-116 | grep packet | cut -f1 -d'%' | cut -f6 -d' '
+}
+Ping=$(CheckPing)
+if [ $Ping -eq 0 ]
+then
+echo ''
+echo "================================"
+echo 'All Good (vnode-39-116)'
+echo "================================"
+else
+echo 'Packet Failure'
+fi
+sleep 2
+
+echo "================================"
+echo "vnode-39-118                    "
+echo "================================"
+nslookup vnode-39-118
+ping -c 3 vnode-39-118
+function CheckPing {
+ping -c 3 vnode-39-118 | grep packet | cut -f1 -d'%' | cut -f6 -d' '
+}
+Ping=$(CheckPing)
+if [ $Ping -eq 0 ]
+then
+echo ''
+echo "================================"
+echo 'All Good (vnode-39-118)'
+echo "================================"
+else
+echo 'Packet Failure'
+fi
+sleep 2
+
+echo "================================"
+echo "rsrac1-scan                     "
+echo "================================"
+nslookup rsrac1-scan
+ping -c 3 rsrac1-scan
+function CheckPing {
+ping -c 3 rsrac1-scan | grep packet | cut -f1 -d'%' | cut -f6 -d' '
+}
+Ping=$(CheckPing)
+if [ $Ping -eq 0 ]
+then
+echo ''
+echo "================================"
+echo 'All Good (rsrac1-scan)'
+echo "================================"
+else
+echo 'Packet Failure'
+fi
+sleep 2
+

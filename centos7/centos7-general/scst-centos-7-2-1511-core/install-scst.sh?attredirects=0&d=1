@@ -1,0 +1,22 @@
+ svn co https://scst.svn.sourceforge.net/svnroot/scst/branches/3.1.x scst-3.1
+ cd scst-3.1
+ make 2perf
+ make scst
+ make scst_install
+ make iscsi
+ make iscsi_install
+ make scstadm
+ make scstadm_install
+ chkconfig --add scst
+ modprobe scst
+ modprobe scst_vdisk
+ modprobe scst_disk
+ modprobe scst_user
+ modprobe scst_modisk
+ modprobe scst_processor
+ modprobe scst_raid
+ modprobe scst_tape
+ modprobe scst_cdrom
+ modprobe scst_changer
+ modprobe iscsi-scst
+ iscsi-scstd

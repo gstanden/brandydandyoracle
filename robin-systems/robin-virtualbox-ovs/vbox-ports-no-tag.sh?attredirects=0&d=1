@@ -1,0 +1,8 @@
+ovs-vsctl del-port CentOS-72D
+ip tuntap add CentOS-72D mode tap
+ip link set CentOS-72D up
+ovs-vsctl add-port sw1 CentOS-72D
+ovs-vsctl del-port CentOS-72E
+ip tuntap add CentOS-72E mode tap
+ip link set CentOS-72E up
+ovs-vsctl add-port sw1 CentOS-72E

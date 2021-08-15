@@ -1,0 +1,6 @@
+#!/bin/bash
+ovsBr='sw8'
+sudo ovs-vsctl add-port ${ovsBr} $5
+sudo ovs-vsctl set port $5 tag=60
+sudo ovs-vsctl set port ${ovsBr} tag=60
+sudo ovs-vsctl set port ${ovsBr} trunks=60,70

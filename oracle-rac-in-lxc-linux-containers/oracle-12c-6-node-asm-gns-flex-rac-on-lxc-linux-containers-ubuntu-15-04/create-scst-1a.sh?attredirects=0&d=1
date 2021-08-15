@@ -1,0 +1,48 @@
+cd ~/Downloads
+pwd
+sudo apt-get install debian-keyring
+# ssh-keygen -t rsa  # first run only
+sleep 10
+sudo gpg --keyserver keyserver.ubuntu.com --recv-keys B1CDE58F
+sudo gpg --no-default-keyring -a --export B1CDE58F | sudo gpg --no-default-keyring --keyring ~/.gnupg/trustedkeys.gpg --import -
+echo "======================================================="
+echo "Verify gpg key installed successfully                  "
+echo "Sleeping 20 seconds...                                 "
+echo "======================================================="
+sleep 10
+sudo svn co https://scst.svn.sourceforge.net/svnroot/scst/trunk scst
+cd scst
+sudo scripts/generate-kernel-patch 3.19 > ../scst.patch
+cd ..
+sudo apt-get source linux-image-$(uname -r)
+echo "======================================================="
+echo "Verify success...                                      "
+echo "Sleeping 10 seconds...                                 "
+echo "======================================================="
+sleep 5
+sudo apt-get build-dep linux-image-$(uname -r)
+echo "======================================================="
+echo "Verify success...                                      "
+echo "Sleeping 10 seconds...                                 "
+echo "======================================================="
+sleep 5
+sudo apt-get install libncurses5-dev
+echo "======================================================="
+echo "Verify success...                                      "
+echo "Sleeping 10 seconds...                                 "
+echo "======================================================="
+sleep 5
+cd ~/Downloads/linux-3.19.0/
+sudo patch -Np1 -i ../scst.patch
+echo "======================================================="
+echo "Verify patch created successfully...                   "
+echo "Sleeping 10 seconds...                                 "
+echo "======================================================="
+sleep 5
+sudo chmod a+x debian/scripts/*
+sudo chmod a+x debian/scripts/misc/*
+sudo cp debian.master/config/amd64/config.flavour.generic debian.master/config/amd64/config.flavour.scst
+sudo cp debian.master/abi/3.19.0-26.27/amd64/generic debian.master/abi/3.19.0-26.27/amd64/scst
+sudo cp debian.master/abi/3.19.0-26.27/amd64/generic.modules debian.master/abi/3.19.0-26.27/amd64/scst.modules
+sudo cp debian.master/control.d/vars.generic debian.master/control.d/vars.scst
+

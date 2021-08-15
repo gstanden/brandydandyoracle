@@ -1,0 +1,69 @@
+cd /
+sudo apt-get install -y synaptic
+sudo apt-get install -y cpu-checker
+sudo apt-get install -y lxc
+sudo apt-get install -y uml-utilities
+sudo apt-get install -y openvswitch-switch
+sudo apt-get install -y openvswitch-common
+sudo apt-get install -y openvswitch-controller
+sudo apt-get install -y bind9
+sudo apt-get install -y bind9utils
+sudo apt-get install -y isc-dhcp-server
+sudo apt-get install -y apparmor-utils
+sudo apt-get install -y openssh-server uuid
+sudo apt-get install -y uuid
+sudo apt-get install -y qemu-kvm
+sudo apt-get install -y libvirt-bin
+sudo apt-get install -y virt-manager
+sudo apt-get install -y rpm
+sudo apt-get install -y yum
+sudo apt-get install -y hugepages
+sudo apt-get install -y nfs-kernel-server
+sudo apt-get install -y nfs-common portmap
+sudo apt-get install -y multipath-tools open-iscsi 
+sudo apt-get install -y multipath-tools 
+sudo aa-complain /usr/bin/lxc-start
+sudo mkdir -p /shared_config
+sudo mkdir -p /shared_grid
+sudo mkdir -p /shared_home
+sudo mkdir -p /shared_data
+sudo service bind9 stop
+sudo service isc-dhcp-server stop
+sudo service multipath-tools stop
+sudo lxc-create -t oracle -n lxcora01
+sudo lxc-stop -n lxcora01
+sudo tar -xvf ubuntu-files.tar
+
+BEFORE CLONING NEED TO RUN INSIDE CONTAINER lxcora01 "packages.sh"
+BEFORE CLONING NEED TO RUN INSIDE CONTAINER lxcora01 "create_users.sh"
+
+sudo tar -xvf lxcora01-files.tar
+sudo lxc-clone -o lxcora01 -n lxcora02
+sudo lxc-clone -o lxcora01 -n lxcora03
+sudo lxc-clone -o lxcora01 -n lxcora04
+sudo lxc-clone -o lxcora01 -n lxcora05
+sudo lxc-clone -o lxcora01 -n lxcora06
+sudo lxc-clone -o lxcora01 -n lxcora00
+sudo lxc-stop -n lxcora02
+sudo lxc-stop -n lxcora03
+sudo lxc-stop -n lxcora04
+sudo lxc-stop -n lxcora05
+sudo lxc-stop -n lxcora06
+sudo lxc-stop -n lxcora00
+sudo tar -xvf lxc-configuration-files.tar
+sudo tar -xvf lxcora0x-files.tar
+sudo chown bind:bind fwd.*
+sudo chown bind:bind rev.*
+sudo chown root:root dhcpd.conf dhclient.conf
+sudo chown root:root lxcora01*
+sudo chown root:root lxcora01*
+sudo chmod 755 /etc/network/interfaces
+sudo chown root:root interfaces
+
+NEED TO UPDATE THE /etc/dhcp/dhclient.conf FILE TO A NEW ONE
+NEED TO UPDATE THE /var/lib/lxc/lxcora0x TO COMMENT OUT AUTOSTART ON BOOT
+SHOULD BE ABLE TO CREATE THE STORAGE WITH 'dd' COMMAND AND BUILD ENTIRE THING AUTOMATICALLY
+
+sudo ~/Networking/crt_links.sh
+
+THE lxc-services.sh FILE IS MISSING AND NEEDS TO BE ADDED

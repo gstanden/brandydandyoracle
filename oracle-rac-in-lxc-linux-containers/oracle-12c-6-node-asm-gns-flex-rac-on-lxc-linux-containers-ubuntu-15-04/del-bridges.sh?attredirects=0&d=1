@@ -1,0 +1,11 @@
+sudo ovs-vsctl del-br sw1
+sudo ovs-vsctl del-br sw2
+sudo ovs-vsctl del-br sw3
+sudo ovs-vsctl del-br sw4
+sudo ovs-vsctl del-br sw5
+sudo ovs-vsctl del-br sw6
+sudo ovs-vsctl del-br sw7
+sudo ovs-vsctl del-br sw8
+sudo ovs-vsctl del-br sw9
+sudo ovs-vsctl del-br sx1
+

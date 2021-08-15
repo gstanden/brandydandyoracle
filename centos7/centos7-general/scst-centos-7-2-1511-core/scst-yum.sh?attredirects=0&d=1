@@ -1,0 +1,6 @@
+yum install svn
+yum groupinstall "Development Tools" 
+yum install asciidoc newt-devel xmlto
+yum install perl-ExtUtils-MakeMaker
+yum install kernel-devel-$(uname -r)
+

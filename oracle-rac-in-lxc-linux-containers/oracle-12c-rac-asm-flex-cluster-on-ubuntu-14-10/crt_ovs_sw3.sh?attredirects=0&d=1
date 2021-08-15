@@ -1,0 +1,46 @@
+#!/bin/bash
+
+tunctl -t w1
+tunctl -t w2
+tunctl -t w3
+tunctl -t w4
+tunctl -t w5
+ip link set w1 up
+ip link set w2 up
+ip link set w3 up
+ip link set w4 up
+ip link set w5 up
+ovs-vsctl add-br sw3
+ovs-vsctl add-port sw3 w1
+ovs-vsctl add-port sw3 w2
+ovs-vsctl add-port sw3 w3
+ovs-vsctl add-port sw3 w4
+ovs-vsctl add-port sw3 w5
+
+ip link set up dev sw3
+ip addr add 10.207.41.1/24 dev sw3
+ip route replace 10.207.41.0/24 dev sw3
+ifconfig sw3 10.207.41.1 netmask 255.255.255.0
+
+ ovs-vsctl set port sw3 tag=90
+
+# INTIF="sw3"
+# EXTIF="wlan0"
+# echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# clear existing iptable rules, set a default policy
+# iptables -P INPUT ACCEPT
+# iptables -F INPUT 
+# iptables -P OUTPUT ACCEPT
+# iptables -F OUTPUT 
+# iptables -P FORWARD DROP
+# iptables -F FORWARD 
+# iptables -t nat -F
+
+# set forwarding and nat rules
+# iptables -A FORWARD -i $EXTIF -o $INTIF -j ACCEPT
+# iptables -A FORWARD -i $INTIF -o $EXTIF -j ACCEPT
+# iptables -t nat -A POSTROUTING -o $EXTIF -j MASQUERADE
+
+# service isc-dhcp-server start
+

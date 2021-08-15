@@ -1,0 +1,5 @@
+cd ~/Downloads/linux-3.19.0/
+# Create sed commands to edit these scst files
+sudo vi debian.master/control.d/vars.scst
+sudo vi debian.master/etc/getabis
+sudo vi debian.master/rules.d/amd64.mk

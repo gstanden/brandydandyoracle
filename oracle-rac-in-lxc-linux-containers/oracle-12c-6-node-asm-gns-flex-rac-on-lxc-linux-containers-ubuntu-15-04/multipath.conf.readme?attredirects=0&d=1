@@ -1,0 +1,99 @@
+# Configuration file for device mapper multipath.
+# For a complete list of the default configuration values:
+# /usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf.defaults
+# For a list of configuration options with descriptions:
+# /usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf.annotated
+
+# Begin specific Instructions for the Oracle 6-node RAC on LXC OEL 6.5 Linux Containers on Ubuntu Host OS Project
+
+# 1. Blacklist Setup
+
+# Run the following command to get the "device" blacklist information for LXC Ubuntu host OS harddrive.
+
+#     udevadm info -a -p  $(udevadm info -q path -n /dev/sda)  | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x
+
+# Output of udevadm command for OS hard drive is shown below. Note that "spaces matter    ".
+
+#       ATTRS{rev}=="SM30"                                                          <-- blacklist "revision"
+#       ATTRS{model}=="ST1000LM014-1EJ1"                                            <-- blacklist "product"
+#       ATTRS{vendor}=="ATA     "                                                   <-- blacklist "vendor"
+
+# Run the following command to get the "device" blacklist information for the Wintec 128Gb Flash ExpressCard.
+
+#    udevadm info -a -p  $(udevadm info -q path -n /dev/sdag) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x
+
+# Output of udevadm command for Wintec Flash Express Card is shown below. Note that "spaces matter    ".
+
+#       ATTRS{rev}=="18  "                                                          <-- blacklist "revision"
+#       ATTRS{model}=="Wintec JM612 128"                                            <-- blacklist "product"
+#       ATTRS{vendor}=="ATA     "                                                   <-- blacklist "vendor"
+
+# Run the following command to get the "wwid" blacklist information for your Ubuntu host hard drive.
+#    sudo /lib/udev/scsi_id -g -u -d /dev/sda
+# Output of scsi_id command for OS harddrive is shown below.
+
+#      "35000c500828b9d7e"                                                          <-- blacklist "wwid"
+
+# Output of scsi_id command for Wintec Flash Express Card is shown below.
+#    sudo /lib/udev/scsi_id --whitelisted --device=/dev/sdag
+# Output of scsi_id command for Wintec Flash Express Card is shown below. Note that "spaces matter    ".
+
+#      "1ATA     Wintec JM612 128G ExpressCard SSD       WT612-128G2300000424"      <-- blacklist "wwid"
+
+# Add the above blacklists below to blacklist these devices from multipath as shown below.
+# Handle any other devices to be blacklisted using similar commands.
+# Both devices are blacklisted using two methods: (1) by devices, and; (2) by wwid's.
+
+# 2. Additional Devices Setup
+
+# On the Lenovo W520 laptop being used here, for example, there is a Wintec JM612 128Gb Express Card flash device.
+# http://www.wintecind.com/OEM/SSD/MicroSATA/JM612.html
+# If there are external or plugin devices you can configure them in the multipath.conf also as shown below.
+# Output of below udevadm command is shown below for the "Wintec JM612 128Gb Express Card".
+
+#    udevadm info -a -p  $(udevadm info -q path -n /dev/sdag) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x
+
+#       ATTRS{rev}=="18  "                                                          <-- device "revision"
+#       ATTRS{model}=="Wintec JM612 128"                                            <-- device "product"
+#       ATTRS{vendor}=="ATA     "                                                   <-- device "vendor"
+
+# Although Wintec Flash Express Card is blacklisted, it could be used as a multipath device, thus included as a device.
+
+# 3. SCST_FIO
+
+# Configure the SCST_FIO device as shown below using the stanza as shown.
+# The SCST_FIO is the file device driver that is used for file-backed SCST LUNs.
+# The file-backed SCST LUNs is used for the RAC LUNs in this project.
+
+# 4. SCST_BIO
+
+# Configure the SCST_BIO device as shown below using the stanza as shown.
+# The SCST_BIO is the block device driver that is used for device-backed SCST LUNs.
+# Device-backed devices are not used in the Oracle RAC project but they could be used alternatively.
+
+# 5. WWID
+
+# The WWID of the Oracle RAC SCST LUNs must be obtained for each LUN to be used and multipath.conf updated with wwid values.
+# There are various commands which can be used.  Examples are shown below of ways to get the information needed.
+# Note that on Ubuntu the command location is "/lib/udev/scsi_id" as shown below.
+# All these commands show how the wwid values of the LUNs can be obtained. Note that all methods give the same result
+# Output of the scsi_id command for SCST_FIO LUNS is shown below.
+
+#    sudo /lib/udev/scsi_id --whitelisted --device=/dev/dm-4
+# 23832373561623531
+#    sudo /lib/udev/scsi_id -g -u -d /dev/mapper/asm_disk_lxc1_systemdg_01
+# 23832373561623531
+#    sudo /lib/udev/scsi_id --whitelisted --device=/dev/mapper/asm_disk_lxc1_systemdg_01
+# 23832373561623531
+
+# Once the LXC Linux container is configured the wwid can also be checked from the container as shown below.
+# gstanden@vmem1:~/Networking$ ssh root@lxcora01
+# Last login: Sun Aug  2 12:42:53 2015 from 10.207.39.1
+# [root@lxcora01 ~]# scsi_id -g -u -d /dev/mapper/asm_disk_lxc1_systemdg_01
+# 23832373561623531
+# Once all the wwid and device friendly names are decided (being sure to put correctly sized LUNs with the desired devices) complete the "multipaths" section.
+
+# End specific Instructions for the Oracle 6-node RAC on LXC OEL 6.5 Linux Containers on Ubuntu Host OS Project.
+
+# Begin Auto-generated multipath.conf file
+

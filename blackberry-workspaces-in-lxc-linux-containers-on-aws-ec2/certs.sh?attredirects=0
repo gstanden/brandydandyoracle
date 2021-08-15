@@ -1,0 +1,88 @@
+#!/bin/bash
+
+# Usage
+# certs.sh CompanyName yourdomain.com gilbert "Gilbert Standen"
+# certs.sh "Stillman Real Consulting LLC" getblackberry.com gilbert "Gilbert Standen"
+
+Organization=$1
+Domain=$2
+EmailName=$3
+FullName=$4
+
+# Create root CA key
+
+openssl genrsa -out rootCA.key -aes256 -passout pass:changeit 4096
+
+# Create root CA certificate
+
+openssl req -x509 -new -key rootCA.key -out rootCA.crt -subj '/C=UA/O=$Organization/CN=$Organization Root CA' -days 3650 -sha256 -passin pass:changeit
+
+# Create intermediate CA key
+
+openssl genrsa -out intermediateCA.key -aes256 -passout pass:changeit 4096
+
+# Create intermediate CA certificate request
+
+openssl req -new -key intermediateCA.key -out intermediateCA.csr -subj '/C=UA/O=$Organization/CN=$Organization Intermediate CA' -passin pass:changeit
+
+# Create configuration file with X509V3 extensions to add to intermediate CA certificate
+
+cat <<EOF > v3_ca.ext 
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid:always,issuer:always
+basicConstraints=CA:true
+EOF
+
+# Sign intermediate CA certificate request with root CA private key adding X509V3 CA extensions
+
+openssl x509 -req -in intermediateCA.csr -CA rootCA.crt -CAkey rootCA.key -CAcreateserial -CAserial rootCA.srl -extfile v3_ca.ext -out intermediateCA.crt -days 365 -sha256 -passin pass:changeit
+
+# Optionally you can verify intermediate CA certificate and print its contents
+
+openssl verify -CAfile rootCA.crt intermediateCA.crt
+openssl x509 -in intermediateCA.crt -text
+
+# Create server key
+
+openssl genrsa -out server.key -aes256 -passout pass:changeit 4096
+
+# Create server certificate request
+
+openssl req -new -key server.key -out server.csr -subj "/C=UA/O=$Organization/CN=$Domain" -passin pass:changeit
+
+# Sign server certificate request with intermediate CA private key
+
+openssl x509 -req -in server.csr -CA intermediateCA.crt -CAkey intermediateCA.key -CAcreateserial -CAserial intermediateCA.srl -out server.crt -days 365 -sha256 -passin pass:changeit
+
+# You may want to decrypt server private key, so web server can use it without promting for password
+
+mv server.key server.key.secure
+openssl rsa -in server.key.secure -out server.key -passin pass:changeit
+
+# Create client key
+
+openssl genrsa -out client.key -aes256 -passout pass:changeit 4096
+
+# Create client certificate request
+
+openssl req -new -key client.key -out client.csr -subj '/C=UA/O=$Organization/CN=$FullName/emailAddress=$EmailName@$Domain' -passin pass:changeit
+
+# Sign client certificate request with intermediate CA private key
+
+openssl x509 -req -in client.csr -CA intermediateCA.crt -CAkey intermediateCA.key -CAcreateserial -CAserial intermediateCA.srl -out client.crt -days 365 -sha256 -passin pass:changeit
+
+# Create CA certificate chain file
+
+cat intermediateCA.crt rootCA.crt > CAchain.pem
+
+# Export the client certificate to PKCS #12 file (.p12) to be able to import it into the browser or mail client
+
+openssl pkcs12 -export -passout pass:changeit -in client.crt -inkey client.key -certfile CAchain.pem -out client.p12 -passin pass:changeit
+
+# Optionally you can verify server and client certificates and print their contents
+
+openssl verify -CAfile CAchain.pem server.crt
+openssl x509 -in server.crt -text
+
+openssl verify -CAfile CAchain.pem client.crt
+openssl x509 -in client.crt -text

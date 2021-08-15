@@ -1,0 +1,37 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+vmem.org		IN SOA	vmem1.vmem.org. postmaster.vmem.org. (
+				1507261643 ; serial
+				60         ; refresh (1 minute)
+				1800       ; retry (30 minutes)
+				604800     ; expire (1 week)
+				86400      ; minimum (1 day)
+				)
+			NS	vmem1.vmem.org.
+$ORIGIN vmem.org.
+_sflow._udp		TXT	"txtvers=1" "polling=20" "sampling=512"
+			SRV	0 0 6343 vmem1
+gns1			NS	lxc1-gns-vip
+lxc1-gns-vip		A	10.207.39.3
+$TTL 3600	; 1 hour
+lxcora01		A	10.207.39.110
+			TXT	"006b82280fcb9733d6083ccac262792b99"
+lxcora02		A	10.207.39.111
+			TXT	"005ac78cd006b631c6d81990bfc8d24a7e"
+lxcora03		A	10.207.39.112
+			TXT	"0083fb5d5ea1fb1c81881af34dde28cc4b"
+lxcora04		A	10.207.39.113
+			TXT	"0009ceeeff5a7c1ab29ed1e66717ad3aa3"
+lxcora05		A	10.207.39.114
+			TXT	"008b421b241c26b58f3fce90860bef3dc6"
+lxcora06		A	10.207.39.115
+			TXT	"002bab4c051acecbfa6090ca58ddfcef40"
+oracle651		A	10.207.39.74
+			TXT	"00ef15610ab19a267ddc21770cbe5c17c5"
+oracle651.vmem.org	A	10.207.39.74
+			TXT	"00ef15610ab19a267ddc21770cbe5c17c5"
+$TTL 86400	; 1 day
+vmem1			A	10.207.39.1
+$TTL 3600	; 1 hour
+vmem2			A	10.207.39.81
+			TXT	"3118a6c1688c312b822454df8baa10bfff"

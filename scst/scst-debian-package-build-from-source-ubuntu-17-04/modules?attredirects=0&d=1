@@ -1,0 +1,14 @@
+# /etc/modules: kernel modules to load at boot time.
+#
+# This file contains the names of kernel modules that should be loaded
+# at boot time, one per line. Lines beginning with "#" are ignored.
+scst_vdisk
+scst_disk
+iscsi-scst
+scst_user
+scst_modisk
+scst_processor
+scst_raid
+scst_tape
+scst_cdrom
+scst_changer

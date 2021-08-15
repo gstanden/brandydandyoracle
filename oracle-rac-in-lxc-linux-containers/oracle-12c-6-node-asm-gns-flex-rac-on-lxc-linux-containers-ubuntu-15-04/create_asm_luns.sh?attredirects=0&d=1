@@ -1,0 +1,26 @@
+sudo iscsiadm --mode node --targetname iqn.2014-08.org.vmem:oracle651.san.asm.luns   --portal 10.207.40.74 --login
+sudo iscsiadm --mode node --targetname iqn.2014-08.org.vmem:oracle651.san.asm.luns   --portal 10.207.41.74 --login
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns  --portal 10.207.40.74 --login
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns  --portal 10.207.41.74 --login
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns2 --portal 10.207.40.74 --login
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns2 --portal 10.207.41.74 --login
+
+ls -lrt /dev/mapper
+
+sudo iscsiadm --mode node --targetname iqn.2014-08.org.vmem:oracle651.san.asm.luns   --portal 10.207.40.74 --logout
+sudo iscsiadm --mode node --targetname iqn.2014-08.org.vmem:oracle651.san.asm.luns   --portal 10.207.41.74 --logout
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns  --portal 10.207.40.74 --logout
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns  --portal 10.207.41.74 --logout
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns2 --portal 10.207.40.74 --logout
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns2 --portal 10.207.41.74 --logout
+
+sudo service multipath-tools restart
+
+sudo iscsiadm --mode node --targetname iqn.2014-08.org.vmem:oracle651.san.asm.luns   --portal 10.207.40.74 --login
+sudo iscsiadm --mode node --targetname iqn.2014-08.org.vmem:oracle651.san.asm.luns   --portal 10.207.41.74 --login
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns  --portal 10.207.40.74 --login
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns  --portal 10.207.41.74 --login
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns2 --portal 10.207.40.74 --login
+sudo iscsiadm --mode node --targetname iqn.2014-10.org.vmem1:oracle651.san.asm.luns2 --portal 10.207.41.74 --login
+
+ls -lrt /dev/mapper

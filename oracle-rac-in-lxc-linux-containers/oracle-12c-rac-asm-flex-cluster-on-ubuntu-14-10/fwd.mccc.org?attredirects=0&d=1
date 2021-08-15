@@ -1,0 +1,14 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+mccc.org		IN SOA	mccc1.mccc.org. postmaster.mccc.org. (
+				1505021309 ; serial
+				60         ; refresh (1 minute)
+				1800       ; retry (30 minutes)
+				604800     ; expire (1 week)
+				86400      ; minimum (1 day)
+				)
+			NS	mccc1.mccc.org.
+$ORIGIN mccc.org.
+_sflow._udp		TXT	"txtvers=1" "polling=20" "sampling=512"
+			SRV	0 0 6343 mccc1
+mccc1			A	10.207.29.1

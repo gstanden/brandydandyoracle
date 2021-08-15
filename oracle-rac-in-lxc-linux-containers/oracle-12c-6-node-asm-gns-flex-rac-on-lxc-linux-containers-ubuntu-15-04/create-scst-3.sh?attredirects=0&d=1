@@ -1,0 +1,6 @@
+cd ~/Downloads/scst
+sudo modprobe scst
+sudo modprobe scst_vdisk
+sudo modprobe iscsi-scst
+sudo iscsi-scstd
+sudo scstadmin -set_drv_attr iscsi -attributes enabled=1 

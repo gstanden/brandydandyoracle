@@ -1,0 +1,12 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+29.207.10.in-addr.arpa	IN SOA	mccc1.mccc.org. postmaster.mccc.org. (
+				1411021420 ; serial
+				3600       ; refresh (1 hour)
+				1800       ; retry (30 minutes)
+				604800     ; expire (1 week)
+				86400      ; minimum (1 day)
+				)
+			NS	mccc1.mccc.org.
+$ORIGIN 29.207.10.in-addr.arpa.
+1			PTR	mccc1.mccc.org.

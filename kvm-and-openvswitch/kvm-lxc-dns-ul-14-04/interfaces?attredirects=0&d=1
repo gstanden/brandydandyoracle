@@ -1,0 +1,5 @@
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+	dns-domain vmem.org
+	dns-nameserver 127.0.0.1

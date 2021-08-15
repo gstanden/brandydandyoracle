@@ -1,0 +1,58 @@
+#
+# Configuration file for ISC dhcpd for Ubuntu 14.04
+# Configuration file for ISC dhcpd for Ubuntu 15.04 GLS Tested on 15.04 2015.05.02
+# Added a second subnet configuration (10.207.29.1/24) for mediacomcorp.org domain
+#
+ddns-updates on;  
+ddns-update-style interim;  
+update-static-leases on;  
+authoritative;  
+key rndc-key { algorithm hmac-md5; secret "5rcWKMkWCP6RBUeu9tjIZg==";}  
+allow unknown-clients;  
+use-host-decl-names on;  
+default-lease-time 1814400; 
+max-lease-time 1814400; 
+log-facility local7;  
+
+zone vmem.org. {
+	primary 10.207.39.1;
+	key rndc-key;
+}
+zone mccc.org. {
+	primary 10.207.29.1;
+	key rndc-key;
+}
+zone 39.207.10.in-addr.arpa. {
+	primary 10.207.39.1;
+	key rndc-key;
+}
+zone 29.207.10.in-addr.arpa. {
+	primary 10.207.29.1;
+	key rndc-key;
+}
+subnet 10.207.39.0 netmask 255.255.255.0 {
+#  ---  default gateway
+	option routers			10.207.39.1;
+	option subnet-mask		255.255.255.0;
+	option domain-name		"vmem.org";
+	option domain-name-servers	10.207.39.1;
+#	option ntp-servers		10.207.39.1;
+	ddns-domainname			"vmem.org.";
+	ddns-rev-domainname		"in-addr.arpa.";
+	range 				10.207.39.70 10.207.39.254;
+	default-lease-time 		1814400;
+	max-lease-time 			1814400;
+}
+subnet 10.207.29.0 netmask 255.255.255.0 {
+#  ---  default gateway
+	option routers			10.207.29.1;
+	option subnet-mask		255.255.255.0;
+	option domain-name		"mccc.org";
+	option domain-name-servers	10.207.29.1;
+#	option ntp-servers		10.207.29.1;
+	ddns-domainname			"mccc.org.";
+	ddns-rev-domainname		"in-addr.arpa.";
+	range 				10.207.29.70 10.207.29.254;
+	default-lease-time 		1814400;
+	max-lease-time 			1814400;
+}

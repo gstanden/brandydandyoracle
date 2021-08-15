@@ -1,0 +1,13 @@
+Source: scst
+Section: database
+Priority: optional
+Maintainer: Gilbert Standen <gilstanden@hotmail.com>
+Build-Depends: debhelper (>= 9), dh-systemd
+Standards-Version: 3.9.8
+Homepage: http://scst.sourceforge.net
+
+Package: scst
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description:Generic SCSI target subsystem for Linux
+ The generic SCSI target subsystem for Linux (SCST) allows creation of sophisticated storage devices from any Linux box.

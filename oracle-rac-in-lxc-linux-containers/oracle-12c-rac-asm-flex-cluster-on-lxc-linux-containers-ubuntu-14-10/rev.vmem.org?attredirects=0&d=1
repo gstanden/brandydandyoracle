@@ -1,0 +1,15 @@
+$ORIGIN .
+$TTL 86400			; time-to-live in seconds
+39.207.10.in-addr.arpa	IN SOA	W520.vmem.org. postmaster.vmem.org. (
+				1412261100 ; serial
+				60         ; refresh (1 hour)
+				1800       ; retry (30 minutes)
+				604800     ; expire (1 week)
+				86400      ; minimum (1 day)
+				)
+			NS	W520.vmem.org.
+$ORIGIN 39.207.10.in-addr.arpa.
+1			PTR	W520.vmem.org.
+3			PTR	lxc1-gns-vip.vmem.org.
+39.207.10.in-addr.arpa	NS	W520.vmem.org.
+W520			A	10.207.39.1

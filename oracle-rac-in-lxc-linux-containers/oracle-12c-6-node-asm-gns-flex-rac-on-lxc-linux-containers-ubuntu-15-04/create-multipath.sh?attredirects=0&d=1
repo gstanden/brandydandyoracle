@@ -1,0 +1,153 @@
+echo '' > ~/Downloads/scst-files/multipath.conf
+echo 'blacklist {' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    devnode      "sd[a]$"' >> /home/gstanden/Downloads/scst-files/multipath.conf
+
+function GetDevNode {
+sudo ls /dev/sd* | sed 's/$/ /' | tr -d '\n'
+}
+DevNode=$(GetDevNode)
+for k in $DevNode
+do
+	function GetVendor {
+	sudo udevadm info -a -p  $(udevadm info -q path -n $k) | egrep 'ATTRS{vendor}' | grep -v '0x' | sed 's/  *//g' | rev | cut -f1 -d'=' | sed 's/"//g' | rev
+	}
+	Vendor=$(GetVendor)
+ 	function GetProduct {
+ 	sudo udevadm info -a -p  $(udevadm info -q path -n $k) | egrep 'ATTRS{model}' | grep -v '0x' | sed 's/  *//g' | rev | cut -f1 -d'=' | rev
+ 	}
+ 	Product=$(GetProduct)
+	function CheckProductExist {
+	cat multipath.conf | grep $Product | rev | cut -f1 -d' ' | rev | sort -u | wc -l
+	}
+	ProductExist=$(CheckProductExist)
+		if [ "$Vendor" != "SCST_FIO" ] && [ "$ProductExist" -eq 0 ]
+		then
+			function GetExistId {
+			sudo /lib/udev/scsi_id -g -u -d $k
+			}
+			ExistId=$(GetExistId)
+			function CheckIdExist {
+			grep -c $ExistId /home/gstanden/Downloads/scst-files/multipath.conf
+			}
+			IdExist=$(CheckIdExist)
+			if [ "$IdExist" -eq 0 ]
+			then
+				sudo /lib/udev/scsi_id -g -u -d $k | sed 's/^/    wwid         "/' | sed 's/$/"/' >> /home/gstanden/Downloads/scst-files/multipath.conf
+			fi
+		echo '    device {' >> /home/gstanden/Downloads/scst-files/multipath.conf
+		sudo udevadm info -a -p  $(udevadm info -q path -n $k) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep vendor | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        vendor   /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+		sudo udevadm info -a -p  $(udevadm info -q path -n $k) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep model  | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        product  /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+		sudo udevadm info -a -p  $(udevadm info -q path -n $k) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep rev    | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        revision /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+		echo '    }' >> /home/gstanden/Downloads/scst-files/multipath.conf
+		fi
+done
+echo '}' >> /home/gstanden/Downloads/scst-files/multipath.conf
+
+# for m in $DevNode
+# do
+# 	function GetVendor {
+# 	sudo udevadm info -a -p  $(udevadm info -q path -n $m) | egrep 'ATTRS{vendor}' | grep -v '0x' | sed 's/  *//g' | rev | cut -f1 -d'=' | rev
+# 	}
+# 	Vendor=$(GetVendor)
+# 	function GetProduct {
+# 	sudo udevadm info -a -p  $(udevadm info -q path -n $k) | egrep 'ATTRS{model}' | grep -v '0x' | sed 's/  *//g' | rev | cut -f1 -d'=' | rev
+# 	}
+# 	Product=$(GetProduct)
+# 	function GetRev {
+# 	sudo udevadm info -a -p  $(udevadm info -q path -n $k) | egrep 'ATTRS{rev}' | grep -v '0x' | sed 's/  *//g' | rev | cut -f1 -d'=' | rev
+# 	}
+# 	Rev=$(GetRev)
+# 	function CheckVendorProductRevExist {
+# 	cat multipath.conf | egrep "$Vendor|$Product|$Rev" | rev | cut -f1 -d' ' | rev | head -3 | wc -l
+# 	}
+# 	VendorProductRevExist=$(CheckVendorProductRevExist)
+# 	echo $Vendor
+# 	echo $Product
+# 	echo $Rev
+# 	echo '---'
+# 	sleep 3
+# 	if [ "$Vendor" != "SCST_FIO" ] && [ "$VendorProductRevExist" -eq 0 ]
+# 	then
+# 	echo '    device {' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# 	sudo udevadm info -a -p  $(udevadm info -q path -n $m) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep vendor | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        vendor   /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# 	sudo udevadm info -a -p  $(udevadm info -q path -n $m) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep model  | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        product  /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# 	sudo udevadm info -a -p  $(udevadm info -q path -n $m) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep rev    | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        revision /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# 	echo '    }' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# 	fi
+# done
+# echo '}' >> /home/gstanden/Downloads/scst-files/multipath.conf
+	
+# echo '    device {' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# sudo udevadm info -a -p  $(udevadm info -q path -n /dev/sda) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep vendor | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        vendor   /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# sudo udevadm info -a -p  $(udevadm info -q path -n /dev/sda) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep model  | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        product  /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# sudo udevadm info -a -p  $(udevadm info -q path -n /dev/sda) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep rev    | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        revision /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# echo '    }' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# echo '    device {' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# sudo udevadm info -a -p  $(udevadm info -q path -n /dev/sdb) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep vendor | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        vendor   /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# sudo udevadm info -a -p  $(udevadm info -q path -n /dev/sdb) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep model  | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        product  /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# sudo udevadm info -a -p  $(udevadm info -q path -n /dev/sdb) | egrep 'ATTRS{rev}|ATTRS{model}|ATTRS{vendor}' | grep -v 0x | grep rev    | cut -f3 -d'=' | sed 's/  *//g' | sed 's/^/        revision /' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# echo '    }' >> /home/gstanden/Downloads/scst-files/multipath.conf
+# echo '}' >> /home/gstanden/Downloads/scst-files/multipath.conf
+
+echo 'defaults {' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    user_friendly_names  yes' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '}' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo 'devices {' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    device {' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    vendor               "SCST_FIO"' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    product              "asm*"' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    revision             "310"' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    path_grouping_policy group_by_serial' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    getuid_callout       "/lib/udev/scsi_id --whitelisted --device=/dev/%n"' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    hardware_handler     "0"' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    features             "1 queue_if_no_path"' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    fast_io_fail_tmo     5' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    dev_loss_tmo         30' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    failback             immediate' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    rr_weight            uniform' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    no_path_retry        fail' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    path_checker         tur' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    rr_min_io            4' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    path_selector        "round-robin 0"' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '    }' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo '}' >> /home/gstanden/Downloads/scst-files/multipath.conf
+echo 'multipaths {' >> /home/gstanden/Downloads/scst-files/multipath.conf
+
+# Old function line
+# sudo scstadmin -list_group | grep systemdg | rev | cut -f1 -d' ' | rev | sed 's/$/ /' | tr -d '\n'
+
+function GetLunName {
+cat /etc/scst.conf | grep LUN | rev | cut -f1 -d' ' | rev | sed 's/$/ /' | tr -d '\n'
+}
+LunName=$(GetLunName)
+
+for i in $LunName
+do
+	function GetDevNode {
+	sudo ls /dev/sd* | sed 's/$/ /' | tr -d '\n'
+	}
+	DevNode=$(GetDevNode)
+	for j in $DevNode
+	do
+		function GetModelName {
+		sudo udevadm info -a -p  $(udevadm info -q path -n $j) | egrep 'ATTRS{model}' | sed 's/  *//g' | rev | cut -f1 -d'=' | sed 's/"//g' | rev | sed 's/^[ \t]*//;s/[ \t]*$//' | grep $i 
+		}
+		function CheckEntryExist {
+		cat /home/gstanden/Downloads/scst-files/multipath.conf | grep $i
+		}
+		EntryExist=$(CheckEntryExist)
+		ModelName=$(GetModelName)
+		if [ "$ModelName" = "$i" ] && [ -z "$EntryExist" ]
+		then
+			function Getwwid {
+			sudo /lib/udev/scsi_id -g -u -d $j
+			}
+			wwid=$(Getwwid)
+			echo "     multipath {" >> /home/gstanden/Downloads/scst-files/multipath.conf
+			echo "         wwid $wwid" >> /home/gstanden/Downloads/scst-files/multipath.conf
+			echo "         alias asm_$i" >> /home/gstanden/Downloads/scst-files/multipath.conf
+			echo "     }" >> /home/gstanden/Downloads/scst-files/multipath.conf
+		fi
+	done
+done
+echo '}' >> /home/gstanden/Downloads/scst-files/multipath.conf

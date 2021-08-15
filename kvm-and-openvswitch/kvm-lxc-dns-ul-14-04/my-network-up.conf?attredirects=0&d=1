@@ -1,0 +1,15 @@
+# 'my-network-up.conf' - My custom upstart events
+#
+# These are the scripts that run when a network appears.
+
+description "My custom upstart events"
+
+start on net-device-up     # Start a daemon or run a script
+stop on net-device-down    # (Optional) Stop a daemon, scripts already self-terminate.
+
+script
+# You can really put shell script in here, including if/then and tests.
+/home/gstanden/crt_ovs_sw1.sh 2>&1 > /home/gstanden/crt_ovs_sw1.log
+/home/gstanden/crt_ovs_sw2.sh 2>&1 > /home/gstanden/crt_ovs_sw2.log
+/home/gstanden/crt_ovs_sw3.sh 2>&1 > /home/gstanden/crt_ovs_sw3.log
+end script

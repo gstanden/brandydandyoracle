@@ -1,0 +1,41 @@
+#! /bin/bash
+
+# Usage
+# sudo ./create-ovs-sw-files.sh ContainerBaseName ContainerCount
+
+# Example
+# sudo ./create-ovs-sw-files.sh lxcora0 6
+# Above example would create networking files for 6 LXC containers with names of the form {lxcora01, lxcora02, lxcora03,lxcora04 lxcora05,lxcora06} 
+
+# Notes
+# The ContainerBaseName must be passed in at the command line and is the prefix of the LXC container names
+# The ContainerCount is the total number of LXC containers to be created
+ 
+export DirectoryName='/etc/network/if-up.d /etc/network/if-down.d'
+export ContainerBaseName=$1
+export ContainerCount=$2
+
+for j in $DirectoryName
+do
+cd $j
+
+function GetFileNames {
+ls "$ContainerBaseName"1* | more | grep "$1" | sed 's/$/ /' | tr -d '\n'
+}
+FileName=$(GetFileNames)
+
+let n=2
+	for i in $FileName
+	do
+		while [ $n -le $ContainerCount ]
+		do
+		function NewFileNames {
+		echo $i | sed "s/"$ContainerBaseName"1/$ContainerBaseName$n/" 
+		}
+		NewFile=$(NewFileNames)
+		cp $i $NewFile
+		((n=n+1))
+		done
+	let n=2
+	done
+done

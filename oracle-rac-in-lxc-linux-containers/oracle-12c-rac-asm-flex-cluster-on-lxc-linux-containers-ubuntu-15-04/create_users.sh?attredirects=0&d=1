@@ -1,0 +1,14 @@
+groupadd -g 1000 oinstall
+groupadd -g 1100 asmadmin
+groupadd -g 1200 dba
+groupadd -g 1300 asmdba
+groupadd -g 1201 oper
+groupadd -g 1301 asmoper
+useradd -u 1098 -g oinstall -G asmadmin,asmdba,asmoper,dba grid
+usermod -a -G dba,asmdba,oper,oinstall oracle
+mkdir -p /u00/app/12.1.0/grid
+mkdir -p /u00/app/grid
+chown -R grid:oinstall /u00
+mkdir -p /u00/app/oracle
+chown oracle:oinstall /u00/app/oracle
+chmod -R 775 /u00

@@ -1,0 +1,15 @@
+stormgr volume create cssvote1 1G -b 512 -m 'ssd' -M -P 1
+sleep 2
+stormgr volume mount cssvote1 default centos-72k
+mkfs -t ext4 /dev/vblock5
+sleep 2
+lxc-device --name=vnode-39-116.robinsystems.com -- add /dev/vblock5
+lxc-device --name=vnode-39-118.robinsystems.com -- add /dev/vblock5
+ssh vnode-39-116 mkdir /orasharefs; chown oracle:oinstall /orasharefs
+ssh vnode-39-118 mkdir /orasharefs; chown oracle:oinstall /orasharefs
+ssh vnode-39-116 mount -t ext4 /dev/vblock5 /orasharefs/
+sleep 2
+ssh vnode-39-118 mount -t ext4 /dev/vblock5 /orasharefs/
+sleep 2
+ssh vnode-39-116 crsctl replace votedisk /orasharefs/cssvote1
+

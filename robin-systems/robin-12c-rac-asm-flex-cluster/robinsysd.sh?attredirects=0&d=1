@@ -1,0 +1,8 @@
+stormgr volume create sysd1 10G -b 512 -m 'ssd' -M -P 1
+sleep 2
+stormgr volume mount sysd1 default centos-72k
+sleep 2
+lxc-device --name=vnode-39-116.robinsystems.com -- add /dev/vblock7
+lxc-device --name=vnode-39-118.robinsystems.com -- add /dev/vblock7
+chown oracle:asmadmin /dev/vblock7
+chmod 0660 /dev/vblock7

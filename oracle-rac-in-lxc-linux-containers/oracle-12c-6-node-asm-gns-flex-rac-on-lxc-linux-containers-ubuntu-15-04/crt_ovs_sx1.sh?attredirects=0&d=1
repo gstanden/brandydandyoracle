@@ -1,0 +1,68 @@
+#!/bin/bash
+# Requires use of Upstart Script /etc/init/my-network-up.conf to ensure interfaces are up before running.
+sleep 10 
+tunctl -t a1
+tunctl -t a2
+tunctl -t a3
+tunctl -t a4
+tunctl -t a5
+#tunctl -t a6
+ip link set a1 up
+ip link set a2 up
+ip link set a3 up
+ip link set a4 up
+ip link set a5 up
+#ip link set a6 up
+ovs-vsctl add-br sx1
+ovs-vsctl add-port sx1 a1
+ovs-vsctl add-port sx1 a2
+ovs-vsctl add-port sx1 a3
+ovs-vsctl add-port sx1 a4
+ovs-vsctl add-port sx1 a5
+#ovs-vsctl add-port sx1 a6
+ip link set up dev sx1
+ip addr add 10.207.29.1/24 dev sx1
+ip route replace 10.207.29.0/24 dev sx1
+
+ovs-vsctl set port sx1 trunks=11
+ovs-vsctl set port sx1 tag=11
+
+# GLS 20140825 Get active external interface dynamically at boot.  Tested & works with {wlan0, eth0, bnep0} on Ubuntu 14.04.1 Desktop x86_64.
+# GLS 20140825 Interface "bnep0" is Blackberry Z30 OS10 Bluetooth Tether.
+
+### BEGIN Get Active EXTIF Dynamcially. ###
+function GetInterface
+{
+ifconfig | egrep -B1 'inet addr' | egrep -A1 'wlan|eth|bnep' | sed '$!N;s/\n/ /' | sed 's/  */ /g' | cut -f1,7 -d' ' | sed 's/ addr//' | head -1 | cut -f1 -d':'
+}
+function GetIP
+{
+ifconfig | egrep -B1 'inet addr' | egrep -A1 'wlan|eth|bnep' | sed '$!N;s/\n/ /' | sed 's/  */ /g' | cut -f1,7 -d' ' | sed 's/ addr//' | head -1 | cut -f2 -d':'
+}
+### END Get Active EXTIF Dynamically. ###
+
+echo '       IP: '$(GetIP)
+echo 'Interface: '$(GetInterface)
+
+INTIF="sx1"
+EXTIF=$(GetInterface)
+# EXTIF="wlan0"
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# clear existing iptable rules, set a default policy
+iptables -P INPUT ACCEPT
+iptables -F INPUT 
+iptables -P OUTPUT ACCEPT
+iptables -F OUTPUT 
+iptables -P FORWARD DROP
+iptables -F FORWARD 
+iptables -t nat -F
+
+# set forwarding and nat rules
+iptables -A FORWARD -i $EXTIF -o $INTIF -j ACCEPT
+iptables -A FORWARD -i $INTIF -o $EXTIF -j ACCEPT
+iptables -t nat -A POSTROUTING -o $EXTIF -j MASQUERADE
+
+# service isc-dhcp-server restart
+# service bind9 restart

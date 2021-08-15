@@ -1,0 +1,615 @@
+
+Performing pre-checks for cluster services setup 
+
+Checking node reachability...
+
+Check: Node reachability from node "lxcora03"
+  Destination Node                      Reachable?              
+  ------------------------------------  ------------------------
+  lxcora03                              yes                     
+Result: Node reachability check passed from node "lxcora03"
+
+
+Checking user equivalence...
+
+Check: User equivalence for user "grid"
+  Node Name                             Status                  
+  ------------------------------------  ------------------------
+  lxcora03                              passed                  
+Result: User equivalence check passed for user "grid"
+
+Check: Package existence for "cvuqdisk" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      cvuqdisk-1.0.9-1          cvuqdisk-1.0.9-1          passed    
+Result: Package existence check passed for "cvuqdisk"
+
+Checking node connectivity...
+
+Checking hosts config file...
+  Node Name                             Status                  
+  ------------------------------------  ------------------------
+  lxcora03                              passed                  
+
+Verification of the hosts config file successful
+
+
+Interface information for node "lxcora03"
+ Name   IP Address      Subnet          Gateway         Def. Gateway    HW Address        MTU   
+ ------ --------------- --------------- --------------- --------------- ----------------- ------
+ eth0   10.207.39.71    10.207.39.0     0.0.0.0         10.207.39.1     FE:A2:59:B2:F8:38 1500  
+ eth1   192.210.39.11   192.0.0.0       0.0.0.0         10.207.39.1     B6:87:EF:C0:BA:D6 9000  
+ eth2   192.211.39.11   192.0.0.0       0.0.0.0         10.207.39.1     26:4C:7C:F3:B5:66 9000  
+ eth3   192.212.39.11   192.0.0.0       0.0.0.0         10.207.39.1     22:0E:BE:48:19:1C 9000  
+ eth4   192.213.39.11   192.0.0.0       0.0.0.0         10.207.39.1     32:C5:68:88:95:3F 9000  
+ eth5   172.220.40.11   172.0.0.0       0.0.0.0         10.207.39.1     F2:28:D3:62:0E:F9 9000  
+ eth6   172.221.40.11   172.0.0.0       0.0.0.0         10.207.39.1     EE:07:33:DF:F3:4D 9000  
+
+
+Check: Node connectivity of subnet "10.207.39.0"
+Result: Node connectivity passed for subnet "10.207.39.0" with node(s) lxcora03
+
+
+Check: TCP connectivity of subnet "10.207.39.0"
+  Source                          Destination                     Connected?      
+  ------------------------------  ------------------------------  ----------------
+  lxcora03 : 10.207.39.71         lxcora03 : 10.207.39.71         passed          
+Result: TCP connectivity check passed for subnet "10.207.39.0"
+
+
+Check: Node connectivity of subnet "192.0.0.0"
+  Source                          Destination                     Connected?      
+  ------------------------------  ------------------------------  ----------------
+  lxcora03[192.210.39.11]         lxcora03[192.211.39.11]         yes             
+  lxcora03[192.210.39.11]         lxcora03[192.212.39.11]         yes             
+  lxcora03[192.210.39.11]         lxcora03[192.213.39.11]         yes             
+  lxcora03[192.211.39.11]         lxcora03[192.212.39.11]         yes             
+  lxcora03[192.211.39.11]         lxcora03[192.213.39.11]         yes             
+  lxcora03[192.212.39.11]         lxcora03[192.213.39.11]         yes             
+Result: Node connectivity passed for subnet "192.0.0.0" with node(s) lxcora03
+
+
+Check: TCP connectivity of subnet "192.0.0.0"
+  Source                          Destination                     Connected?      
+  ------------------------------  ------------------------------  ----------------
+  lxcora03 : 192.210.39.11        lxcora03 : 192.210.39.11        passed          
+  lxcora03 : 192.211.39.11        lxcora03 : 192.210.39.11        passed          
+  lxcora03 : 192.212.39.11        lxcora03 : 192.210.39.11        passed          
+  lxcora03 : 192.213.39.11        lxcora03 : 192.210.39.11        passed          
+  lxcora03 : 192.210.39.11        lxcora03 : 192.211.39.11        passed          
+  lxcora03 : 192.211.39.11        lxcora03 : 192.211.39.11        passed          
+  lxcora03 : 192.212.39.11        lxcora03 : 192.211.39.11        passed          
+  lxcora03 : 192.213.39.11        lxcora03 : 192.211.39.11        passed          
+  lxcora03 : 192.210.39.11        lxcora03 : 192.212.39.11        passed          
+  lxcora03 : 192.211.39.11        lxcora03 : 192.212.39.11        passed          
+  lxcora03 : 192.212.39.11        lxcora03 : 192.212.39.11        passed          
+  lxcora03 : 192.213.39.11        lxcora03 : 192.212.39.11        passed          
+  lxcora03 : 192.210.39.11        lxcora03 : 192.213.39.11        passed          
+  lxcora03 : 192.211.39.11        lxcora03 : 192.213.39.11        passed          
+  lxcora03 : 192.212.39.11        lxcora03 : 192.213.39.11        passed          
+  lxcora03 : 192.213.39.11        lxcora03 : 192.213.39.11        passed          
+Result: TCP connectivity check passed for subnet "192.0.0.0"
+
+
+Check: Node connectivity of subnet "172.0.0.0"
+  Source                          Destination                     Connected?      
+  ------------------------------  ------------------------------  ----------------
+  lxcora03[172.220.40.11]         lxcora03[172.221.40.11]         yes             
+Result: Node connectivity passed for subnet "172.0.0.0" with node(s) lxcora03
+
+
+Check: TCP connectivity of subnet "172.0.0.0"
+  Source                          Destination                     Connected?      
+  ------------------------------  ------------------------------  ----------------
+  lxcora03 : 172.220.40.11        lxcora03 : 172.220.40.11        passed          
+  lxcora03 : 172.221.40.11        lxcora03 : 172.220.40.11        passed          
+  lxcora03 : 172.220.40.11        lxcora03 : 172.221.40.11        passed          
+  lxcora03 : 172.221.40.11        lxcora03 : 172.221.40.11        passed          
+Result: TCP connectivity check passed for subnet "172.0.0.0"
+
+
+Interfaces found on subnet "10.207.39.0" that are likely candidates for VIP are:
+lxcora03 eth0:10.207.39.71
+
+Interfaces found on subnet "192.0.0.0" that are likely candidates for VIP are:
+lxcora03 eth1:192.210.39.11
+
+Interfaces found on subnet "192.0.0.0" that are likely candidates for VIP are:
+lxcora03 eth2:192.211.39.11
+
+Interfaces found on subnet "192.0.0.0" that are likely candidates for VIP are:
+lxcora03 eth3:192.212.39.11
+
+Interfaces found on subnet "192.0.0.0" that are likely candidates for VIP are:
+lxcora03 eth4:192.213.39.11
+
+Interfaces found on subnet "172.0.0.0" that are likely candidates for VIP are:
+lxcora03 eth5:172.220.40.11
+
+Interfaces found on subnet "172.0.0.0" that are likely candidates for VIP are:
+lxcora03 eth6:172.221.40.11
+
+WARNING: 
+Could not find a suitable set of interfaces for the private interconnect
+
+Result: Node connectivity check passed
+
+Checking multicast communication...
+
+Checking subnet "10.207.39.0" for multicast communication with multicast group "224.0.0.251"...
+Check of subnet "10.207.39.0" for multicast communication with multicast group "224.0.0.251" passed.
+
+Check of multicast communication passed.
+
+Check: Total memory 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      23.4132GB (2.4550556E7KB)  4GB (4194304.0KB)         passed    
+Result: Total memory check passed
+
+Check: Available memory 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      18.415GB (1.9309504E7KB)  50MB (51200.0KB)          passed    
+Result: Available memory check passed
+
+Check: Swap space 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      11.7969GB (1.2369916E7KB)  16GB (1.6777216E7KB)      failed    
+Result: Swap space check failed
+
+Check: Free disk space for "lxcora03:/usr,lxcora03:/var,lxcora03:/etc,lxcora03:/sbin,lxcora03:/tmp" 
+  Path              Node Name     Mount point   Available     Required      Status      
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  /usr              lxcora03      /             88.4001GB     1.0635GB      passed      
+  /var              lxcora03      /             88.4001GB     1.0635GB      passed      
+  /etc              lxcora03      /             88.4001GB     1.0635GB      passed      
+  /sbin             lxcora03      /             88.4001GB     1.0635GB      passed      
+  /tmp              lxcora03      /             88.4001GB     1.0635GB      passed      
+Result: Free disk space check passed for "lxcora03:/usr,lxcora03:/var,lxcora03:/etc,lxcora03:/sbin,lxcora03:/tmp"
+
+Check: User existence for "grid" 
+  Node Name     Status                    Comment                 
+  ------------  ------------------------  ------------------------
+  lxcora03      passed                    exists(1098)            
+
+Checking for multiple users with UID value 1098
+Result: Check for multiple users with UID value 1098 passed 
+Result: User existence check passed for "grid"
+
+Check: Group existence for "oinstall" 
+  Node Name     Status                    Comment                 
+  ------------  ------------------------  ------------------------
+  lxcora03      passed                    exists                  
+Result: Group existence check passed for "oinstall"
+
+Check: Group existence for "asmadmin" 
+  Node Name     Status                    Comment                 
+  ------------  ------------------------  ------------------------
+  lxcora03      passed                    exists                  
+Result: Group existence check passed for "asmadmin"
+
+Check: Membership of user "grid" in group "oinstall" [as Primary]
+  Node Name         User Exists   Group Exists  User in Group  Primary       Status      
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          yes           yes           yes           yes           passed      
+Result: Membership check for user "grid" in group "oinstall" [as Primary] passed
+
+Check: Membership of user "grid" in group "asmadmin" 
+  Node Name         User Exists   Group Exists  User in Group  Status          
+  ----------------  ------------  ------------  ------------  ----------------
+  lxcora03          yes           yes           yes           passed          
+Result: Membership check for user "grid" in group "asmadmin" passed
+
+Check: Run level 
+  Node Name     run level                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      3                         3,5                       passed    
+Result: Run level check passed
+
+Check: Hard limits for "maximum open file descriptors" 
+  Node Name         Type          Available     Required      Status          
+  ----------------  ------------  ------------  ------------  ----------------
+  lxcora03          hard          4096          65536         failed          
+Result: Hard limits check failed for "maximum open file descriptors"
+
+Check: Soft limits for "maximum open file descriptors" 
+  Node Name         Type          Available     Required      Status          
+  ----------------  ------------  ------------  ------------  ----------------
+  lxcora03          soft          4096          1024          passed          
+Result: Soft limits check passed for "maximum open file descriptors"
+
+Check: Hard limits for "maximum user processes" 
+  Node Name         Type          Available     Required      Status          
+  ----------------  ------------  ------------  ------------  ----------------
+  lxcora03          hard          191609        16384         passed          
+Result: Hard limits check passed for "maximum user processes"
+
+Check: Soft limits for "maximum user processes" 
+  Node Name         Type          Available     Required      Status          
+  ----------------  ------------  ------------  ------------  ----------------
+  lxcora03          soft          1024          2047          failed          
+Result: Soft limits check failed for "maximum user processes"
+
+Check: System architecture 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      x86_64                    x86_64                    passed    
+Result: System architecture check passed
+
+Check: Kernel version 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      3.8.13-44.1.5.el6uek.x86_64  2.6.39                    passed    
+Result: Kernel version check passed
+
+Check: Kernel parameter for "semmsl" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          250           250           250           passed          
+Result: Kernel parameter check passed for "semmsl"
+
+Check: Kernel parameter for "semmns" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          32000         32000         32000         passed          
+Result: Kernel parameter check passed for "semmns"
+
+Check: Kernel parameter for "semopm" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          100           100           100           passed          
+Result: Kernel parameter check passed for "semopm"
+
+Check: Kernel parameter for "semmni" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          128           128           128           passed          
+Result: Kernel parameter check passed for "semmni"
+
+Check: Kernel parameter for "shmmax" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          68719476736   68719476736   12569884672   passed          
+Result: Kernel parameter check passed for "shmmax"
+
+Check: Kernel parameter for "shmmni" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          4096          4096          4096          passed          
+Result: Kernel parameter check passed for "shmmni"
+
+Check: Kernel parameter for "shmall" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          4294967296    4294967296    2455055       passed          
+Result: Kernel parameter check passed for "shmall"
+
+Check: Kernel parameter for "file-max" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          6815744       6815744       6815744       passed          
+Result: Kernel parameter check passed for "file-max"
+
+Check: Kernel parameter for "ip_local_port_range" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          unknown       unknown       between 9000 & 65535  failed (ignorable)  Current value incorrect. Configured value incorrect. 
+
+PRVF-7544 : Check cannot be performed for kernel parameter "ip_local_port_range" on node "lxcora03"
+PRVG-2044 : Command "/sbin/sysctl -a | grep ip_local_port_range[[:space:]]*=" failed on node "lxcora03" and produced no output.
+PRVG-1206 : Check cannot be performed for configured value of kernel parameter "ip_local_port_range" on node "lxcora03"
+
+Result: Kernel parameter check failed for "ip_local_port_range"
+
+Check: Kernel parameter for "rmem_default" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          unknown       unknown       262144        failed        Current value incorrect. Configured value incorrect. 
+
+PRVF-7544 : Check cannot be performed for kernel parameter "rmem_default" on node "lxcora03"
+PRVG-2044 : Command "/sbin/sysctl -a | grep rmem_default[[:space:]]*=" failed on node "lxcora03" and produced no output.
+PRVG-1206 : Check cannot be performed for configured value of kernel parameter "rmem_default" on node "lxcora03"
+
+Result: Kernel parameter check failed for "rmem_default"
+
+Check: Kernel parameter for "rmem_max" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          unknown       unknown       4194304       failed        Current value incorrect. Configured value incorrect. 
+
+PRVF-7544 : Check cannot be performed for kernel parameter "rmem_max" on node "lxcora03"
+PRVG-2044 : Command "/sbin/sysctl -a | grep rmem_max[[:space:]]*=" failed on node "lxcora03" and produced no output.
+PRVG-1206 : Check cannot be performed for configured value of kernel parameter "rmem_max" on node "lxcora03"
+
+Result: Kernel parameter check failed for "rmem_max"
+
+Check: Kernel parameter for "wmem_default" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          unknown       unknown       262144        failed        Current value incorrect. Configured value incorrect. 
+
+PRVF-7544 : Check cannot be performed for kernel parameter "wmem_default" on node "lxcora03"
+PRVG-2044 : Command "/sbin/sysctl -a | grep wmem_default[[:space:]]*=" failed on node "lxcora03" and produced no output.
+PRVG-1206 : Check cannot be performed for configured value of kernel parameter "wmem_default" on node "lxcora03"
+
+Result: Kernel parameter check failed for "wmem_default"
+
+Check: Kernel parameter for "wmem_max" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          unknown       unknown       1048576       failed        Current value incorrect. Configured value incorrect. 
+
+PRVF-7544 : Check cannot be performed for kernel parameter "wmem_max" on node "lxcora03"
+PRVG-2044 : Command "/sbin/sysctl -a | grep wmem_max[[:space:]]*=" failed on node "lxcora03" and produced no output.
+PRVG-1206 : Check cannot be performed for configured value of kernel parameter "wmem_max" on node "lxcora03"
+
+Result: Kernel parameter check failed for "wmem_max"
+
+Check: Kernel parameter for "aio-max-nr" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          1048576       1048576       1048576       passed          
+Result: Kernel parameter check passed for "aio-max-nr"
+
+Check: Kernel parameter for "panic_on_oops" 
+  Node Name         Current       Configured    Required      Status        Comment     
+  ----------------  ------------  ------------  ------------  ------------  ------------
+  lxcora03          1             1             1             passed          
+Result: Kernel parameter check passed for "panic_on_oops"
+
+Check: Package existence for "binutils" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      binutils-2.20.51.0.2-5.42.el6  binutils-2.20.51.0.2      passed    
+Result: Package existence check passed for "binutils"
+
+Check: Package existence for "compat-libcap1" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      compat-libcap1-1.10-1     compat-libcap1-1.10       passed    
+Result: Package existence check passed for "compat-libcap1"
+
+Check: Package existence for "compat-libstdc++-33(x86_64)" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      compat-libstdc++-33(x86_64)-3.2.3-69.el6  compat-libstdc++-33(x86_64)-3.2.3  passed    
+Result: Package existence check passed for "compat-libstdc++-33(x86_64)"
+
+Check: Package existence for "libgcc(x86_64)" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      libgcc(x86_64)-4.4.7-11.el6  libgcc(x86_64)-4.4.4      passed    
+Result: Package existence check passed for "libgcc(x86_64)"
+
+Check: Package existence for "libstdc++(x86_64)" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      libstdc++(x86_64)-4.4.7-11.el6  libstdc++(x86_64)-4.4.4   passed    
+Result: Package existence check passed for "libstdc++(x86_64)"
+
+Check: Package existence for "libstdc++-devel(x86_64)" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      libstdc++-devel(x86_64)-4.4.7-11.el6  libstdc++-devel(x86_64)-4.4.4  passed    
+Result: Package existence check passed for "libstdc++-devel(x86_64)"
+
+Check: Package existence for "sysstat" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      sysstat-9.0.4-27.el6      sysstat-9.0.4             passed    
+Result: Package existence check passed for "sysstat"
+
+Check: Package existence for "gcc" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      gcc-4.4.7-11.el6          gcc-4.4.4                 passed    
+Result: Package existence check passed for "gcc"
+
+Check: Package existence for "gcc-c++" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      gcc-c++-4.4.7-11.el6      gcc-c++-4.4.4             passed    
+Result: Package existence check passed for "gcc-c++"
+
+Check: Package existence for "ksh" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      ksh                       ksh                       passed    
+Result: Package existence check passed for "ksh"
+
+Check: Package existence for "make" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      make-3.81-20.el6          make-3.81                 passed    
+Result: Package existence check passed for "make"
+
+Check: Package existence for "glibc(x86_64)" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      glibc(x86_64)-2.12-1.149.el6  glibc(x86_64)-2.12        passed    
+Result: Package existence check passed for "glibc(x86_64)"
+
+Check: Package existence for "glibc-devel(x86_64)" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      glibc-devel(x86_64)-2.12-1.149.el6  glibc-devel(x86_64)-2.12  passed    
+Result: Package existence check passed for "glibc-devel(x86_64)"
+
+Check: Package existence for "libaio(x86_64)" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      libaio(x86_64)-0.3.107-10.el6  libaio(x86_64)-0.3.107    passed    
+Result: Package existence check passed for "libaio(x86_64)"
+
+Check: Package existence for "libaio-devel(x86_64)" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      libaio-devel(x86_64)-0.3.107-10.el6  libaio-devel(x86_64)-0.3.107  passed    
+Result: Package existence check passed for "libaio-devel(x86_64)"
+
+Check: Package existence for "nfs-utils" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      nfs-utils-1.2.3-54.el6    nfs-utils-1.2.3-15        passed    
+Result: Package existence check passed for "nfs-utils"
+
+Checking availability of ports "6200,6100" required for component "Oracle Notification Service (ONS)"
+  Node Name         Port Number   Protocol      Available     Status          
+  ----------------  ------------  ------------  ------------  ----------------
+  lxcora03          6200          TCP           yes           successful      
+  lxcora03          6100          TCP           yes           successful      
+Result: Port availability check passed for ports "6200,6100"
+
+Checking availability of ports "42424" required for component "Oracle Cluster Synchronization Services (CSSD)"
+  Node Name         Port Number   Protocol      Available     Status          
+  ----------------  ------------  ------------  ------------  ----------------
+  lxcora03          42424         TCP           yes           successful      
+Result: Port availability check passed for ports "42424"
+
+Checking for multiple users with UID value 0
+Result: Check for multiple users with UID value 0 passed 
+
+Check: Current group ID 
+Result: Current group ID check passed
+
+Starting check for consistency of primary group of root user
+  Node Name                             Status                  
+  ------------------------------------  ------------------------
+  lxcora03                              passed                  
+
+Check for consistency of root user's primary group passed
+
+
+Checking Devices for ASM...
+
+Check: Package existence for "cvuqdisk" 
+  Node Name     Available                 Required                  Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      cvuqdisk-1.0.9-1          cvuqdisk-1.0.9-1          passed    
+Result: Package existence check passed for "cvuqdisk"
+
+Checking for shared devices...
+
+PRVG-5150 : could not determine if path /shared_data/asm_disk_lxc1_data_01 is a valid path on all nodes
+
+
+Checking consistency of device owner across all nodes...
+Consistency check of device owner for "/shared_data/asm_disk_lxc1_data_01" PASSED
+
+
+Checking consistency of device group across all nodes...
+Consistency check of device group for "/shared_data/asm_disk_lxc1_data_01" PASSED
+
+
+Checking consistency of device permissions across all nodes...
+PRVF-9993 : Permissions of device "/shared_data/asm_disk_lxc1_data_01" did not match the expected permissions. [Expected = "0660"; Found = "0664"] on nodes: [lxcora03]
+
+Consistency check of device permissions FAILED for at least one device
+
+
+Checking consistency of device size across all nodes...
+Consistency check of device size for "/shared_data/asm_disk_lxc1_data_01" PASSED
+
+UDev attributes check for ASM Disks started...
+Result: UDev attributes check passed for ASM Disks 
+
+
+Checking that ASM devices are ASM Filter Driver capable.
+
+WARNING: 
+PRVG-12805 : Device "/shared_data/asm_disk_lxc1_data_01" cannot be managed by the ASM Filter Driver on node "lxcora03".
+Result: Devices check for ASM failed
+
+
+Starting Clock synchronization checks using Network Time Protocol(NTP)...
+
+Checking existence of NTP configuration file "/etc/ntp.conf" across nodes
+  Node Name                             File exists?            
+  ------------------------------------  ------------------------
+  lxcora03                              yes                     
+The NTP configuration file "/etc/ntp.conf" is available on all nodes
+NTP configuration file "/etc/ntp.conf" existence check passed
+No NTP Daemons or Services were found to be running
+PRVF-5507 : NTP daemon or service is not running on any node but NTP configuration file exists on the following node(s):
+lxcora03
+Result: Clock synchronization check using Network Time Protocol(NTP) failed
+
+Checking Core file name pattern consistency...
+Core file name pattern consistency check passed.
+
+Checking to make sure user "grid" is not in "root" group
+  Node Name     Status                    Comment                 
+  ------------  ------------------------  ------------------------
+  lxcora03      passed                    does not exist          
+Result: User "grid" is not part of "root" group. Check passed
+
+Check default user file creation mask
+  Node Name     Available                 Required                  Comment   
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      0022                      0022                      passed    
+Result: Default user file creation mask check passed
+Checking integrity of file "/etc/resolv.conf" across nodes
+
+Checking the file "/etc/resolv.conf" to make sure only one of 'domain' and 'search' entries is defined
+"domain" and "search" entries do not coexist in any "/etc/resolv.conf" file
+Checking if 'domain' entry in file "/etc/resolv.conf" is consistent across the nodes...
+"domain" entry does not exist in any "/etc/resolv.conf" file
+Checking if 'search' entry in file "/etc/resolv.conf" is consistent across the nodes...
+Checking file "/etc/resolv.conf" to make sure that only one 'search' entry is defined
+More than one "search" entry does not exist in any "/etc/resolv.conf" file
+Checking DNS response time for an unreachable node
+  Node Name                             Status                  
+  ------------------------------------  ------------------------
+  lxcora03                              passed                  
+The DNS response time for an unreachable node is within acceptable limit on all nodes
+checking DNS response from all servers in "/etc/resolv.conf"
+checking response for name "lxcora03" from each of the name servers specified in "/etc/resolv.conf"
+  Node Name     Source                    Comment                   Status    
+  ------------  ------------------------  ------------------------  ----------
+  lxcora03      10.207.39.1               IPv4                      passed    
+
+Check for integrity of file "/etc/resolv.conf" failed
+
+Check: Time zone consistency 
+Result: Time zone consistency check passed
+
+Checking integrity of name service switch configuration file "/etc/nsswitch.conf" ...
+Checking if "hosts" entry in file "/etc/nsswitch.conf" is consistent across nodes...
+Checking file "/etc/nsswitch.conf" to make sure that only one "hosts" entry is defined
+More than one "hosts" entry does not exist in any "/etc/nsswitch.conf" file
+Check for integrity of name service switch configuration file "/etc/nsswitch.conf" passed
+
+
+Checking daemon "avahi-daemon" is not configured and running
+
+Check: Daemon "avahi-daemon" not configured
+  Node Name     Configured                Status                  
+  ------------  ------------------------  ------------------------
+  lxcora03      no                        passed                  
+Daemon not configured check passed for process "avahi-daemon"
+
+Check: Daemon "avahi-daemon" not running
+  Node Name     Running?                  Status                  
+  ------------  ------------------------  ------------------------
+  lxcora03      no                        passed                  
+Daemon not running check passed for process "avahi-daemon"
+
+Starting check for /dev/shm mounted as temporary file system ...
+
+Check for /dev/shm mounted as temporary file system passed
+
+Starting check for /boot mount ...
+
+ERROR: 
+
+PRVE-10073 : Required /boot data is not available on node "lxcora03"
+
+Check for /boot mount failed
+
+Starting check for zeroconf check ...
+
+Check for zeroconf check passed
+
+Pre-check for cluster services setup was unsuccessful on all the nodes. 

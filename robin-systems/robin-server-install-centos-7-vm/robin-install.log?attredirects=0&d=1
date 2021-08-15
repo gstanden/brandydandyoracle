@@ -1,0 +1,2084 @@
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: mirrors.mit.edu
+ * extras: mirror.stjschools.org
+ * updates: mirror.cs.uwp.edu
+Resolving Dependencies
+--> Running transaction check
+---> Package robin.x86_64 0:3.0.0-994_dev.el7.centos will be installed
+--> Processing Dependency: python34-tornadostreamform = 0.1.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-tornado = 4.3-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-six = 1.10.0-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-scpclient = 0.5-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-scp = 0.10.2-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-requests = 2.9.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pytz = 2016.4-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-python-editor = 1.0-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pycurl = 7.43.0-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pycrypto = 2.6.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pycparser = 2.14-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pyasn1 = 0.1.9-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pyOpenSSL = 16.0.0-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-ptyprocess = 0.5.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-psycopg2 = 2.6.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pexpect = 4.0.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-paramiko = 1.16.0-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-netifaces = 0.10.4-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-ldap3 = 1.0.4-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-jsonpickle = 0.9.3 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-idna = 2.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-ecdsa = 0.13-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-cryptography = 1.3.2-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-click = 6.6-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-cffi = 1.6.0 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-backports_abc = 0.4-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-alembic = 0.8.4 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-SQLAlchemy = 1.0.11-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-MarkupSafe = 0.23-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-Mako = 1.0.4-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python(abi) = 3.4 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: sshpass for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-prettytable for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-PyYAML for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-PyJWT for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python2-paramiko for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python-keyczar for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python-jinja2 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python-httplib2 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: postgresql95-server for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: postgresql95 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: pam_cgfs for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: openvswitch-kmod for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: openvswitch for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: nmap for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: lxcfs for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: lxc-libs for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: lxc-devel for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: lxc for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: lm_sensors for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: libprotobuf-c.so.1(LIBPROTOBUF_C_1.0.0)(64bit) for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: iptables-services for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: haproxy for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: fuse-devel for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: docker-engine-selinux for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: docker-engine for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: docbook2X for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: ansible for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: PyYAML for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: /usr/bin/python3 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: libprotobuf-c.so.1()(64bit) for package: robin-3.0.0-994_dev.el7.centos.x86_64
+---> Package robin-ui.x86_64 0:3.0.0-994_dev.el7.centos will be installed
+--> Processing Dependency: php56w-mbstring for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: php56w-common for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: php56w-cli for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: php56w for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: nodejs for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: mod_ssl for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: httpd for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Running transaction check
+---> Package PyYAML.x86_64 0:3.10-11.el7 will be installed
+--> Processing Dependency: libyaml-0.so.2()(64bit) for package: PyYAML-3.10-11.el7.x86_64
+---> Package ansible.noarch 0:2.1.0.0-1.el7 will be installed
+---> Package docbook2X.x86_64 0:0.8.8-17.el7 will be installed
+--> Processing Dependency: texinfo for package: docbook2X-0.8.8-17.el7.x86_64
+--> Processing Dependency: perl(XML::SAX::ParserFactory) for package: docbook2X-0.8.8-17.el7.x86_64
+--> Processing Dependency: openjade for package: docbook2X-0.8.8-17.el7.x86_64
+--> Processing Dependency: /usr/bin/sgml2xml for package: docbook2X-0.8.8-17.el7.x86_64
+---> Package docker-engine.x86_64 0:1.12.0-1.el7.centos will be installed
+---> Package docker-engine-selinux.noarch 0:1.12.0-1.el7.centos will be installed
+---> Package fuse-devel.x86_64 0:2.9.2-6.el7 will be installed
+---> Package haproxy.x86_64 0:1.5.14-3.el7 will be installed
+---> Package httpd.x86_64 0:2.4.6-40.el7.centos.4 will be installed
+--> Processing Dependency: httpd-tools = 2.4.6-40.el7.centos.4 for package: httpd-2.4.6-40.el7.centos.4.x86_64
+--> Processing Dependency: /etc/mime.types for package: httpd-2.4.6-40.el7.centos.4.x86_64
+---> Package iptables-services.x86_64 0:1.4.21-16.el7 will be installed
+---> Package lm_sensors.x86_64 0:3.3.4-11.el7 will be installed
+---> Package lxc.x86_64 0:2.0.3-1.el7.centos will be installed
+---> Package lxc-devel.x86_64 0:2.0.3-1.el7.centos will be installed
+---> Package lxc-libs.x86_64 0:2.0.3-1.el7.centos will be installed
+---> Package lxcfs.x86_64 0:2.0.2-0 will be installed
+---> Package mod_ssl.x86_64 1:2.4.6-40.el7.centos.4 will be installed
+---> Package nmap.x86_64 2:6.40-7.el7 will be installed
+---> Package nodejs.x86_64 0:0.10.42-4.el7 will be installed
+--> Processing Dependency: libuv.so.0.10()(64bit) for package: nodejs-0.10.42-4.el7.x86_64
+---> Package openvswitch.x86_64 0:2.5.0-1 will be installed
+---> Package openvswitch-kmod.x86_64 0:2.5.0-1.el7.centos will be installed
+---> Package php56w.x86_64 0:5.6.22-1.w7 will be installed
+---> Package php56w-cli.x86_64 0:5.6.22-1.w7 will be installed
+---> Package php56w-common.x86_64 0:5.6.22-1.w7 will be installed
+---> Package php56w-mbstring.x86_64 0:5.6.22-1.w7 will be installed
+---> Package postgresql95.x86_64 0:9.5.3-2PGDG.rhel7 will be installed
+--> Processing Dependency: postgresql95-libs(x86-64) = 9.5.3-2PGDG.rhel7 for package: postgresql95-9.5.3-2PGDG.rhel7.x86_64
+--> Processing Dependency: libpq.so.5()(64bit) for package: postgresql95-9.5.3-2PGDG.rhel7.x86_64
+---> Package postgresql95-server.x86_64 0:9.5.3-2PGDG.rhel7 will be installed
+---> Package protobuf-c.x86_64 0:1.0.2-2.el7 will be installed
+---> Package python-httplib2.noarch 0:0.7.7-3.el7 will be installed
+---> Package python-jinja2.noarch 0:2.7.2-2.el7 will be installed
+--> Processing Dependency: python-babel >= 0.8 for package: python-jinja2-2.7.2-2.el7.noarch
+---> Package python-keyczar.noarch 0:0.71c-2.el7 will be installed
+--> Processing Dependency: python-crypto for package: python-keyczar-0.71c-2.el7.noarch
+---> Package python2-paramiko.noarch 0:1.16.1-1.el7 will be installed
+--> Processing Dependency: python2-ecdsa for package: python2-paramiko-1.16.1-1.el7.noarch
+---> Package python34.x86_64 0:3.4.3-4.el7 will be installed
+--> Processing Dependency: python34-libs(x86-64) = 3.4.3-4.el7 for package: python34-3.4.3-4.el7.x86_64
+--> Processing Dependency: libpython3.4m.so.1.0()(64bit) for package: python34-3.4.3-4.el7.x86_64
+---> Package python34-Mako.noarch 0:1.0.4-1 will be installed
+---> Package python34-MarkupSafe.x86_64 0:0.23-1 will be installed
+---> Package python34-PyJWT.noarch 0:1.4.0-1 will be installed
+---> Package python34-PyYAML.x86_64 0:3.11-2.el7 will be installed
+---> Package python34-SQLAlchemy.x86_64 0:1.0.11-1 will be installed
+---> Package python34-alembic.noarch 0:0.8.4-1 will be installed
+---> Package python34-backports_abc.noarch 0:0.4-1 will be installed
+---> Package python34-cffi.x86_64 0:1.6.0-1 will be installed
+---> Package python34-click.noarch 0:6.6-1 will be installed
+---> Package python34-cryptography.x86_64 0:1.3.2-1 will be installed
+---> Package python34-ecdsa.noarch 0:0.13-1 will be installed
+---> Package python34-idna.noarch 0:2.1-1 will be installed
+---> Package python34-jsonpickle.noarch 0:0.9.3-1 will be installed
+---> Package python34-ldap3.noarch 0:1.0.4-1 will be installed
+---> Package python34-netifaces.x86_64 0:0.10.4-1 will be installed
+---> Package python34-paramiko.noarch 0:1.16.0-1 will be installed
+---> Package python34-pexpect.noarch 0:4.0.1-1 will be installed
+---> Package python34-prettytable.noarch 0:0.7.2-1 will be installed
+---> Package python34-psycopg2.x86_64 0:2.6.1-1 will be installed
+---> Package python34-ptyprocess.noarch 0:0.5.1-1 will be installed
+---> Package python34-pyOpenSSL.noarch 0:16.0.0-1 will be installed
+---> Package python34-pyasn1.noarch 0:0.1.9-1 will be installed
+---> Package python34-pycparser.noarch 0:2.14-1 will be installed
+---> Package python34-pycrypto.x86_64 0:2.6.1-1 will be installed
+---> Package python34-pycurl.x86_64 0:7.43.0-1 will be installed
+---> Package python34-python-editor.noarch 0:1.0-1 will be installed
+---> Package python34-pytz.noarch 0:2016.4-1 will be installed
+---> Package python34-requests.noarch 0:2.9.1-1 will be installed
+---> Package python34-scp.noarch 0:0.10.2-1 will be installed
+---> Package python34-scpclient.noarch 0:0.5-1 will be installed
+---> Package python34-six.noarch 0:1.10.0-1 will be installed
+---> Package python34-tornado.x86_64 0:4.3-1 will be installed
+---> Package python34-tornadostreamform.noarch 0:0.1.1-1 will be installed
+---> Package sshpass.x86_64 0:1.05-5.el7 will be installed
+--> Running transaction check
+---> Package httpd-tools.x86_64 0:2.4.6-40.el7.centos.4 will be installed
+---> Package libuv.x86_64 1:0.10.34-2.el7 will be installed
+---> Package libyaml.x86_64 0:0.1.4-11.el7_0 will be installed
+---> Package mailcap.noarch 0:2.1.41-2.el7 will be installed
+---> Package openjade.x86_64 0:1.3.2-45.el7 will be installed
+--> Processing Dependency: sgml-common for package: openjade-1.3.2-45.el7.x86_64
+---> Package opensp.x86_64 0:1.5.2-19.el7 will be installed
+---> Package perl-XML-SAX.noarch 0:0.99-9.el7 will be installed
+--> Processing Dependency: perl(XML::SAX::Exception) for package: perl-XML-SAX-0.99-9.el7.noarch
+--> Processing Dependency: perl(XML::SAX::Base) for package: perl-XML-SAX-0.99-9.el7.noarch
+--> Processing Dependency: perl(XML::NamespaceSupport) for package: perl-XML-SAX-0.99-9.el7.noarch
+--> Processing Dependency: perl(LWP::UserAgent) for package: perl-XML-SAX-0.99-9.el7.noarch
+---> Package postgresql95-libs.x86_64 0:9.5.3-2PGDG.rhel7 will be installed
+---> Package python-babel.noarch 0:0.9.6-8.el7 will be installed
+---> Package python2-crypto.x86_64 0:2.6.1-9.el7 will be installed
+--> Processing Dependency: libtomcrypt.so.0()(64bit) for package: python2-crypto-2.6.1-9.el7.x86_64
+---> Package python2-ecdsa.noarch 0:0.13-4.el7 will be installed
+---> Package python34-libs.x86_64 0:3.4.3-4.el7 will be installed
+---> Package texinfo.x86_64 0:5.1-4.el7 will be installed
+--> Processing Dependency: perl(Text::Unidecode) for package: texinfo-5.1-4.el7.x86_64
+--> Processing Dependency: perl(Locale::Messages) for package: texinfo-5.1-4.el7.x86_64
+--> Running transaction check
+---> Package libtomcrypt.x86_64 0:1.17-23.el7 will be installed
+--> Processing Dependency: libtommath >= 0.42.0 for package: libtomcrypt-1.17-23.el7.x86_64
+--> Processing Dependency: libtommath.so.0()(64bit) for package: libtomcrypt-1.17-23.el7.x86_64
+---> Package perl-Text-Unidecode.noarch 0:0.04-20.el7 will be installed
+---> Package perl-XML-NamespaceSupport.noarch 0:1.11-10.el7 will be installed
+---> Package perl-XML-SAX-Base.noarch 0:1.08-7.el7 will be installed
+---> Package perl-libintl.x86_64 0:1.20-12.el7 will be installed
+---> Package perl-libwww-perl.noarch 0:6.05-2.el7 will be installed
+--> Processing Dependency: perl(WWW::RobotRules) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(URI) >= 1.10 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(Net::HTTP) >= 6.04 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(LWP::MediaTypes) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Status) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Response) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Request::Common) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Request) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Negotiate) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Date) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Daemon) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Cookies) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(File::Listing) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(URI::Heuristic) for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(URI::Escape) for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTML::HeadParser) for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTML::Entities) for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(Encode::Locale) for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(Digest::MD5) for package: perl-libwww-perl-6.05-2.el7.noarch
+---> Package sgml-common.noarch 0:0.6.3-39.el7 will be installed
+--> Running transaction check
+---> Package libtommath.x86_64 0:0.42.0-4.el7 will be installed
+---> Package perl-Digest-MD5.x86_64 0:2.52-3.el7 will be installed
+--> Processing Dependency: perl(Digest::base) >= 1.00 for package: perl-Digest-MD5-2.52-3.el7.x86_64
+---> Package perl-Encode-Locale.noarch 0:1.03-5.el7 will be installed
+---> Package perl-File-Listing.noarch 0:6.04-7.el7 will be installed
+---> Package perl-HTML-Parser.x86_64 0:3.71-4.el7 will be installed
+--> Processing Dependency: perl(HTML::Tagset) >= 3 for package: perl-HTML-Parser-3.71-4.el7.x86_64
+---> Package perl-HTTP-Cookies.noarch 0:6.01-5.el7 will be installed
+---> Package perl-HTTP-Daemon.noarch 0:6.01-5.el7 will be installed
+---> Package perl-HTTP-Date.noarch 0:6.02-8.el7 will be installed
+--> Processing Dependency: perl(Time::Zone) for package: perl-HTTP-Date-6.02-8.el7.noarch
+---> Package perl-HTTP-Message.noarch 0:6.06-6.el7 will be installed
+--> Processing Dependency: perl(IO::Uncompress::Bunzip2) >= 2.021 for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Compress::Bzip2) >= 2.021 for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Uncompress::RawInflate) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Uncompress::Inflate) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Uncompress::Gunzip) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::HTML) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Compress::Gzip) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Compress::Deflate) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(Compress::Raw::Zlib) for package: perl-HTTP-Message-6.06-6.el7.noarch
+---> Package perl-HTTP-Negotiate.noarch 0:6.01-5.el7 will be installed
+---> Package perl-LWP-MediaTypes.noarch 0:6.02-2.el7 will be installed
+---> Package perl-Net-HTTP.noarch 0:6.06-2.el7 will be installed
+--> Processing Dependency: perl(IO::Socket::SSL) >= 1.38 for package: perl-Net-HTTP-6.06-2.el7.noarch
+---> Package perl-URI.noarch 0:1.60-9.el7 will be installed
+--> Processing Dependency: perl(Business::ISBN) for package: perl-URI-1.60-9.el7.noarch
+---> Package perl-WWW-RobotRules.noarch 0:6.02-5.el7 will be installed
+--> Running transaction check
+---> Package perl-Business-ISBN.noarch 0:2.06-2.el7 will be installed
+--> Processing Dependency: perl(Business::ISBN::Data) >= 20120719.001 for package: perl-Business-ISBN-2.06-2.el7.noarch
+---> Package perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7 will be installed
+---> Package perl-Digest.noarch 0:1.17-245.el7 will be installed
+---> Package perl-HTML-Tagset.noarch 0:3.20-15.el7 will be installed
+---> Package perl-IO-Compress.noarch 0:2.061-2.el7 will be installed
+--> Processing Dependency: perl(Compress::Raw::Bzip2) >= 2.061 for package: perl-IO-Compress-2.061-2.el7.noarch
+---> Package perl-IO-HTML.noarch 0:1.00-2.el7 will be installed
+---> Package perl-IO-Socket-SSL.noarch 0:1.94-3.el7 will be installed
+--> Processing Dependency: perl(Net::SSLeay) >= 1.21 for package: perl-IO-Socket-SSL-1.94-3.el7.noarch
+--> Processing Dependency: perl(IO::Socket::IP) >= 0.20 for package: perl-IO-Socket-SSL-1.94-3.el7.noarch
+--> Processing Dependency: perl(Net::SSLeay) for package: perl-IO-Socket-SSL-1.94-3.el7.noarch
+--> Processing Dependency: perl(Net::LibIDN) for package: perl-IO-Socket-SSL-1.94-3.el7.noarch
+---> Package perl-TimeDate.noarch 1:2.30-2.el7 will be installed
+--> Running transaction check
+---> Package perl-Business-ISBN-Data.noarch 0:20120719.001-2.el7 will be installed
+---> Package perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7 will be installed
+---> Package perl-IO-Socket-IP.noarch 0:0.21-4.el7 will be installed
+---> Package perl-Net-LibIDN.x86_64 0:0.12-15.el7 will be installed
+---> Package perl-Net-SSLeay.x86_64 0:1.55-3.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                    Arch   Version                     Repository  Size
+================================================================================
+Installing:
+ robin                      x86_64 3.0.0-994_dev.el7.centos    robin-repo 8.5 M
+ robin-ui                   x86_64 3.0.0-994_dev.el7.centos    robin-repo  23 M
+Installing for dependencies:
+ PyYAML                     x86_64 3.10-11.el7                 base       153 k
+ ansible                    noarch 2.1.0.0-1.el7               robin-repo 3.4 M
+ docbook2X                  x86_64 0.8.8-17.el7                robin-repo 315 k
+ docker-engine              x86_64 1.12.0-1.el7.centos         robin-repo  19 M
+ docker-engine-selinux      noarch 1.12.0-1.el7.centos         robin-repo  28 k
+ fuse-devel                 x86_64 2.9.2-6.el7                 base        36 k
+ haproxy                    x86_64 1.5.14-3.el7                base       833 k
+ httpd                      x86_64 2.4.6-40.el7.centos.4       updates    2.7 M
+ httpd-tools                x86_64 2.4.6-40.el7.centos.4       updates     83 k
+ iptables-services          x86_64 1.4.21-16.el7               base        50 k
+ libtomcrypt                x86_64 1.17-23.el7                 robin-repo 224 k
+ libtommath                 x86_64 0.42.0-4.el7                robin-repo  35 k
+ libuv                      x86_64 1:0.10.34-2.el7             robin-repo  62 k
+ libyaml                    x86_64 0.1.4-11.el7_0              base        55 k
+ lm_sensors                 x86_64 3.3.4-11.el7                base       137 k
+ lxc                        x86_64 2.0.3-1.el7.centos          robin-repo 388 k
+ lxc-devel                  x86_64 2.0.3-1.el7.centos          robin-repo  13 k
+ lxc-libs                   x86_64 2.0.3-1.el7.centos          robin-repo 236 k
+ lxcfs                      x86_64 2.0.2-0                     robin-repo  43 k
+ mailcap                    noarch 2.1.41-2.el7                base        31 k
+ mod_ssl                    x86_64 1:2.4.6-40.el7.centos.4     updates    104 k
+ nmap                       x86_64 2:6.40-7.el7                base       4.0 M
+ nodejs                     x86_64 0.10.42-4.el7               robin-repo 2.0 M
+ openjade                   x86_64 1.3.2-45.el7                base       831 k
+ opensp                     x86_64 1.5.2-19.el7                base       874 k
+ openvswitch                x86_64 2.5.0-1                     robin-repo 2.3 M
+ openvswitch-kmod           x86_64 2.5.0-1.el7.centos          robin-repo 2.0 k
+ perl-Business-ISBN         noarch 2.06-2.el7                  base        25 k
+ perl-Business-ISBN-Data    noarch 20120719.001-2.el7          base        24 k
+ perl-Compress-Raw-Bzip2    x86_64 2.061-3.el7                 base        32 k
+ perl-Compress-Raw-Zlib     x86_64 1:2.061-4.el7               base        57 k
+ perl-Digest                noarch 1.17-245.el7                base        23 k
+ perl-Digest-MD5            x86_64 2.52-3.el7                  base        30 k
+ perl-Encode-Locale         noarch 1.03-5.el7                  base        16 k
+ perl-File-Listing          noarch 6.04-7.el7                  base        13 k
+ perl-HTML-Parser           x86_64 3.71-4.el7                  base       115 k
+ perl-HTML-Tagset           noarch 3.20-15.el7                 base        18 k
+ perl-HTTP-Cookies          noarch 6.01-5.el7                  base        26 k
+ perl-HTTP-Daemon           noarch 6.01-5.el7                  base        20 k
+ perl-HTTP-Date             noarch 6.02-8.el7                  base        14 k
+ perl-HTTP-Message          noarch 6.06-6.el7                  base        82 k
+ perl-HTTP-Negotiate        noarch 6.01-5.el7                  base        17 k
+ perl-IO-Compress           noarch 2.061-2.el7                 base       260 k
+ perl-IO-HTML               noarch 1.00-2.el7                  base        23 k
+ perl-IO-Socket-IP          noarch 0.21-4.el7                  base        35 k
+ perl-IO-Socket-SSL         noarch 1.94-3.el7                  base       113 k
+ perl-LWP-MediaTypes        noarch 6.02-2.el7                  base        24 k
+ perl-Net-HTTP              noarch 6.06-2.el7                  base        29 k
+ perl-Net-LibIDN            x86_64 0.12-15.el7                 base        28 k
+ perl-Net-SSLeay            x86_64 1.55-3.el7                  base       285 k
+ perl-Text-Unidecode        noarch 0.04-20.el7                 base       114 k
+ perl-TimeDate              noarch 1:2.30-2.el7                base        52 k
+ perl-URI                   noarch 1.60-9.el7                  base       106 k
+ perl-WWW-RobotRules        noarch 6.02-5.el7                  base        18 k
+ perl-XML-NamespaceSupport  noarch 1.11-10.el7                 base        18 k
+ perl-XML-SAX               noarch 0.99-9.el7                  base        63 k
+ perl-XML-SAX-Base          noarch 1.08-7.el7                  base        32 k
+ perl-libintl               x86_64 1.20-12.el7                 base       875 k
+ perl-libwww-perl           noarch 6.05-2.el7                  base       205 k
+ php56w                     x86_64 5.6.22-1.w7                 robin-repo 2.8 M
+ php56w-cli                 x86_64 5.6.22-1.w7                 robin-repo 2.9 M
+ php56w-common              x86_64 5.6.22-1.w7                 robin-repo 1.3 M
+ php56w-mbstring            x86_64 5.6.22-1.w7                 robin-repo 542 k
+ postgresql95               x86_64 9.5.3-2PGDG.rhel7           robin-repo 1.3 M
+ postgresql95-libs          x86_64 9.5.3-2PGDG.rhel7           robin-repo 218 k
+ postgresql95-server        x86_64 9.5.3-2PGDG.rhel7           robin-repo 4.1 M
+ protobuf-c                 x86_64 1.0.2-2.el7                 base        28 k
+ python-babel               noarch 0.9.6-8.el7                 base       1.4 M
+ python-httplib2            noarch 0.7.7-3.el7                 robin-repo  70 k
+ python-jinja2              noarch 2.7.2-2.el7                 base       515 k
+ python-keyczar             noarch 0.71c-2.el7                 robin-repo 218 k
+ python2-crypto             x86_64 2.6.1-9.el7                 robin-repo 475 k
+ python2-ecdsa              noarch 0.13-4.el7                  robin-repo  83 k
+ python2-paramiko           noarch 1.16.1-1.el7                robin-repo 257 k
+ python34                   x86_64 3.4.3-4.el7                 robin-repo  49 k
+ python34-Mako              noarch 1.0.4-1                     robin-repo 135 k
+ python34-MarkupSafe        x86_64 0.23-1                      robin-repo  32 k
+ python34-PyJWT             noarch 1.4.0-1                     robin-repo  43 k
+ python34-PyYAML            x86_64 3.11-2.el7                  robin-repo 150 k
+ python34-SQLAlchemy        x86_64 1.0.11-1                    robin-repo 1.6 M
+ python34-alembic           noarch 0.8.4-1                     robin-repo 246 k
+ python34-backports_abc     noarch 0.4-1                       robin-repo 9.5 k
+ python34-cffi              x86_64 1.6.0-1                     robin-repo 216 k
+ python34-click             noarch 6.6-1                       robin-repo 119 k
+ python34-cryptography      x86_64 1.3.2-1                     robin-repo 376 k
+ python34-ecdsa             noarch 0.13-1                      robin-repo  83 k
+ python34-idna              noarch 2.1-1                       robin-repo  80 k
+ python34-jsonpickle        noarch 0.9.3-1                     robin-repo  45 k
+ python34-ldap3             noarch 1.0.4-1                     robin-repo 378 k
+ python34-libs              x86_64 3.4.3-4.el7                 robin-repo 6.7 M
+ python34-netifaces         x86_64 0.10.4-1                    robin-repo  22 k
+ python34-paramiko          noarch 1.16.0-1                    robin-repo 240 k
+ python34-pexpect           noarch 4.0.1-1                     robin-repo  76 k
+ python34-prettytable       noarch 0.7.2-1                     robin-repo  27 k
+ python34-psycopg2          x86_64 2.6.1-1                     robin-repo 248 k
+ python34-ptyprocess        noarch 0.5.1-1                     robin-repo  22 k
+ python34-pyOpenSSL         noarch 16.0.0-1                    robin-repo 816 k
+ python34-pyasn1            noarch 0.1.9-1                     robin-repo  78 k
+ python34-pycparser         noarch 2.14-1                      robin-repo 167 k
+ python34-pycrypto          x86_64 2.6.1-1                     robin-repo 417 k
+ python34-pycurl            x86_64 7.43.0-1                    robin-repo  49 k
+ python34-python-editor     noarch 1.0-1                       robin-repo 6.5 k
+ python34-pytz              noarch 2016.4-1                    robin-repo 226 k
+ python34-requests          noarch 2.9.1-1                     robin-repo 618 k
+ python34-scp               noarch 0.10.2-1                    robin-repo  14 k
+ python34-scpclient         noarch 0.5-1                       robin-repo  15 k
+ python34-six               noarch 1.10.0-1                    robin-repo  20 k
+ python34-tornado           x86_64 4.3-1                       robin-repo 685 k
+ python34-tornadostreamform noarch 0.1.1-1                     robin-repo  16 k
+ sgml-common                noarch 0.6.3-39.el7                base        55 k
+ sshpass                    x86_64 1.05-5.el7                  robin-repo  21 k
+ texinfo                    x86_64 5.1-4.el7                   base       961 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages (+112 Dependent packages)
+
+Total download size: 102 M
+Installed size: 371 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              4.6 MB/s | 102 MB  00:22     
+Running transaction check
+Running transaction test
+
+
+Transaction check error:
+  file /usr/bin/mako-render from install of python34-Mako-1.0.4-1.noarch conflicts with file from package python-mako-0.8.1-2.el7.noarch
+
+Error Summary
+-------------
+
+Loaded plugins: fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+ * base: ftpmirror.your.org
+ * extras: mirrors.cmich.edu
+ * updates: mirror.cs.uwp.edu
+Resolving Dependencies
+--> Running transaction check
+---> Package robin.x86_64 0:3.0.0-994_dev.el7.centos will be installed
+--> Processing Dependency: python34-tornadostreamform = 0.1.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-tornado = 4.3-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-six = 1.10.0-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-scpclient = 0.5-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-scp = 0.10.2-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-requests = 2.9.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pytz = 2016.4-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-python-editor = 1.0-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pycurl = 7.43.0-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pycrypto = 2.6.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pycparser = 2.14-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pyasn1 = 0.1.9-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pyOpenSSL = 16.0.0-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-ptyprocess = 0.5.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-psycopg2 = 2.6.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-pexpect = 4.0.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-paramiko = 1.16.0-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-netifaces = 0.10.4-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-ldap3 = 1.0.4-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-jsonpickle = 0.9.3 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-idna = 2.1-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-ecdsa = 0.13-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-cryptography = 1.3.2-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-click = 6.6-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-cffi = 1.6.0 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-backports_abc = 0.4-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-alembic = 0.8.4 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-SQLAlchemy = 1.0.11-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-MarkupSafe = 0.23-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-Mako = 1.0.4-1 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python(abi) = 3.4 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: sshpass for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-prettytable for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-PyYAML for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34-PyJWT for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python34 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python2-paramiko for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python-keyczar for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python-jinja2 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: python-httplib2 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: postgresql95-server for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: postgresql95 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: pam_cgfs for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: openvswitch-kmod for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: openvswitch for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: nmap for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: lxcfs for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: lxc-libs for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: lxc-devel for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: lxc for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: lm_sensors for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: libprotobuf-c.so.1(LIBPROTOBUF_C_1.0.0)(64bit) for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: iptables-services for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: haproxy for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: fuse-devel for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: docker-engine-selinux for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: docker-engine for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: docbook2X for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: ansible for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: PyYAML for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: /usr/bin/python3 for package: robin-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: libprotobuf-c.so.1()(64bit) for package: robin-3.0.0-994_dev.el7.centos.x86_64
+---> Package robin-ui.x86_64 0:3.0.0-994_dev.el7.centos will be installed
+--> Processing Dependency: php56w-mbstring for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: php56w-common for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: php56w-cli for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: php56w for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: nodejs for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: mod_ssl for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Processing Dependency: httpd for package: robin-ui-3.0.0-994_dev.el7.centos.x86_64
+--> Running transaction check
+---> Package PyYAML.x86_64 0:3.10-11.el7 will be installed
+--> Processing Dependency: libyaml-0.so.2()(64bit) for package: PyYAML-3.10-11.el7.x86_64
+---> Package ansible.noarch 0:2.1.0.0-1.el7 will be installed
+---> Package docbook2X.x86_64 0:0.8.8-17.el7 will be installed
+--> Processing Dependency: texinfo for package: docbook2X-0.8.8-17.el7.x86_64
+--> Processing Dependency: perl(XML::SAX::ParserFactory) for package: docbook2X-0.8.8-17.el7.x86_64
+--> Processing Dependency: openjade for package: docbook2X-0.8.8-17.el7.x86_64
+--> Processing Dependency: /usr/bin/sgml2xml for package: docbook2X-0.8.8-17.el7.x86_64
+---> Package docker-engine.x86_64 0:1.12.0-1.el7.centos will be installed
+---> Package docker-engine-selinux.noarch 0:1.12.0-1.el7.centos will be installed
+---> Package fuse-devel.x86_64 0:2.9.2-6.el7 will be installed
+---> Package haproxy.x86_64 0:1.5.14-3.el7 will be installed
+---> Package httpd.x86_64 0:2.4.6-40.el7.centos.4 will be installed
+--> Processing Dependency: httpd-tools = 2.4.6-40.el7.centos.4 for package: httpd-2.4.6-40.el7.centos.4.x86_64
+--> Processing Dependency: /etc/mime.types for package: httpd-2.4.6-40.el7.centos.4.x86_64
+---> Package iptables-services.x86_64 0:1.4.21-16.el7 will be installed
+---> Package lm_sensors.x86_64 0:3.3.4-11.el7 will be installed
+---> Package lxc.x86_64 0:2.0.3-1.el7.centos will be installed
+---> Package lxc-devel.x86_64 0:2.0.3-1.el7.centos will be installed
+---> Package lxc-libs.x86_64 0:2.0.3-1.el7.centos will be installed
+---> Package lxcfs.x86_64 0:2.0.2-0 will be installed
+---> Package mod_ssl.x86_64 1:2.4.6-40.el7.centos.4 will be installed
+---> Package nmap.x86_64 2:6.40-7.el7 will be installed
+---> Package nodejs.x86_64 0:0.10.42-4.el7 will be installed
+--> Processing Dependency: libuv.so.0.10()(64bit) for package: nodejs-0.10.42-4.el7.x86_64
+---> Package openvswitch.x86_64 0:2.5.0-1 will be installed
+---> Package openvswitch-kmod.x86_64 0:2.5.0-1.el7.centos will be installed
+---> Package php56w.x86_64 0:5.6.22-1.w7 will be installed
+---> Package php56w-cli.x86_64 0:5.6.22-1.w7 will be installed
+---> Package php56w-common.x86_64 0:5.6.22-1.w7 will be installed
+---> Package php56w-mbstring.x86_64 0:5.6.22-1.w7 will be installed
+---> Package postgresql95.x86_64 0:9.5.3-2PGDG.rhel7 will be installed
+--> Processing Dependency: postgresql95-libs(x86-64) = 9.5.3-2PGDG.rhel7 for package: postgresql95-9.5.3-2PGDG.rhel7.x86_64
+--> Processing Dependency: libpq.so.5()(64bit) for package: postgresql95-9.5.3-2PGDG.rhel7.x86_64
+---> Package postgresql95-server.x86_64 0:9.5.3-2PGDG.rhel7 will be installed
+---> Package protobuf-c.x86_64 0:1.0.2-2.el7 will be installed
+---> Package python-httplib2.noarch 0:0.7.7-3.el7 will be installed
+---> Package python-jinja2.noarch 0:2.7.2-2.el7 will be installed
+--> Processing Dependency: python-babel >= 0.8 for package: python-jinja2-2.7.2-2.el7.noarch
+---> Package python-keyczar.noarch 0:0.71c-2.el7 will be installed
+--> Processing Dependency: python-crypto for package: python-keyczar-0.71c-2.el7.noarch
+---> Package python2-paramiko.noarch 0:1.16.1-1.el7 will be installed
+--> Processing Dependency: python2-ecdsa for package: python2-paramiko-1.16.1-1.el7.noarch
+---> Package python34.x86_64 0:3.4.3-4.el7 will be installed
+--> Processing Dependency: python34-libs(x86-64) = 3.4.3-4.el7 for package: python34-3.4.3-4.el7.x86_64
+--> Processing Dependency: libpython3.4m.so.1.0()(64bit) for package: python34-3.4.3-4.el7.x86_64
+---> Package python34-Mako.noarch 0:1.0.4-1 will be installed
+---> Package python34-MarkupSafe.x86_64 0:0.23-1 will be installed
+---> Package python34-PyJWT.noarch 0:1.4.0-1 will be installed
+---> Package python34-PyYAML.x86_64 0:3.11-2.el7 will be installed
+---> Package python34-SQLAlchemy.x86_64 0:1.0.11-1 will be installed
+---> Package python34-alembic.noarch 0:0.8.4-1 will be installed
+---> Package python34-backports_abc.noarch 0:0.4-1 will be installed
+---> Package python34-cffi.x86_64 0:1.6.0-1 will be installed
+---> Package python34-click.noarch 0:6.6-1 will be installed
+---> Package python34-cryptography.x86_64 0:1.3.2-1 will be installed
+---> Package python34-ecdsa.noarch 0:0.13-1 will be installed
+---> Package python34-idna.noarch 0:2.1-1 will be installed
+---> Package python34-jsonpickle.noarch 0:0.9.3-1 will be installed
+---> Package python34-ldap3.noarch 0:1.0.4-1 will be installed
+---> Package python34-netifaces.x86_64 0:0.10.4-1 will be installed
+---> Package python34-paramiko.noarch 0:1.16.0-1 will be installed
+---> Package python34-pexpect.noarch 0:4.0.1-1 will be installed
+---> Package python34-prettytable.noarch 0:0.7.2-1 will be installed
+---> Package python34-psycopg2.x86_64 0:2.6.1-1 will be installed
+---> Package python34-ptyprocess.noarch 0:0.5.1-1 will be installed
+---> Package python34-pyOpenSSL.noarch 0:16.0.0-1 will be installed
+---> Package python34-pyasn1.noarch 0:0.1.9-1 will be installed
+---> Package python34-pycparser.noarch 0:2.14-1 will be installed
+---> Package python34-pycrypto.x86_64 0:2.6.1-1 will be installed
+---> Package python34-pycurl.x86_64 0:7.43.0-1 will be installed
+---> Package python34-python-editor.noarch 0:1.0-1 will be installed
+---> Package python34-pytz.noarch 0:2016.4-1 will be installed
+---> Package python34-requests.noarch 0:2.9.1-1 will be installed
+---> Package python34-scp.noarch 0:0.10.2-1 will be installed
+---> Package python34-scpclient.noarch 0:0.5-1 will be installed
+---> Package python34-six.noarch 0:1.10.0-1 will be installed
+---> Package python34-tornado.x86_64 0:4.3-1 will be installed
+---> Package python34-tornadostreamform.noarch 0:0.1.1-1 will be installed
+---> Package sshpass.x86_64 0:1.05-5.el7 will be installed
+--> Running transaction check
+---> Package httpd-tools.x86_64 0:2.4.6-40.el7.centos.4 will be installed
+---> Package libuv.x86_64 1:0.10.34-2.el7 will be installed
+---> Package libyaml.x86_64 0:0.1.4-11.el7_0 will be installed
+---> Package mailcap.noarch 0:2.1.41-2.el7 will be installed
+---> Package openjade.x86_64 0:1.3.2-45.el7 will be installed
+--> Processing Dependency: sgml-common for package: openjade-1.3.2-45.el7.x86_64
+---> Package opensp.x86_64 0:1.5.2-19.el7 will be installed
+---> Package perl-XML-SAX.noarch 0:0.99-9.el7 will be installed
+--> Processing Dependency: perl(XML::SAX::Exception) for package: perl-XML-SAX-0.99-9.el7.noarch
+--> Processing Dependency: perl(XML::SAX::Base) for package: perl-XML-SAX-0.99-9.el7.noarch
+--> Processing Dependency: perl(XML::NamespaceSupport) for package: perl-XML-SAX-0.99-9.el7.noarch
+--> Processing Dependency: perl(LWP::UserAgent) for package: perl-XML-SAX-0.99-9.el7.noarch
+---> Package postgresql95-libs.x86_64 0:9.5.3-2PGDG.rhel7 will be installed
+---> Package python-babel.noarch 0:0.9.6-8.el7 will be installed
+---> Package python2-crypto.x86_64 0:2.6.1-9.el7 will be installed
+--> Processing Dependency: libtomcrypt.so.0()(64bit) for package: python2-crypto-2.6.1-9.el7.x86_64
+---> Package python2-ecdsa.noarch 0:0.13-4.el7 will be installed
+---> Package python34-libs.x86_64 0:3.4.3-4.el7 will be installed
+---> Package texinfo.x86_64 0:5.1-4.el7 will be installed
+--> Processing Dependency: perl(Text::Unidecode) for package: texinfo-5.1-4.el7.x86_64
+--> Processing Dependency: perl(Locale::Messages) for package: texinfo-5.1-4.el7.x86_64
+--> Running transaction check
+---> Package libtomcrypt.x86_64 0:1.17-23.el7 will be installed
+--> Processing Dependency: libtommath >= 0.42.0 for package: libtomcrypt-1.17-23.el7.x86_64
+--> Processing Dependency: libtommath.so.0()(64bit) for package: libtomcrypt-1.17-23.el7.x86_64
+---> Package perl-Text-Unidecode.noarch 0:0.04-20.el7 will be installed
+---> Package perl-XML-NamespaceSupport.noarch 0:1.11-10.el7 will be installed
+---> Package perl-XML-SAX-Base.noarch 0:1.08-7.el7 will be installed
+---> Package perl-libintl.x86_64 0:1.20-12.el7 will be installed
+---> Package perl-libwww-perl.noarch 0:6.05-2.el7 will be installed
+--> Processing Dependency: perl(WWW::RobotRules) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(URI) >= 1.10 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(Net::HTTP) >= 6.04 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(LWP::MediaTypes) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Status) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Response) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Request::Common) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Request) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Negotiate) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Date) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Daemon) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTTP::Cookies) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(File::Listing) >= 6 for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(URI::Heuristic) for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(URI::Escape) for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTML::HeadParser) for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(HTML::Entities) for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(Encode::Locale) for package: perl-libwww-perl-6.05-2.el7.noarch
+--> Processing Dependency: perl(Digest::MD5) for package: perl-libwww-perl-6.05-2.el7.noarch
+---> Package sgml-common.noarch 0:0.6.3-39.el7 will be installed
+--> Running transaction check
+---> Package libtommath.x86_64 0:0.42.0-4.el7 will be installed
+---> Package perl-Digest-MD5.x86_64 0:2.52-3.el7 will be installed
+--> Processing Dependency: perl(Digest::base) >= 1.00 for package: perl-Digest-MD5-2.52-3.el7.x86_64
+---> Package perl-Encode-Locale.noarch 0:1.03-5.el7 will be installed
+---> Package perl-File-Listing.noarch 0:6.04-7.el7 will be installed
+---> Package perl-HTML-Parser.x86_64 0:3.71-4.el7 will be installed
+--> Processing Dependency: perl(HTML::Tagset) >= 3 for package: perl-HTML-Parser-3.71-4.el7.x86_64
+---> Package perl-HTTP-Cookies.noarch 0:6.01-5.el7 will be installed
+---> Package perl-HTTP-Daemon.noarch 0:6.01-5.el7 will be installed
+---> Package perl-HTTP-Date.noarch 0:6.02-8.el7 will be installed
+--> Processing Dependency: perl(Time::Zone) for package: perl-HTTP-Date-6.02-8.el7.noarch
+---> Package perl-HTTP-Message.noarch 0:6.06-6.el7 will be installed
+--> Processing Dependency: perl(IO::Uncompress::Bunzip2) >= 2.021 for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Compress::Bzip2) >= 2.021 for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Uncompress::RawInflate) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Uncompress::Inflate) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Uncompress::Gunzip) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::HTML) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Compress::Gzip) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(IO::Compress::Deflate) for package: perl-HTTP-Message-6.06-6.el7.noarch
+--> Processing Dependency: perl(Compress::Raw::Zlib) for package: perl-HTTP-Message-6.06-6.el7.noarch
+---> Package perl-HTTP-Negotiate.noarch 0:6.01-5.el7 will be installed
+---> Package perl-LWP-MediaTypes.noarch 0:6.02-2.el7 will be installed
+---> Package perl-Net-HTTP.noarch 0:6.06-2.el7 will be installed
+--> Processing Dependency: perl(IO::Socket::SSL) >= 1.38 for package: perl-Net-HTTP-6.06-2.el7.noarch
+---> Package perl-URI.noarch 0:1.60-9.el7 will be installed
+--> Processing Dependency: perl(Business::ISBN) for package: perl-URI-1.60-9.el7.noarch
+---> Package perl-WWW-RobotRules.noarch 0:6.02-5.el7 will be installed
+--> Running transaction check
+---> Package perl-Business-ISBN.noarch 0:2.06-2.el7 will be installed
+--> Processing Dependency: perl(Business::ISBN::Data) >= 20120719.001 for package: perl-Business-ISBN-2.06-2.el7.noarch
+---> Package perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7 will be installed
+---> Package perl-Digest.noarch 0:1.17-245.el7 will be installed
+---> Package perl-HTML-Tagset.noarch 0:3.20-15.el7 will be installed
+---> Package perl-IO-Compress.noarch 0:2.061-2.el7 will be installed
+--> Processing Dependency: perl(Compress::Raw::Bzip2) >= 2.061 for package: perl-IO-Compress-2.061-2.el7.noarch
+---> Package perl-IO-HTML.noarch 0:1.00-2.el7 will be installed
+---> Package perl-IO-Socket-SSL.noarch 0:1.94-3.el7 will be installed
+--> Processing Dependency: perl(Net::SSLeay) >= 1.21 for package: perl-IO-Socket-SSL-1.94-3.el7.noarch
+--> Processing Dependency: perl(IO::Socket::IP) >= 0.20 for package: perl-IO-Socket-SSL-1.94-3.el7.noarch
+--> Processing Dependency: perl(Net::SSLeay) for package: perl-IO-Socket-SSL-1.94-3.el7.noarch
+--> Processing Dependency: perl(Net::LibIDN) for package: perl-IO-Socket-SSL-1.94-3.el7.noarch
+---> Package perl-TimeDate.noarch 1:2.30-2.el7 will be installed
+--> Running transaction check
+---> Package perl-Business-ISBN-Data.noarch 0:20120719.001-2.el7 will be installed
+---> Package perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7 will be installed
+---> Package perl-IO-Socket-IP.noarch 0:0.21-4.el7 will be installed
+---> Package perl-Net-LibIDN.x86_64 0:0.12-15.el7 will be installed
+---> Package perl-Net-SSLeay.x86_64 0:1.55-3.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                    Arch   Version                     Repository  Size
+================================================================================
+Installing:
+ robin                      x86_64 3.0.0-994_dev.el7.centos    robin-repo 8.5 M
+ robin-ui                   x86_64 3.0.0-994_dev.el7.centos    robin-repo  23 M
+Installing for dependencies:
+ PyYAML                     x86_64 3.10-11.el7                 base       153 k
+ ansible                    noarch 2.1.0.0-1.el7               robin-repo 3.4 M
+ docbook2X                  x86_64 0.8.8-17.el7                robin-repo 315 k
+ docker-engine              x86_64 1.12.0-1.el7.centos         robin-repo  19 M
+ docker-engine-selinux      noarch 1.12.0-1.el7.centos         robin-repo  28 k
+ fuse-devel                 x86_64 2.9.2-6.el7                 base        36 k
+ haproxy                    x86_64 1.5.14-3.el7                base       833 k
+ httpd                      x86_64 2.4.6-40.el7.centos.4       updates    2.7 M
+ httpd-tools                x86_64 2.4.6-40.el7.centos.4       updates     83 k
+ iptables-services          x86_64 1.4.21-16.el7               base        50 k
+ libtomcrypt                x86_64 1.17-23.el7                 robin-repo 224 k
+ libtommath                 x86_64 0.42.0-4.el7                robin-repo  35 k
+ libuv                      x86_64 1:0.10.34-2.el7             robin-repo  62 k
+ libyaml                    x86_64 0.1.4-11.el7_0              base        55 k
+ lm_sensors                 x86_64 3.3.4-11.el7                base       137 k
+ lxc                        x86_64 2.0.3-1.el7.centos          robin-repo 388 k
+ lxc-devel                  x86_64 2.0.3-1.el7.centos          robin-repo  13 k
+ lxc-libs                   x86_64 2.0.3-1.el7.centos          robin-repo 236 k
+ lxcfs                      x86_64 2.0.2-0                     robin-repo  43 k
+ mailcap                    noarch 2.1.41-2.el7                base        31 k
+ mod_ssl                    x86_64 1:2.4.6-40.el7.centos.4     updates    104 k
+ nmap                       x86_64 2:6.40-7.el7                base       4.0 M
+ nodejs                     x86_64 0.10.42-4.el7               robin-repo 2.0 M
+ openjade                   x86_64 1.3.2-45.el7                base       831 k
+ opensp                     x86_64 1.5.2-19.el7                base       874 k
+ openvswitch                x86_64 2.5.0-1                     robin-repo 2.3 M
+ openvswitch-kmod           x86_64 2.5.0-1.el7.centos          robin-repo 2.0 k
+ perl-Business-ISBN         noarch 2.06-2.el7                  base        25 k
+ perl-Business-ISBN-Data    noarch 20120719.001-2.el7          base        24 k
+ perl-Compress-Raw-Bzip2    x86_64 2.061-3.el7                 base        32 k
+ perl-Compress-Raw-Zlib     x86_64 1:2.061-4.el7               base        57 k
+ perl-Digest                noarch 1.17-245.el7                base        23 k
+ perl-Digest-MD5            x86_64 2.52-3.el7                  base        30 k
+ perl-Encode-Locale         noarch 1.03-5.el7                  base        16 k
+ perl-File-Listing          noarch 6.04-7.el7                  base        13 k
+ perl-HTML-Parser           x86_64 3.71-4.el7                  base       115 k
+ perl-HTML-Tagset           noarch 3.20-15.el7                 base        18 k
+ perl-HTTP-Cookies          noarch 6.01-5.el7                  base        26 k
+ perl-HTTP-Daemon           noarch 6.01-5.el7                  base        20 k
+ perl-HTTP-Date             noarch 6.02-8.el7                  base        14 k
+ perl-HTTP-Message          noarch 6.06-6.el7                  base        82 k
+ perl-HTTP-Negotiate        noarch 6.01-5.el7                  base        17 k
+ perl-IO-Compress           noarch 2.061-2.el7                 base       260 k
+ perl-IO-HTML               noarch 1.00-2.el7                  base        23 k
+ perl-IO-Socket-IP          noarch 0.21-4.el7                  base        35 k
+ perl-IO-Socket-SSL         noarch 1.94-3.el7                  base       113 k
+ perl-LWP-MediaTypes        noarch 6.02-2.el7                  base        24 k
+ perl-Net-HTTP              noarch 6.06-2.el7                  base        29 k
+ perl-Net-LibIDN            x86_64 0.12-15.el7                 base        28 k
+ perl-Net-SSLeay            x86_64 1.55-3.el7                  base       285 k
+ perl-Text-Unidecode        noarch 0.04-20.el7                 base       114 k
+ perl-TimeDate              noarch 1:2.30-2.el7                base        52 k
+ perl-URI                   noarch 1.60-9.el7                  base       106 k
+ perl-WWW-RobotRules        noarch 6.02-5.el7                  base        18 k
+ perl-XML-NamespaceSupport  noarch 1.11-10.el7                 base        18 k
+ perl-XML-SAX               noarch 0.99-9.el7                  base        63 k
+ perl-XML-SAX-Base          noarch 1.08-7.el7                  base        32 k
+ perl-libintl               x86_64 1.20-12.el7                 base       875 k
+ perl-libwww-perl           noarch 6.05-2.el7                  base       205 k
+ php56w                     x86_64 5.6.22-1.w7                 robin-repo 2.8 M
+ php56w-cli                 x86_64 5.6.22-1.w7                 robin-repo 2.9 M
+ php56w-common              x86_64 5.6.22-1.w7                 robin-repo 1.3 M
+ php56w-mbstring            x86_64 5.6.22-1.w7                 robin-repo 542 k
+ postgresql95               x86_64 9.5.3-2PGDG.rhel7           robin-repo 1.3 M
+ postgresql95-libs          x86_64 9.5.3-2PGDG.rhel7           robin-repo 218 k
+ postgresql95-server        x86_64 9.5.3-2PGDG.rhel7           robin-repo 4.1 M
+ protobuf-c                 x86_64 1.0.2-2.el7                 base        28 k
+ python-babel               noarch 0.9.6-8.el7                 base       1.4 M
+ python-httplib2            noarch 0.7.7-3.el7                 robin-repo  70 k
+ python-jinja2              noarch 2.7.2-2.el7                 base       515 k
+ python-keyczar             noarch 0.71c-2.el7                 robin-repo 218 k
+ python2-crypto             x86_64 2.6.1-9.el7                 robin-repo 475 k
+ python2-ecdsa              noarch 0.13-4.el7                  robin-repo  83 k
+ python2-paramiko           noarch 1.16.1-1.el7                robin-repo 257 k
+ python34                   x86_64 3.4.3-4.el7                 robin-repo  49 k
+ python34-Mako              noarch 1.0.4-1                     robin-repo 135 k
+ python34-MarkupSafe        x86_64 0.23-1                      robin-repo  32 k
+ python34-PyJWT             noarch 1.4.0-1                     robin-repo  43 k
+ python34-PyYAML            x86_64 3.11-2.el7                  robin-repo 150 k
+ python34-SQLAlchemy        x86_64 1.0.11-1                    robin-repo 1.6 M
+ python34-alembic           noarch 0.8.4-1                     robin-repo 246 k
+ python34-backports_abc     noarch 0.4-1                       robin-repo 9.5 k
+ python34-cffi              x86_64 1.6.0-1                     robin-repo 216 k
+ python34-click             noarch 6.6-1                       robin-repo 119 k
+ python34-cryptography      x86_64 1.3.2-1                     robin-repo 376 k
+ python34-ecdsa             noarch 0.13-1                      robin-repo  83 k
+ python34-idna              noarch 2.1-1                       robin-repo  80 k
+ python34-jsonpickle        noarch 0.9.3-1                     robin-repo  45 k
+ python34-ldap3             noarch 1.0.4-1                     robin-repo 378 k
+ python34-libs              x86_64 3.4.3-4.el7                 robin-repo 6.7 M
+ python34-netifaces         x86_64 0.10.4-1                    robin-repo  22 k
+ python34-paramiko          noarch 1.16.0-1                    robin-repo 240 k
+ python34-pexpect           noarch 4.0.1-1                     robin-repo  76 k
+ python34-prettytable       noarch 0.7.2-1                     robin-repo  27 k
+ python34-psycopg2          x86_64 2.6.1-1                     robin-repo 248 k
+ python34-ptyprocess        noarch 0.5.1-1                     robin-repo  22 k
+ python34-pyOpenSSL         noarch 16.0.0-1                    robin-repo 816 k
+ python34-pyasn1            noarch 0.1.9-1                     robin-repo  78 k
+ python34-pycparser         noarch 2.14-1                      robin-repo 167 k
+ python34-pycrypto          x86_64 2.6.1-1                     robin-repo 417 k
+ python34-pycurl            x86_64 7.43.0-1                    robin-repo  49 k
+ python34-python-editor     noarch 1.0-1                       robin-repo 6.5 k
+ python34-pytz              noarch 2016.4-1                    robin-repo 226 k
+ python34-requests          noarch 2.9.1-1                     robin-repo 618 k
+ python34-scp               noarch 0.10.2-1                    robin-repo  14 k
+ python34-scpclient         noarch 0.5-1                       robin-repo  15 k
+ python34-six               noarch 1.10.0-1                    robin-repo  20 k
+ python34-tornado           x86_64 4.3-1                       robin-repo 685 k
+ python34-tornadostreamform noarch 0.1.1-1                     robin-repo  16 k
+ sgml-common                noarch 0.6.3-39.el7                base        55 k
+ sshpass                    x86_64 1.05-5.el7                  robin-repo  21 k
+ texinfo                    x86_64 5.1-4.el7                   base       961 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages (+112 Dependent packages)
+
+Total download size: 102 M
+Installed size: 371 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                               24 MB/s | 102 MB  00:04     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : php56w-common-5.6.22-1.w7.x86_64                           1/114 
+  Installing : 1:perl-Compress-Raw-Zlib-2.061-4.el7.x86_64                2/114 
+  Installing : postgresql95-libs-9.5.3-2PGDG.rhel7.x86_64                 3/114 
+  Installing : lxc-libs-2.0.3-1.el7.centos.x86_64                         4/114 
+  Installing : lxc-2.0.3-1.el7.centos.x86_64                              5/114 
+/var/tmp/rpm-tmp.UaEJqS: line 14: /usr/local/etc/default/lxc-net: No such file or directory
+warning: %post(lxc-2.0.3-1.el7.centos.x86_64) scriptlet failed, exit status 1
+Non-fatal POSTIN scriptlet failure in rpm package lxc-2.0.3-1.el7.centos.x86_64
+  Installing : postgresql95-9.5.3-2PGDG.rhel7.x86_64                      6/114 
+  Installing : php56w-cli-5.6.22-1.w7.x86_64                              7/114 
+  Installing : libyaml-0.1.4-11.el7_0.x86_64                              8/114 
+  Installing : PyYAML-3.10-11.el7.x86_64                                  9/114 
+  Installing : iptables-services-1.4.21-16.el7.x86_64                    10/114 
+  Installing : sgml-common-0.6.3-39.el7.noarch                           11/114 
+  Installing : opensp-1.5.2-19.el7.x86_64                                12/114 
+  Installing : perl-Encode-Locale-1.03-5.el7.noarch                      13/114 
+  Installing : sshpass-1.05-5.el7.x86_64                                 14/114 
+  Installing : python-httplib2-0.7.7-3.el7.noarch                        15/114 
+  Installing : mailcap-2.1.41-2.el7.noarch                               16/114 
+  Installing : perl-LWP-MediaTypes-6.02-2.el7.noarch                     17/114 
+  Installing : docker-engine-selinux-1.12.0-1.el7.centos.noarch          18/114 
+restorecon:  lstat(/var/lib/docker) failed:  No such file or directory
+warning: %post(docker-engine-selinux-1.12.0-1.el7.centos.noarch) scriptlet failed, exit status 255
+Non-fatal POSTIN scriptlet failure in rpm package docker-engine-selinux-1.12.0-1.el7.centos.noarch
+  Installing : docker-engine-1.12.0-1.el7.centos.x86_64                  19/114 
+  Installing : openjade-1.3.2-45.el7.x86_64                              20/114 
+  Installing : postgresql95-server-9.5.3-2PGDG.rhel7.x86_64              21/114 
+  Installing : lxc-devel-2.0.3-1.el7.centos.x86_64                       22/114 
+  Installing : php56w-mbstring-5.6.22-1.w7.x86_64                        23/114 
+  Installing : perl-Net-LibIDN-0.12-15.el7.x86_64                        24/114 
+  Installing : 1:libuv-0.10.34-2.el7.x86_64                              25/114 
+  Installing : nodejs-0.10.42-4.el7.x86_64                               26/114 
+  Installing : lxcfs-2.0.2-0.x86_64                                      27/114 
+Created symlink from /etc/systemd/system/multi-user.target.wants/lxcfs.service to /usr/lib/systemd/system/lxcfs.service.
+Redirecting to /bin/systemctl restart  lxcfs.service
+  Installing : perl-XML-NamespaceSupport-1.11-10.el7.noarch              28/114 
+  Installing : perl-libintl-1.20-12.el7.x86_64                           29/114 
+  Installing : 2:nmap-6.40-7.el7.x86_64                                  30/114 
+  Installing : perl-XML-SAX-Base-1.08-7.el7.noarch                       31/114 
+  Installing : libtommath-0.42.0-4.el7.x86_64                            32/114 
+  Installing : libtomcrypt-1.17-23.el7.x86_64                            33/114 
+  Installing : python2-crypto-2.6.1-9.el7.x86_64                         34/114 
+  Installing : python-keyczar-0.71c-2.el7.noarch                         35/114 
+  Installing : httpd-tools-2.4.6-40.el7.centos.4.x86_64                  36/114 
+  Installing : httpd-2.4.6-40.el7.centos.4.x86_64                        37/114 
+  Installing : 1:mod_ssl-2.4.6-40.el7.centos.4.x86_64                    38/114 
+  Installing : php56w-5.6.22-1.w7.x86_64                                 39/114 
+  Installing : perl-Text-Unidecode-0.04-20.el7.noarch                    40/114 
+  Installing : texinfo-5.1-4.el7.x86_64                                  41/114 
+  Installing : perl-IO-HTML-1.00-2.el7.noarch                            42/114 
+  Installing : python2-ecdsa-0.13-4.el7.noarch                           43/114 
+  Installing : python2-paramiko-1.16.1-1.el7.noarch                      44/114 
+  Installing : fuse-devel-2.9.2-6.el7.x86_64                             45/114 
+  Installing : perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64                46/114 
+  Installing : perl-IO-Compress-2.061-2.el7.noarch                       47/114 
+  Installing : perl-Digest-1.17-245.el7.noarch                           48/114 
+  Installing : perl-Digest-MD5-2.52-3.el7.x86_64                         49/114 
+  Installing : openvswitch-kmod-2.5.0-1.el7.centos.x86_64                50/114 
+  Installing : perl-Net-SSLeay-1.55-3.el7.x86_64                         51/114 
+  Installing : python-babel-0.9.6-8.el7.noarch                           52/114 
+  Installing : python-jinja2-2.7.2-2.el7.noarch                          53/114 
+  Installing : ansible-2.1.0.0-1.el7.noarch                              54/114 
+  Installing : openvswitch-2.5.0-1.x86_64                                55/114 
+  Installing : 1:perl-TimeDate-2.30-2.el7.noarch                         56/114 
+  Installing : perl-HTTP-Date-6.02-8.el7.noarch                          57/114 
+  Installing : perl-File-Listing-6.04-7.el7.noarch                       58/114 
+  Installing : perl-HTML-Tagset-3.20-15.el7.noarch                       59/114 
+  Installing : haproxy-1.5.14-3.el7.x86_64                               60/114 
+  Installing : perl-Business-ISBN-Data-20120719.001-2.el7.noarch         61/114 
+  Installing : perl-Business-ISBN-2.06-2.el7.noarch                      62/114 
+  Installing : perl-URI-1.60-9.el7.noarch                                63/114 
+  Installing : perl-HTTP-Message-6.06-6.el7.noarch                       64/114 
+  Installing : perl-HTTP-Cookies-6.01-5.el7.noarch                       65/114 
+  Installing : perl-HTML-Parser-3.71-4.el7.x86_64                        66/114 
+  Installing : perl-HTTP-Negotiate-6.01-5.el7.noarch                     67/114 
+  Installing : perl-HTTP-Daemon-6.01-5.el7.noarch                        68/114 
+  Installing : perl-WWW-RobotRules-6.02-5.el7.noarch                     69/114 
+  Installing : lm_sensors-3.3.4-11.el7.x86_64                            70/114 
+  Installing : perl-IO-Socket-IP-0.21-4.el7.noarch                       71/114 
+  Installing : perl-IO-Socket-SSL-1.94-3.el7.noarch                      72/114 
+  Installing : perl-Net-HTTP-6.06-2.el7.noarch                           73/114 
+  Installing : perl-libwww-perl-6.05-2.el7.noarch                        74/114 
+  Installing : perl-XML-SAX-0.99-9.el7.noarch                            75/114 
+  Installing : docbook2X-0.8.8-17.el7.x86_64                             76/114 
+  Installing : protobuf-c-1.0.2-2.el7.x86_64                             77/114 
+  Installing : python34-pyasn1-0.1.9-1.noarch                            78/114 
+  Installing : python34-ldap3-1.0.4-1.noarch                             79/114 
+  Installing : python34-pyOpenSSL-16.0.0-1.noarch                        80/114 
+  Installing : python34-alembic-0.8.4-1.noarch                           81/114 
+  Installing : python34-backports_abc-0.4-1.noarch                       82/114 
+  Installing : python34-pytz-2016.4-1.noarch                             83/114 
+  Installing : python34-six-1.10.0-1.noarch                              84/114 
+  Installing : python34-PyJWT-1.4.0-1.noarch                             85/114 
+  Installing : python34-jsonpickle-0.9.3-1.noarch                        86/114 
+  Installing : python34-pexpect-4.0.1-1.noarch                           87/114 
+  Installing : python34-click-6.6-1.noarch                               88/114 
+  Installing : python34-ecdsa-0.13-1.noarch                              89/114 
+  Installing : python34-idna-2.1-1.noarch                                90/114 
+  Installing : python34-python-editor-1.0-1.noarch                       91/114 
+  Installing : python34-paramiko-1.16.0-1.noarch                         92/114 
+  Installing : python34-ptyprocess-0.5.1-1.noarch                        93/114 
+  Installing : python34-scp-0.10.2-1.noarch                              94/114 
+  Installing : python34-pycparser-2.14-1.noarch                          95/114 
+  Installing : python34-requests-2.9.1-1.noarch                          96/114 
+  Installing : python34-Mako-1.0.4-1.noarch                              97/114 
+  Installing : python34-prettytable-0.7.2-1.noarch                       98/114 
+  Installing : python34-tornadostreamform-0.1.1-1.noarch                 99/114 
+  Installing : python34-scpclient-0.5-1.noarch                          100/114 
+  Installing : python34-3.4.3-4.el7.x86_64                              101/114 
+  Installing : python34-netifaces-0.10.4-1.x86_64                       102/114 
+  Installing : python34-PyYAML-3.11-2.el7.x86_64                        103/114 
+  Installing : python34-pycrypto-2.6.1-1.x86_64                         104/114 
+  Installing : python34-cryptography-1.3.2-1.x86_64                     105/114 
+  Installing : python34-pycurl-7.43.0-1.x86_64                          106/114 
+  Installing : python34-cffi-1.6.0-1.x86_64                             107/114 
+  Installing : python34-MarkupSafe-0.23-1.x86_64                        108/114 
+  Installing : python34-tornado-4.3-1.x86_64                            109/114 
+  Installing : python34-SQLAlchemy-1.0.11-1.x86_64                      110/114 
+  Installing : python34-psycopg2-2.6.1-1.x86_64                         111/114 
+  Installing : robin-3.0.0-994_dev.el7.centos.x86_64                    112/114 
+mkdir: cannot create directory ‘/lib/modules/3.10.0-327.28.2.el7.x86_64/extra’: File exists
+Redirecting to /bin/systemctl restart  docker.service
+  Installing : python34-libs-3.4.3-4.el7.x86_64                         113/114 
+  Installing : robin-ui-3.0.0-994_dev.el7.centos.x86_64                 114/114 
+  Verifying  : python-keyczar-0.71c-2.el7.noarch                          1/114 
+  Verifying  : python34-pyasn1-0.1.9-1.noarch                             2/114 
+  Verifying  : docker-engine-selinux-1.12.0-1.el7.centos.noarch           3/114 
+  Verifying  : protobuf-c-1.0.2-2.el7.x86_64                              4/114 
+  Verifying  : perl-IO-Socket-IP-0.21-4.el7.noarch                        5/114 
+  Verifying  : lm_sensors-3.3.4-11.el7.x86_64                             6/114 
+  Verifying  : perl-HTTP-Cookies-6.01-5.el7.noarch                        7/114 
+  Verifying  : python34-ldap3-1.0.4-1.noarch                              8/114 
+  Verifying  : perl-LWP-MediaTypes-6.02-2.el7.noarch                      9/114 
+  Verifying  : robin-ui-3.0.0-994_dev.el7.centos.x86_64                  10/114 
+  Verifying  : perl-IO-Socket-SSL-1.94-3.el7.noarch                      11/114 
+  Verifying  : python34-pyOpenSSL-16.0.0-1.noarch                        12/114 
+  Verifying  : perl-Business-ISBN-Data-20120719.001-2.el7.noarch         13/114 
+  Verifying  : python34-alembic-0.8.4-1.noarch                           14/114 
+  Verifying  : mailcap-2.1.41-2.el7.noarch                               15/114 
+  Verifying  : python34-backports_abc-0.4-1.noarch                       16/114 
+  Verifying  : python-httplib2-0.7.7-3.el7.noarch                        17/114 
+  Verifying  : lxc-libs-2.0.3-1.el7.centos.x86_64                        18/114 
+  Verifying  : sshpass-1.05-5.el7.x86_64                                 19/114 
+  Verifying  : perl-Net-HTTP-6.06-2.el7.noarch                           20/114 
+  Verifying  : docbook2X-0.8.8-17.el7.x86_64                             21/114 
+  Verifying  : postgresql95-libs-9.5.3-2PGDG.rhel7.x86_64                22/114 
+  Verifying  : haproxy-1.5.14-3.el7.x86_64                               23/114 
+  Verifying  : python34-pytz-2016.4-1.noarch                             24/114 
+  Verifying  : PyYAML-3.10-11.el7.x86_64                                 25/114 
+  Verifying  : perl-HTML-Tagset-3.20-15.el7.noarch                       26/114 
+  Verifying  : 1:perl-TimeDate-2.30-2.el7.noarch                         27/114 
+  Verifying  : php56w-common-5.6.22-1.w7.x86_64                          28/114 
+  Verifying  : python-jinja2-2.7.2-2.el7.noarch                          29/114 
+  Verifying  : docker-engine-1.12.0-1.el7.centos.x86_64                  30/114 
+  Verifying  : perl-Encode-Locale-1.03-5.el7.noarch                      31/114 
+  Verifying  : python34-six-1.10.0-1.noarch                              32/114 
+  Verifying  : sgml-common-0.6.3-39.el7.noarch                           33/114 
+  Verifying  : python34-PyJWT-1.4.0-1.noarch                             34/114 
+  Verifying  : python34-jsonpickle-0.9.3-1.noarch                        35/114 
+  Verifying  : python34-pexpect-4.0.1-1.noarch                           36/114 
+  Verifying  : lxc-devel-2.0.3-1.el7.centos.x86_64                       37/114 
+  Verifying  : robin-3.0.0-994_dev.el7.centos.x86_64                     38/114 
+  Verifying  : opensp-1.5.2-19.el7.x86_64                                39/114 
+  Verifying  : openvswitch-2.5.0-1.x86_64                                40/114 
+  Verifying  : python2-crypto-2.6.1-9.el7.x86_64                         41/114 
+  Verifying  : python34-libs-3.4.3-4.el7.x86_64                          42/114 
+  Verifying  : python-babel-0.9.6-8.el7.noarch                           43/114 
+  Verifying  : python34-click-6.6-1.noarch                               44/114 
+  Verifying  : python34-ecdsa-0.13-1.noarch                              45/114 
+  Verifying  : 1:mod_ssl-2.4.6-40.el7.centos.4.x86_64                    46/114 
+  Verifying  : perl-Net-SSLeay-1.55-3.el7.x86_64                         47/114 
+  Verifying  : openvswitch-kmod-2.5.0-1.el7.centos.x86_64                48/114 
+  Verifying  : texinfo-5.1-4.el7.x86_64                                  49/114 
+  Verifying  : ansible-2.1.0.0-1.el7.noarch                              50/114 
+  Verifying  : perl-Digest-1.17-245.el7.noarch                           51/114 
+  Verifying  : python34-idna-2.1-1.noarch                                52/114 
+  Verifying  : perl-Digest-MD5-2.52-3.el7.x86_64                         53/114 
+  Verifying  : perl-URI-1.60-9.el7.noarch                                54/114 
+  Verifying  : perl-File-Listing-6.04-7.el7.noarch                       55/114 
+  Verifying  : perl-Business-ISBN-2.06-2.el7.noarch                      56/114 
+  Verifying  : openjade-1.3.2-45.el7.x86_64                              57/114 
+  Verifying  : python34-3.4.3-4.el7.x86_64                               58/114 
+  Verifying  : nodejs-0.10.42-4.el7.x86_64                               59/114 
+  Verifying  : perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64                60/114 
+  Verifying  : python34-python-editor-1.0-1.noarch                       61/114 
+  Verifying  : perl-HTML-Parser-3.71-4.el7.x86_64                        62/114 
+  Verifying  : perl-HTTP-Message-6.06-6.el7.noarch                       63/114 
+  Verifying  : python34-paramiko-1.16.0-1.noarch                         64/114 
+  Verifying  : python34-netifaces-0.10.4-1.x86_64                        65/114 
+  Verifying  : python34-PyYAML-3.11-2.el7.x86_64                         66/114 
+  Verifying  : perl-WWW-RobotRules-6.02-5.el7.noarch                     67/114 
+  Verifying  : fuse-devel-2.9.2-6.el7.x86_64                             68/114 
+  Verifying  : iptables-services-1.4.21-16.el7.x86_64                    69/114 
+  Verifying  : python34-ptyprocess-0.5.1-1.noarch                        70/114 
+  Verifying  : python2-ecdsa-0.13-4.el7.noarch                           71/114 
+  Verifying  : python34-pycrypto-2.6.1-1.x86_64                          72/114 
+  Verifying  : python34-cryptography-1.3.2-1.x86_64                      73/114 
+  Verifying  : perl-HTTP-Negotiate-6.01-5.el7.noarch                     74/114 
+  Verifying  : python34-scp-0.10.2-1.noarch                              75/114 
+  Verifying  : perl-IO-HTML-1.00-2.el7.noarch                            76/114 
+  Verifying  : perl-Text-Unidecode-0.04-20.el7.noarch                    77/114 
+  Verifying  : libyaml-0.1.4-11.el7_0.x86_64                             78/114 
+  Verifying  : httpd-tools-2.4.6-40.el7.centos.4.x86_64                  79/114 
+  Verifying  : libtomcrypt-1.17-23.el7.x86_64                            80/114 
+  Verifying  : libtommath-0.42.0-4.el7.x86_64                            81/114 
+  Verifying  : python34-pycurl-7.43.0-1.x86_64                           82/114 
+  Verifying  : python34-cffi-1.6.0-1.x86_64                              83/114 
+  Verifying  : perl-XML-SAX-Base-1.08-7.el7.noarch                       84/114 
+  Verifying  : postgresql95-9.5.3-2PGDG.rhel7.x86_64                     85/114 
+  Verifying  : python34-pycparser-2.14-1.noarch                          86/114 
+  Verifying  : postgresql95-server-9.5.3-2PGDG.rhel7.x86_64              87/114 
+  Verifying  : 2:nmap-6.40-7.el7.x86_64                                  88/114 
+  Verifying  : perl-IO-Compress-2.061-2.el7.noarch                       89/114 
+  Verifying  : python34-MarkupSafe-0.23-1.x86_64                         90/114 
+  Verifying  : httpd-2.4.6-40.el7.centos.4.x86_64                        91/114 
+  Verifying  : php56w-5.6.22-1.w7.x86_64                                 92/114 
+  Verifying  : python34-requests-2.9.1-1.noarch                          93/114 
+  Verifying  : perl-libintl-1.20-12.el7.x86_64                           94/114 
+  Verifying  : perl-XML-NamespaceSupport-1.11-10.el7.noarch              95/114 
+  Verifying  : lxcfs-2.0.2-0.x86_64                                      96/114 
+  Verifying  : python34-tornado-4.3-1.x86_64                             97/114 
+  Verifying  : perl-HTTP-Date-6.02-8.el7.noarch                          98/114 
+  Verifying  : perl-HTTP-Daemon-6.01-5.el7.noarch                        99/114 
+  Verifying  : 1:perl-Compress-Raw-Zlib-2.061-4.el7.x86_64              100/114 
+  Verifying  : perl-libwww-perl-6.05-2.el7.noarch                       101/114 
+  Verifying  : php56w-cli-5.6.22-1.w7.x86_64                            102/114 
+  Verifying  : perl-XML-SAX-0.99-9.el7.noarch                           103/114 
+  Verifying  : python34-SQLAlchemy-1.0.11-1.x86_64                      104/114 
+  Verifying  : python2-paramiko-1.16.1-1.el7.noarch                     105/114 
+  Verifying  : python34-psycopg2-2.6.1-1.x86_64                         106/114 
+  Verifying  : python34-Mako-1.0.4-1.noarch                             107/114 
+  Verifying  : php56w-mbstring-5.6.22-1.w7.x86_64                       108/114 
+  Verifying  : 1:libuv-0.10.34-2.el7.x86_64                             109/114 
+  Verifying  : python34-prettytable-0.7.2-1.noarch                      110/114 
+  Verifying  : python34-tornadostreamform-0.1.1-1.noarch                111/114 
+  Verifying  : lxc-2.0.3-1.el7.centos.x86_64                            112/114 
+  Verifying  : python34-scpclient-0.5-1.noarch                          113/114 
+  Verifying  : perl-Net-LibIDN-0.12-15.el7.x86_64                       114/114 
+
+Installed:
+  robin.x86_64 0:3.0.0-994_dev.el7.centos                                       
+  robin-ui.x86_64 0:3.0.0-994_dev.el7.centos                                    
+
+Dependency Installed:
+  PyYAML.x86_64 0:3.10-11.el7                                                   
+  ansible.noarch 0:2.1.0.0-1.el7                                                
+  docbook2X.x86_64 0:0.8.8-17.el7                                               
+  docker-engine.x86_64 0:1.12.0-1.el7.centos                                    
+  docker-engine-selinux.noarch 0:1.12.0-1.el7.centos                            
+  fuse-devel.x86_64 0:2.9.2-6.el7                                               
+  haproxy.x86_64 0:1.5.14-3.el7                                                 
+  httpd.x86_64 0:2.4.6-40.el7.centos.4                                          
+  httpd-tools.x86_64 0:2.4.6-40.el7.centos.4                                    
+  iptables-services.x86_64 0:1.4.21-16.el7                                      
+  libtomcrypt.x86_64 0:1.17-23.el7                                              
+  libtommath.x86_64 0:0.42.0-4.el7                                              
+  libuv.x86_64 1:0.10.34-2.el7                                                  
+  libyaml.x86_64 0:0.1.4-11.el7_0                                               
+  lm_sensors.x86_64 0:3.3.4-11.el7                                              
+  lxc.x86_64 0:2.0.3-1.el7.centos                                               
+  lxc-devel.x86_64 0:2.0.3-1.el7.centos                                         
+  lxc-libs.x86_64 0:2.0.3-1.el7.centos                                          
+  lxcfs.x86_64 0:2.0.2-0                                                        
+  mailcap.noarch 0:2.1.41-2.el7                                                 
+  mod_ssl.x86_64 1:2.4.6-40.el7.centos.4                                        
+  nmap.x86_64 2:6.40-7.el7                                                      
+  nodejs.x86_64 0:0.10.42-4.el7                                                 
+  openjade.x86_64 0:1.3.2-45.el7                                                
+  opensp.x86_64 0:1.5.2-19.el7                                                  
+  openvswitch.x86_64 0:2.5.0-1                                                  
+  openvswitch-kmod.x86_64 0:2.5.0-1.el7.centos                                  
+  perl-Business-ISBN.noarch 0:2.06-2.el7                                        
+  perl-Business-ISBN-Data.noarch 0:20120719.001-2.el7                           
+  perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7                                  
+  perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7                                   
+  perl-Digest.noarch 0:1.17-245.el7                                             
+  perl-Digest-MD5.x86_64 0:2.52-3.el7                                           
+  perl-Encode-Locale.noarch 0:1.03-5.el7                                        
+  perl-File-Listing.noarch 0:6.04-7.el7                                         
+  perl-HTML-Parser.x86_64 0:3.71-4.el7                                          
+  perl-HTML-Tagset.noarch 0:3.20-15.el7                                         
+  perl-HTTP-Cookies.noarch 0:6.01-5.el7                                         
+  perl-HTTP-Daemon.noarch 0:6.01-5.el7                                          
+  perl-HTTP-Date.noarch 0:6.02-8.el7                                            
+  perl-HTTP-Message.noarch 0:6.06-6.el7                                         
+  perl-HTTP-Negotiate.noarch 0:6.01-5.el7                                       
+  perl-IO-Compress.noarch 0:2.061-2.el7                                         
+  perl-IO-HTML.noarch 0:1.00-2.el7                                              
+  perl-IO-Socket-IP.noarch 0:0.21-4.el7                                         
+  perl-IO-Socket-SSL.noarch 0:1.94-3.el7                                        
+  perl-LWP-MediaTypes.noarch 0:6.02-2.el7                                       
+  perl-Net-HTTP.noarch 0:6.06-2.el7                                             
+  perl-Net-LibIDN.x86_64 0:0.12-15.el7                                          
+  perl-Net-SSLeay.x86_64 0:1.55-3.el7                                           
+  perl-Text-Unidecode.noarch 0:0.04-20.el7                                      
+  perl-TimeDate.noarch 1:2.30-2.el7                                             
+  perl-URI.noarch 0:1.60-9.el7                                                  
+  perl-WWW-RobotRules.noarch 0:6.02-5.el7                                       
+  perl-XML-NamespaceSupport.noarch 0:1.11-10.el7                                
+  perl-XML-SAX.noarch 0:0.99-9.el7                                              
+  perl-XML-SAX-Base.noarch 0:1.08-7.el7                                         
+  perl-libintl.x86_64 0:1.20-12.el7                                             
+  perl-libwww-perl.noarch 0:6.05-2.el7                                          
+  php56w.x86_64 0:5.6.22-1.w7                                                   
+  php56w-cli.x86_64 0:5.6.22-1.w7                                               
+  php56w-common.x86_64 0:5.6.22-1.w7                                            
+  php56w-mbstring.x86_64 0:5.6.22-1.w7                                          
+  postgresql95.x86_64 0:9.5.3-2PGDG.rhel7                                       
+  postgresql95-libs.x86_64 0:9.5.3-2PGDG.rhel7                                  
+  postgresql95-server.x86_64 0:9.5.3-2PGDG.rhel7                                
+  protobuf-c.x86_64 0:1.0.2-2.el7                                               
+  python-babel.noarch 0:0.9.6-8.el7                                             
+  python-httplib2.noarch 0:0.7.7-3.el7                                          
+  python-jinja2.noarch 0:2.7.2-2.el7                                            
+  python-keyczar.noarch 0:0.71c-2.el7                                           
+  python2-crypto.x86_64 0:2.6.1-9.el7                                           
+  python2-ecdsa.noarch 0:0.13-4.el7                                             
+  python2-paramiko.noarch 0:1.16.1-1.el7                                        
+  python34.x86_64 0:3.4.3-4.el7                                                 
+  python34-Mako.noarch 0:1.0.4-1                                                
+  python34-MarkupSafe.x86_64 0:0.23-1                                           
+  python34-PyJWT.noarch 0:1.4.0-1                                               
+  python34-PyYAML.x86_64 0:3.11-2.el7                                           
+  python34-SQLAlchemy.x86_64 0:1.0.11-1                                         
+  python34-alembic.noarch 0:0.8.4-1                                             
+  python34-backports_abc.noarch 0:0.4-1                                         
+  python34-cffi.x86_64 0:1.6.0-1                                                
+  python34-click.noarch 0:6.6-1                                                 
+  python34-cryptography.x86_64 0:1.3.2-1                                        
+  python34-ecdsa.noarch 0:0.13-1                                                
+  python34-idna.noarch 0:2.1-1                                                  
+  python34-jsonpickle.noarch 0:0.9.3-1                                          
+  python34-ldap3.noarch 0:1.0.4-1                                               
+  python34-libs.x86_64 0:3.4.3-4.el7                                            
+  python34-netifaces.x86_64 0:0.10.4-1                                          
+  python34-paramiko.noarch 0:1.16.0-1                                           
+  python34-pexpect.noarch 0:4.0.1-1                                             
+  python34-prettytable.noarch 0:0.7.2-1                                         
+  python34-psycopg2.x86_64 0:2.6.1-1                                            
+  python34-ptyprocess.noarch 0:0.5.1-1                                          
+  python34-pyOpenSSL.noarch 0:16.0.0-1                                          
+  python34-pyasn1.noarch 0:0.1.9-1                                              
+  python34-pycparser.noarch 0:2.14-1                                            
+  python34-pycrypto.x86_64 0:2.6.1-1                                            
+  python34-pycurl.x86_64 0:7.43.0-1                                             
+  python34-python-editor.noarch 0:1.0-1                                         
+  python34-pytz.noarch 0:2016.4-1                                               
+  python34-requests.noarch 0:2.9.1-1                                            
+  python34-scp.noarch 0:0.10.2-1                                                
+  python34-scpclient.noarch 0:0.5-1                                             
+  python34-six.noarch 0:1.10.0-1                                                
+  python34-tornado.x86_64 0:4.3-1                                               
+  python34-tornadostreamform.noarch 0:0.1.1-1                                   
+  sgml-common.noarch 0:0.6.3-39.el7                                             
+  sshpass.x86_64 0:1.05-5.el7                                                   
+  texinfo.x86_64 0:5.1-4.el7                                                    
+
+Complete!
+2016-08-16 16:51:57,024 - robin.rcm.setup.host_setup - DEBUG - 
+************************************************************
+Starting Robin Host Setup
+************************************************************
+2016-08-16 16:51:57,025 - robin.utils - INFO - Executing command sed -i -r s/lxc.network.link.*/lxc.network.link = br0/ /etc/lxc/default.conf with timeout 60 seconds
+2016-08-16 16:51:57,073 - robin.utils - INFO - Command sed -i -r s/lxc.network.link.*/lxc.network.link = br0/ /etc/lxc/default.conf completed with return code 0.
+2016-08-16 16:51:57,074 - robin.utils - INFO - Executing command sed -i -r s/SELINUX=\w*/SELINUX=disabled/ /etc/selinux/config with timeout 60 seconds
+2016-08-16 16:51:57,079 - robin.utils - INFO - Command sed -i -r s/SELINUX=\w*/SELINUX=disabled/ /etc/selinux/config completed with return code 0.
+2016-08-16 16:51:57,080 - robin.utils - INFO - Executing command service openvswitch restart with timeout 60 seconds
+2016-08-16 16:51:57,724 - robin.utils - INFO - Command service openvswitch restart completed with return code 0.
+2016-08-16 16:51:57,724 - robin.utils - DEBUG - Standard out: Restarting openvswitch (via systemctl):  [  OK  ]
+
+2016-08-16 16:51:57,724 - robin.utils - INFO - Executing command sed -i -r s/^exit 0// /etc/rc.local with timeout 60 seconds
+2016-08-16 16:51:57,749 - robin.utils - INFO - Command sed -i -r s/^exit 0// /etc/rc.local completed with return code 0.
+2016-08-16 16:51:57,750 - robin.utils - INFO - Executing command sysctl -p with timeout 60 seconds
+2016-08-16 16:51:57,764 - robin.utils - INFO - Command sysctl -p completed with return code 0.
+2016-08-16 16:51:57,764 - robin.utils - DEBUG - Standard out: kernel.core_pattern = /var/crash/core.%e.%p.%h.%t
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+
+2016-08-16 16:51:57,765 - robin.utils - INFO - Executing command service nginx status with timeout 600 seconds
+2016-08-16 16:51:57,810 - robin.utils - INFO - Command service nginx status completed with return code 3.
+2016-08-16 16:51:57,810 - robin.utils - DEBUG - Standard out: ● nginx.service
+   Loaded: not-found (Reason: No such file or directory)
+   Active: inactive (dead)
+
+2016-08-16 16:51:57,810 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  nginx.service
+
+2016-08-16 16:51:57,811 - robin.utils - WARNING - Service nginx requested to stop, but already stopped.
+2016-08-16 16:51:57,811 - robin.utils - INFO - Executing command systemctl is-enabled nginx.service with timeout 60 seconds
+2016-08-16 16:51:57,832 - robin.utils - INFO - Command systemctl is-enabled nginx.service completed with return code 1.
+2016-08-16 16:51:57,832 - robin.utils - DEBUG - Standard err: Failed to get unit file state for nginx.service: No such file or directory
+
+2016-08-16 16:51:57,833 - robin.rcm.setup.install_utils - WARNING - Service nginx systemctl requested disable but already disabled.
+2016-08-16 16:51:57,833 - robin.utils - INFO - Executing command service postgresql-9.5 status with timeout 600 seconds
+2016-08-16 16:51:57,860 - robin.utils - INFO - Command service postgresql-9.5 status completed with return code 3.
+2016-08-16 16:51:57,860 - robin.utils - DEBUG - Standard out: ● postgresql-9.5.service - PostgreSQL 9.5 database server
+   Loaded: loaded (/usr/lib/systemd/system/postgresql-9.5.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:51:57,860 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  postgresql-9.5.service
+
+2016-08-16 16:51:57,861 - robin.utils - WARNING - Service postgresql-9.5 requested to stop, but already stopped.
+2016-08-16 16:51:57,861 - robin.utils - INFO - Executing command systemctl is-enabled postgresql-9.5.service with timeout 60 seconds
+2016-08-16 16:51:57,867 - robin.utils - INFO - Command systemctl is-enabled postgresql-9.5.service completed with return code 1.
+2016-08-16 16:51:57,867 - robin.utils - DEBUG - Standard out: disabled
+
+2016-08-16 16:51:57,867 - robin.rcm.setup.install_utils - WARNING - Service postgresql-9.5 systemctl requested disable but already disabled.
+2016-08-16 16:51:57,867 - robin.utils - INFO - Executing command service haproxy status with timeout 600 seconds
+2016-08-16 16:51:57,898 - robin.utils - INFO - Command service haproxy status completed with return code 3.
+2016-08-16 16:51:57,899 - robin.utils - DEBUG - Standard out: ● haproxy.service - HAProxy Load Balancer
+   Loaded: loaded (/usr/lib/systemd/system/haproxy.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:51:57,899 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  haproxy.service
+
+2016-08-16 16:51:57,899 - robin.utils - WARNING - Service haproxy requested to stop, but already stopped.
+2016-08-16 16:51:57,900 - robin.utils - INFO - Executing command systemctl is-enabled haproxy.service with timeout 60 seconds
+2016-08-16 16:51:57,911 - robin.utils - INFO - Command systemctl is-enabled haproxy.service completed with return code 1.
+2016-08-16 16:51:57,912 - robin.utils - DEBUG - Standard out: disabled
+
+2016-08-16 16:51:57,912 - robin.rcm.setup.install_utils - WARNING - Service haproxy systemctl requested disable but already disabled.
+2016-08-16 16:51:57,912 - robin.utils - INFO - Executing command service firewalld status with timeout 600 seconds
+2016-08-16 16:51:57,942 - robin.utils - INFO - Command service firewalld status completed with return code 0.
+2016-08-16 16:51:57,942 - robin.utils - DEBUG - Standard out: ● firewalld.service - firewalld - dynamic firewall daemon
+   Loaded: loaded (/usr/lib/systemd/system/firewalld.service; enabled; vendor preset: enabled)
+   Active: active (running) since Tue 2016-08-16 16:27:19 CDT; 24min ago
+ Main PID: 630 (firewalld)
+   Memory: 296.0K
+   CGroup: /system.slice/firewalld.service
+           └─630 /usr/bin/python -Es /usr/sbin/firewalld --nofork --nopid
+
+Aug 16 16:51:29 centos-72a firewalld[630]: 2016-08-16 16:51:29 ERROR: COMMAND_FAILED: '/sbin/iptables -w2 -t nat -C POSTROUTING -s 172.17.0.0/16 ! -o docker0 -j MASQUERADE' failed: iptables: No chain/target/match by that name.
+Aug 16 16:51:29 centos-72a firewalld[630]: 2016-08-16 16:51:29 ERROR: COMMAND_FAILED: '/sbin/iptables -w2 -t nat -C DOCKER -i docker0 -j RETURN' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Aug 16 16:51:29 centos-72a firewalld[630]: 2016-08-16 16:51:29 ERROR: COMMAND_FAILED: '/sbin/iptables -w2 -D FORWARD -i docker0 -o docker0 -j DROP' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Aug 16 16:51:29 centos-72a firewalld[630]: 2016-08-16 16:51:29 ERROR: COMMAND_FAILED: '/sbin/iptables -w2 -t filter -C FORWARD -i docker0 -o docker0 -j ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Aug 16 16:51:29 centos-72a firewalld[630]: 2016-08-16 16:51:29 ERROR: COMMAND_FAILED: '/sbin/iptables -w2 -t filter -C FORWARD -i docker0 ! -o docker0 -j ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Aug 16 16:51:29 centos-72a firewalld[630]: 2016-08-16 16:51:29 ERROR: COMMAND_FAILED: '/sbin/iptables -w2 -t filter -C FORWARD -o docker0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Aug 16 16:51:29 centos-72a firewalld[630]: 2016-08-16 16:51:29 ERROR: COMMAND_FAILED: '/sbin/iptables -w2 -t nat -C PREROUTING -m addrtype --dst-type LOCAL -j DOCKER' failed: iptables: No chain/target/match by that name.
+Aug 16 16:51:29 centos-72a firewalld[630]: 2016-08-16 16:51:29 ERROR: COMMAND_FAILED: '/sbin/iptables -w2 -t nat -C OUTPUT -m addrtype --dst-type LOCAL -j DOCKER ! --dst 127.0.0.0/8' failed: iptables: No chain/target/match by that name.
+Aug 16 16:51:29 centos-72a firewalld[630]: 2016-08-16 16:51:29 ERROR: COMMAND_FAILED: '/sbin/iptables -w2 -t filter -C FORWARD -o docker0 -j DOCKER' failed: iptables: No chain/target/match by that name.
+Aug 16 16:51:29 centos-72a firewalld[630]: 2016-08-16 16:51:29 ERROR: COMMAND_FAILED: '/sbin/iptables -w2 -t filter -C FORWARD -j DOCKER-ISOLATION' failed: iptables: No chain/target/match by that name.
+
+2016-08-16 16:51:57,942 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  firewalld.service
+
+2016-08-16 16:51:57,943 - robin.utils - INFO - Executing command service firewalld stop with timeout 60 seconds
+2016-08-16 16:51:59,388 - robin.utils - INFO - Command service firewalld stop completed with return code 0.
+2016-08-16 16:51:59,388 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl stop  firewalld.service
+
+2016-08-16 16:51:59,389 - robin.utils - INFO - Executing command systemctl is-enabled firewalld.service with timeout 60 seconds
+2016-08-16 16:51:59,404 - robin.utils - INFO - Command systemctl is-enabled firewalld.service completed with return code 0.
+2016-08-16 16:51:59,404 - robin.utils - DEBUG - Standard out: enabled
+
+2016-08-16 16:51:59,404 - robin.utils - INFO - Executing command systemctl disable firewalld.service with timeout 60 seconds
+2016-08-16 16:52:00,391 - robin.utils - INFO - Command systemctl disable firewalld.service completed with return code 0.
+2016-08-16 16:52:00,392 - robin.utils - DEBUG - Standard err: Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
+Removed symlink /etc/systemd/system/basic.target.wants/firewalld.service.
+
+2016-08-16 16:52:00,392 - robin.utils - INFO - Executing command sed -i -r s/Defaults *requiretty/#Defaults    requiretty/ /etc/sudoers with timeout 60 seconds
+2016-08-16 16:52:00,407 - robin.utils - INFO - Command sed -i -r s/Defaults *requiretty/#Defaults    requiretty/ /etc/sudoers completed with return code 0.
+2016-08-16 16:52:00,407 - robin.rcm.setup.host_setup - DEBUG - 
+************************************************************
+Successfully completed Robin Host Setup
+************************************************************
+Executing command
+robin-server-setup --installer --master --consul_servers 1 physical
+2016-08-16 16:52:01,269 - robin.rcm.setup.server_setup - DEBUG - process_args: Namespace(bond_mode='active-backup', cleanup=False, consul_servers='1', database=None, dry_run=False, email=None, firstname=None, force=False, host_type='physical', hostname=None, installer=True, lacp_mode='off', lastname=None, master=True, no_clean=False, password=None, physical_nics=None, port=None, user=None, username=None)
+2016-08-16 16:52:01,269 - robin.rcm.setup.server_setup - DEBUG - process_args: {'HOSTNAME': 'centos-72a.robinsystems.com', 'USER': 'robin', 'BOOTSTRAP_EXPECT': 1, 'PORT': 5432, 'DATABASE': 'robin', 'MASTER_NODE': True}
+2016-08-16 16:52:01,269 - robin.rcm.setup.server_setup - DEBUG - kwargs: {'HOSTNAME': 'centos-72a.robinsystems.com', 'USER': 'robin', 'BOOTSTRAP_EXPECT': 1, 'PORT': 5432, 'DATABASE': 'robin', 'MASTER_NODE': True}
+2016-08-16 16:52:01,269 - robin.rcm.setup.server_setup - DEBUG - 
+************************************************************
+Starting Robin Server Setup
+************************************************************
+2016-08-16 16:52:01,269 - robin.utils - INFO - Executing command service consul-server status with timeout 600 seconds
+2016-08-16 16:52:01,324 - robin.utils - INFO - Command service consul-server status completed with return code 3.
+2016-08-16 16:52:01,324 - robin.utils - DEBUG - Standard out: ● consul-server.service - Consul Server
+   Loaded: loaded (/usr/lib/systemd/system/consul-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,324 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  consul-server.service
+
+2016-08-16 16:52:01,324 - robin.utils - WARNING - Service consul-server requested to stop, but already stopped.
+2016-08-16 16:52:01,324 - robin.utils - INFO - Executing command service postgresql-9.5 status with timeout 600 seconds
+2016-08-16 16:52:01,359 - robin.utils - INFO - Command service postgresql-9.5 status completed with return code 3.
+2016-08-16 16:52:01,360 - robin.utils - DEBUG - Standard out: ● postgresql-9.5.service - PostgreSQL 9.5 database server
+   Loaded: loaded (/usr/lib/systemd/system/postgresql-9.5.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,360 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  postgresql-9.5.service
+
+2016-08-16 16:52:01,360 - robin.utils - WARNING - Service postgresql-9.5 requested to stop, but already stopped.
+2016-08-16 16:52:01,360 - robin.utils - INFO - Executing command service robin-server status with timeout 600 seconds
+2016-08-16 16:52:01,400 - robin.utils - INFO - Command service robin-server status completed with return code 3.
+2016-08-16 16:52:01,400 - robin.utils - DEBUG - Standard out: ● robin-server.service - Robin Central Management Server
+   Loaded: loaded (/usr/lib/systemd/system/robin-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,400 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-server.service
+
+2016-08-16 16:52:01,401 - robin.utils - WARNING - Service robin-server requested to stop, but already stopped.
+2016-08-16 16:52:01,401 - robin.utils - INFO - Executing command service robin-event-server status with timeout 600 seconds
+2016-08-16 16:52:01,434 - robin.utils - INFO - Command service robin-event-server status completed with return code 3.
+2016-08-16 16:52:01,434 - robin.utils - DEBUG - Standard out: ● robin-event-server.service - Robin Central Management Event Server
+   Loaded: loaded (/usr/lib/systemd/system/robin-event-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,434 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-event-server.service
+
+2016-08-16 16:52:01,435 - robin.utils - WARNING - Service robin-event-server requested to stop, but already stopped.
+2016-08-16 16:52:01,435 - robin.utils - INFO - Executing command service robin-file-server status with timeout 600 seconds
+2016-08-16 16:52:01,462 - robin.utils - INFO - Command service robin-file-server status completed with return code 3.
+2016-08-16 16:52:01,462 - robin.utils - DEBUG - Standard out: ● robin-file-server.service - Robin Central Management File Server
+   Loaded: loaded (/usr/lib/systemd/system/robin-file-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,462 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-file-server.service
+
+2016-08-16 16:52:01,462 - robin.utils - WARNING - Service robin-file-server requested to stop, but already stopped.
+2016-08-16 16:52:01,463 - robin.utils - INFO - Executing command service robin-agent status with timeout 600 seconds
+2016-08-16 16:52:01,500 - robin.utils - INFO - Command service robin-agent status completed with return code 3.
+2016-08-16 16:52:01,500 - robin.utils - DEBUG - Standard out: ● robin-agent.service - Robin Central Management Agent
+   Loaded: loaded (/usr/lib/systemd/system/robin-agent.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,500 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-agent.service
+
+2016-08-16 16:52:01,500 - robin.utils - WARNING - Service robin-agent requested to stop, but already stopped.
+2016-08-16 16:52:01,500 - robin.utils - INFO - Executing command service robin-metrics status with timeout 600 seconds
+2016-08-16 16:52:01,529 - robin.utils - INFO - Command service robin-metrics status completed with return code 3.
+2016-08-16 16:52:01,529 - robin.utils - DEBUG - Standard out: ● robin-metrics.service - Robin Metrics Collection Service
+   Loaded: loaded (/usr/lib/systemd/system/robin-metrics.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,529 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-metrics.service
+
+2016-08-16 16:52:01,530 - robin.utils - WARNING - Service robin-metrics requested to stop, but already stopped.
+2016-08-16 16:52:01,530 - robin.utils - INFO - Executing command service nfs-server status with timeout 600 seconds
+2016-08-16 16:52:01,565 - robin.utils - INFO - Command service nfs-server status completed with return code 3.
+2016-08-16 16:52:01,565 - robin.utils - DEBUG - Standard out: ● nfs-server.service - NFS server and services
+   Loaded: loaded (/usr/lib/systemd/system/nfs-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,565 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  nfs-server.service
+
+2016-08-16 16:52:01,566 - robin.utils - WARNING - Service nfs-server requested to stop, but already stopped.
+2016-08-16 16:52:01,566 - robin.utils - INFO - Executing command service gui-cli status with timeout 600 seconds
+2016-08-16 16:52:01,593 - robin.utils - INFO - Command service gui-cli status completed with return code 3.
+2016-08-16 16:52:01,593 - robin.utils - DEBUG - Standard out: ● gui-cli.service - Robin GUI CLI Server
+   Loaded: loaded (/usr/lib/systemd/system/gui-cli.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,593 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  gui-cli.service
+
+2016-08-16 16:52:01,594 - robin.utils - WARNING - Service gui-cli requested to stop, but already stopped.
+2016-08-16 16:52:01,594 - robin.utils - INFO - Executing command service stormgr-server status with timeout 600 seconds
+2016-08-16 16:52:01,628 - robin.utils - INFO - Command service stormgr-server status completed with return code 3.
+2016-08-16 16:52:01,629 - robin.utils - DEBUG - Standard out: ● stormgr-server.service - Storage Manager
+   Loaded: loaded (/usr/lib/systemd/system/stormgr-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,629 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  stormgr-server.service
+
+2016-08-16 16:52:01,629 - robin.utils - WARNING - Service stormgr-server requested to stop, but already stopped.
+2016-08-16 16:52:01,629 - robin.utils - INFO - Executing command service rio-server status with timeout 600 seconds
+2016-08-16 16:52:01,659 - robin.utils - INFO - Command service rio-server status completed with return code 3.
+2016-08-16 16:52:01,660 - robin.utils - DEBUG - Standard out: ● rio-server.service - Robin I/O Server
+   Loaded: loaded (/usr/lib/systemd/system/rio-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,660 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  rio-server.service
+
+2016-08-16 16:52:01,660 - robin.utils - WARNING - Service rio-server requested to stop, but already stopped.
+2016-08-16 16:52:01,660 - robin.utils - INFO - Executing command service rdvm-server status with timeout 600 seconds
+2016-08-16 16:52:01,690 - robin.utils - INFO - Command service rdvm-server status completed with return code 3.
+2016-08-16 16:52:01,690 - robin.utils - DEBUG - Standard out: ● rdvm-server.service - Robin Distributed Volume Manager
+   Loaded: loaded (/usr/lib/systemd/system/rdvm-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:01,690 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  rdvm-server.service
+
+2016-08-16 16:52:01,690 - robin.utils - WARNING - Service rdvm-server requested to stop, but already stopped.
+2016-08-16 16:52:01,690 - robin.utils - INFO - Executing command service docker status with timeout 600 seconds
+2016-08-16 16:52:01,724 - robin.utils - INFO - Command service docker status completed with return code 0.
+2016-08-16 16:52:01,724 - robin.utils - DEBUG - Standard out: ● docker.service - Docker Application Container Engine
+   Loaded: loaded (/usr/lib/systemd/system/docker.service; disabled; vendor preset: disabled)
+  Drop-In: /etc/systemd/system/docker.service.d
+           └─docker.conf
+   Active: active (running) since Tue 2016-08-16 16:51:29 CDT; 31s ago
+     Docs: https://docs.docker.com
+ Main PID: 5970 (dockerd)
+   CGroup: /system.slice/docker.service
+           ├─5970 dockerd --log-opt max-size=50m --log-opt max-file=2 --live-restore
+           └─5975 docker-containerd -l unix:///var/run/docker/libcontainerd/docker-containerd.sock --shim docker-containerd-shim --metrics-interval=0 --start-timeout 2m --state-dir /var/run/docker/libcontainerd/containerd --runtime docker-runc
+
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.275017356-05:00" level=warning msg="mountpoint for pids not found"
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.275221049-05:00" level=info msg="Loading containers: start."
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.284745367-05:00" level=info msg="Firewalld running: true"
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.548576411-05:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.894009306-05:00" level=info msg="Loading containers: done."
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.894671690-05:00" level=info msg="Daemon has completed initialization"
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.894710051-05:00" level=info msg="Docker daemon" commit=8eab29e graphdriver=devicemapper version=1.12.0
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.918741350-05:00" level=info msg="API listen on /var/run/docker.sock"
+Aug 16 16:51:29 centos-72a systemd[1]: Started Docker Application Container Engine.
+Aug 16 16:51:59 centos-72a docker[5970]: time="2016-08-16T16:51:59.385246349-05:00" level=info msg="Firewalld running: false"
+
+2016-08-16 16:52:01,724 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  docker.service
+
+2016-08-16 16:52:01,724 - robin.utils - INFO - Executing command service docker stop with timeout 60 seconds
+2016-08-16 16:52:02,926 - robin.utils - INFO - Command service docker stop completed with return code 0.
+2016-08-16 16:52:02,926 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl stop  docker.service
+
+2016-08-16 16:52:02,926 - robin.rcm.setup.install_utils - INFO - Setting up network
+2016-08-16 16:52:02,928 - robin.rcm.setup.install_utils - DEBUG - Checking hosts file
+2016-08-16 16:52:03,013 - robin.rcm.setup.install_utils - DEBUG - 
+Executing following script
+**********************************************************************
+#!/bin/bash
+
+unlink robin_setup.sh
+set -e
+
+ovs-vsctl --if-exists del-br br0
+ovs-vsctl add-br br0
+ovs-vsctl --may-exist add-port br0 enp0s8
+ip link set dev br0 up
+ip addr del 10.207.39.12/24 dev enp0s8
+ip addr add 10.207.39.12/24 broadcast 10.207.39.255 dev br0
+ip route add default via 10.207.39.1 dev br0
+
+
+**********************************************************************
+2016-08-16 16:52:03,013 - robin.utils - INFO - Executing command ./robin_setup.sh with timeout 60 seconds
+2016-08-16 16:52:03,206 - robin.utils - INFO - Command ./robin_setup.sh completed with return code 0.
+2016-08-16 16:52:03,206 - robin.rcm.setup.install_utils - DEBUG - Successfully executed the script
+2016-08-16 16:52:03,206 - robin.rcm.setup.install_utils - WARNING - No configuration found for interface enp0s8, using static mode.
+2016-08-16 16:52:03,207 - robin.rcm.setup.install_utils - WARNING - Unable to find configuration for interface enp0s8
+2016-08-16 16:52:03,208 - robin.utils - INFO - Executing command sed -i /^$/N;/^\n$/D /etc/sysconfig/network-scripts/ifcfg-enp0s8 with timeout 60 seconds
+2016-08-16 16:52:03,211 - robin.utils - INFO - Command sed -i /^$/N;/^\n$/D /etc/sysconfig/network-scripts/ifcfg-enp0s8 completed with return code 0.
+2016-08-16 16:52:03,211 - robin.utils - INFO - Executing command service NetworkManager status with timeout 600 seconds
+2016-08-16 16:52:03,250 - robin.utils - INFO - Command service NetworkManager status completed with return code 0.
+2016-08-16 16:52:03,250 - robin.utils - DEBUG - Standard out: ● NetworkManager.service - Network Manager
+   Loaded: loaded (/usr/lib/systemd/system/NetworkManager.service; enabled; vendor preset: enabled)
+   Active: active (running) since Tue 2016-08-16 16:27:19 CDT; 24min ago
+ Main PID: 871 (NetworkManager)
+   CGroup: /system.slice/NetworkManager.service
+           ├─ 871 /usr/sbin/NetworkManager --no-daemon
+           └─1223 /sbin/dhclient -d -q -sf /usr/libexec/nm-dhcp-helper -pf /var/run/dhclient-enp0s8.pid -lf /var/lib/NetworkManager/dhclient-8f2a270e-0122-4f4b-95a3-92d431f95c78-enp0s8.lease -cf /var/lib/NetworkManager/dhclient-enp0s8.conf enp0s8
+
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): new Generic device (carrier: OFF, driver: 'openvswitch', ifindex: 7)
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (enp0s8): enslaved to non-master-type device ovs-system; ignoring
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): link connected
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  keyfile: add connection in-memory (e17192e8-4cc2-48f3-bdf6-ea0c9c16bed8,"br0")
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: unmanaged -> unavailable (reason 'connection-assumed') [10 20 41]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: unavailable -> disconnected (reason 'connection-assumed') [20 30 41]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): Activation: starting connection 'br0' (e17192e8-4cc2-48f3-bdf6-ea0c9c16bed8)
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: config -> ip-config (reason 'none') [50 70 0]
+
+2016-08-16 16:52:03,250 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  NetworkManager.service
+
+2016-08-16 16:52:03,251 - robin.utils - INFO - Executing command service NetworkManager status with timeout 600 seconds
+2016-08-16 16:52:03,300 - robin.utils - INFO - Command service NetworkManager status completed with return code 0.
+2016-08-16 16:52:03,301 - robin.utils - DEBUG - Standard out: ● NetworkManager.service - Network Manager
+   Loaded: loaded (/usr/lib/systemd/system/NetworkManager.service; enabled; vendor preset: enabled)
+   Active: active (running) since Tue 2016-08-16 16:27:19 CDT; 24min ago
+ Main PID: 871 (NetworkManager)
+   CGroup: /system.slice/NetworkManager.service
+           ├─ 871 /usr/sbin/NetworkManager --no-daemon
+           └─1223 /sbin/dhclient -d -q -sf /usr/libexec/nm-dhcp-helper -pf /var/run/dhclient-enp0s8.pid -lf /var/lib/NetworkManager/dhclient-8f2a270e-0122-4f4b-95a3-92d431f95c78-enp0s8.lease -cf /var/lib/NetworkManager/dhclient-enp0s8.conf enp0s8
+
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  keyfile: add connection in-memory (e17192e8-4cc2-48f3-bdf6-ea0c9c16bed8,"br0")
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: unmanaged -> unavailable (reason 'connection-assumed') [10 20 41]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: unavailable -> disconnected (reason 'connection-assumed') [20 30 41]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): Activation: starting connection 'br0' (e17192e8-4cc2-48f3-bdf6-ea0c9c16bed8)
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: ip-config -> ip-check (reason 'none') [70 80 0]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: ip-check -> secondaries (reason 'none') [80 90 0]
+Aug 16 16:52:03 centos-72a NetworkManager[871]: <info>  (br0): device state change: secondaries -> activated (reason 'none') [90 100 0]
+
+2016-08-16 16:52:03,301 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  NetworkManager.service
+
+2016-08-16 16:52:03,301 - robin.utils - INFO - Executing command service NetworkManager restart with timeout 60 seconds
+2016-08-16 16:52:05,209 - robin.utils - INFO - Command service NetworkManager restart completed with return code 0.
+2016-08-16 16:52:05,210 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl restart  NetworkManager.service
+
+2016-08-16 16:52:08,165 - robin.rcm.setup.install_utils - INFO - Verifying system requirements
+2016-08-16 16:52:08,166 - robin.rcm.setup.install_utils - DEBUG - Detected 1.8 GB of system memory for which 2GB of swap is recommended
+2016-08-16 16:52:08,166 - robin.rcm.setup.install_utils - DEBUG - Check if swap is enabled
+2016-08-16 16:52:08,166 - robin.utils - INFO - Executing command cat /proc/swaps with timeout 60 seconds
+2016-08-16 16:52:08,170 - robin.utils - INFO - Command cat /proc/swaps completed with return code 0.
+2016-08-16 16:52:08,170 - robin.utils - DEBUG - Standard out: Filename				Type		Size	Used	Priority
+/dev/dm-1                               partition	2097148	24	-1
+
+2016-08-16 16:52:08,170 - robin.rcm.setup.install_utils - DEBUG - Swap partition(s) found
+2016-08-16 16:52:08,171 - robin.rcm.setup.install_utils - WARNING - WARNING: Total swap space of 2.0 GB is less than the recommended swap size of 2GB.
+2016-08-16 16:52:08,171 - robin.rcm.setup.install_utils - DEBUG - Configuring DNS
+2016-08-16 16:52:08,171 - robin.rcm.setup.install_utils - DEBUG - Modifying /etc/resolv.conf
+2016-08-16 16:52:08,172 - robin.rcm.setup.install_utils - DEBUG - Localhost not found in nameserver list and will be added
+2016-08-16 16:52:08,173 - robin.rcm.setup.install_utils - DEBUG - Contents of /etc/resolv.conf: # Generated by NetworkManager
+search robinsystems.com
+nameserver 127.0.0.1
+nameserver 10.207.39.1
+
+2016-08-16 16:52:08,174 - robin.utils - INFO - Executing command systemctl enable iptables.service with timeout 60 seconds
+2016-08-16 16:52:08,394 - robin.utils - INFO - Command systemctl enable iptables.service completed with return code 0.
+2016-08-16 16:52:08,395 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/basic.target.wants/iptables.service to /usr/lib/systemd/system/iptables.service.
+
+2016-08-16 16:52:08,502 - robin.utils - INFO - Executing command iptables -t nat -A OUTPUT -d 127.0.0.1 -p udp --dport 53 -j DNAT --to 127.0.0.1:8600 with timeout 60 seconds
+2016-08-16 16:52:08,703 - robin.utils - INFO - Command iptables -t nat -A OUTPUT -d 127.0.0.1 -p udp --dport 53 -j DNAT --to 127.0.0.1:8600 completed with return code 0.
+2016-08-16 16:52:08,703 - robin.utils - INFO - Executing command iptables -t nat -A OUTPUT -d 127.0.0.1 -p tcp --dport 53 -j DNAT --to 127.0.0.1:8600 with timeout 60 seconds
+2016-08-16 16:52:08,706 - robin.utils - INFO - Command iptables -t nat -A OUTPUT -d 127.0.0.1 -p tcp --dport 53 -j DNAT --to 127.0.0.1:8600 completed with return code 0.
+2016-08-16 16:52:08,951 - robin.utils - INFO - Executing command service docker status with timeout 600 seconds
+2016-08-16 16:52:08,995 - robin.utils - INFO - Command service docker status completed with return code 3.
+2016-08-16 16:52:08,996 - robin.utils - DEBUG - Standard out: ● docker.service - Docker Application Container Engine
+   Loaded: loaded (/usr/lib/systemd/system/docker.service; disabled; vendor preset: disabled)
+  Drop-In: /etc/systemd/system/docker.service.d
+           └─docker.conf
+   Active: inactive (dead)
+     Docs: https://docs.docker.com
+
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.894009306-05:00" level=info msg="Loading containers: done."
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.894671690-05:00" level=info msg="Daemon has completed initialization"
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.894710051-05:00" level=info msg="Docker daemon" commit=8eab29e graphdriver=devicemapper version=1.12.0
+Aug 16 16:51:29 centos-72a docker[5970]: time="2016-08-16T16:51:29.918741350-05:00" level=info msg="API listen on /var/run/docker.sock"
+Aug 16 16:51:29 centos-72a systemd[1]: Started Docker Application Container Engine.
+Aug 16 16:51:59 centos-72a docker[5970]: time="2016-08-16T16:51:59.385246349-05:00" level=info msg="Firewalld running: false"
+Aug 16 16:52:01 centos-72a systemd[1]: Stopping Docker Application Container Engine...
+Aug 16 16:52:01 centos-72a docker[5970]: time="2016-08-16T16:52:01.862087529-05:00" level=info msg="Processing signal 'terminated'"
+Aug 16 16:52:01 centos-72a docker[5970]: time="2016-08-16T16:52:01.897051879-05:00" level=info msg="stopping containerd after receiving terminated"
+Aug 16 16:52:02 centos-72a systemd[1]: Stopped Docker Application Container Engine.
+
+2016-08-16 16:52:08,996 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  docker.service
+
+2016-08-16 16:52:08,996 - robin.utils - INFO - Executing command service docker start with timeout 60 seconds
+2016-08-16 16:52:10,806 - robin.utils - INFO - Command service docker start completed with return code 0.
+2016-08-16 16:52:10,806 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  docker.service
+
+2016-08-16 16:52:10,806 - robin.utils - INFO - Executing command systemctl enable docker.service with timeout 60 seconds
+2016-08-16 16:52:11,749 - robin.utils - INFO - Command systemctl enable docker.service completed with return code 0.
+2016-08-16 16:52:11,749 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service.
+
+2016-08-16 16:52:11,749 - robin.rcm.setup.server_setup - INFO - Setting up Consul server
+2016-08-16 16:52:11,750 - robin.setup.consul_setup.setup_consul_config_json - DEBUG - Entering: robin.setup.consul_setup.setup_consul_config_json(/etc/consul/server/config.json.template, /etc/consul/server/config.json, ADVERTISE_ADDR=10.207.39.12, USER=robin, BOOTSTRAP_EXPECT=1, PORT=5432, DOMAIN=robin, DATABASE=robin, HOSTNAME=centos-72a.robinsystems.com, MASTER_NODE=True)
+2016-08-16 16:52:11,756 - robin.setup.consul_setup.setup_consul_config_json - DEBUG - Leaving: robin.setup.consul_setup.setup_consul_config_json(/etc/consul/server/config.json.template, /etc/consul/server/config.json, ADVERTISE_ADDR=10.207.39.12, USER=robin, BOOTSTRAP_EXPECT=1, PORT=5432, DOMAIN=robin, DATABASE=robin, HOSTNAME=centos-72a.robinsystems.com, MASTER_NODE=True)
+2016-08-16 16:52:11,787 - robin.utils - INFO - Executing command service consul-server status with timeout 600 seconds
+2016-08-16 16:52:11,820 - robin.utils - INFO - Command service consul-server status completed with return code 3.
+2016-08-16 16:52:11,821 - robin.utils - DEBUG - Standard out: ● consul-server.service - Consul Server
+   Loaded: loaded (/usr/lib/systemd/system/consul-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:11,821 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  consul-server.service
+
+2016-08-16 16:52:11,821 - robin.utils - INFO - Executing command service consul-server start with timeout 60 seconds
+2016-08-16 16:52:12,952 - robin.utils - INFO - Command service consul-server start completed with return code 0.
+2016-08-16 16:52:12,952 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  consul-server.service
+
+2016-08-16 16:52:12,953 - robin.utils - INFO - Executing command systemctl enable consul-server.service with timeout 60 seconds
+2016-08-16 16:52:14,268 - robin.utils - INFO - Command systemctl enable consul-server.service completed with return code 0.
+2016-08-16 16:52:14,268 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/default.target.wants/consul-server.service to /usr/lib/systemd/system/consul-server.service.
+
+2016-08-16 16:52:14,269 - robin.utils - INFO - Executing command systemctl enable postgresql-9.5.service with timeout 60 seconds
+2016-08-16 16:52:15,530 - robin.utils - INFO - Command systemctl enable postgresql-9.5.service completed with return code 0.
+2016-08-16 16:52:15,530 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/postgresql-9.5.service to /usr/lib/systemd/system/postgresql-9.5.service.
+
+2016-08-16 16:52:15,531 - robin.utils - INFO - Executing command /usr/pgsql-9.5/bin/postgresql95-check-db-dir /var/lib/pgsql/9.5/data with timeout 60 seconds
+2016-08-16 16:52:15,544 - robin.utils - ERROR - Command /usr/pgsql-9.5/bin/postgresql95-check-db-dir /var/lib/pgsql/9.5/data failed with return code 1.
+2016-08-16 16:52:15,544 - robin.utils - ERROR - Standard out: "/var/lib/pgsql/9.5/data" is missing or empty.
+Use "/usr/pgsql-9.5/bin/postgresql95-setup initdb" to initialize the database cluster.
+See %{_pkgdocdir}/README.rpm-dist for more information.
+
+2016-08-16 16:52:15,544 - robin.rcm.setup.server_setup - DEBUG - Postgresql DB not initialized, initializing
+2016-08-16 16:52:15,544 - robin.utils - INFO - Executing command /usr/pgsql-9.5/bin/postgresql95-setup initdb with timeout 120 seconds
+2016-08-16 16:52:22,940 - robin.utils - INFO - Command /usr/pgsql-9.5/bin/postgresql95-setup initdb completed with return code 0.
+2016-08-16 16:52:22,940 - robin.utils - DEBUG - Standard out: Initializing database ... OK
+
+
+2016-08-16 16:52:22,945 - robin.utils - INFO - Executing command adduser --home /var/lib/robin robin with timeout 60 seconds
+2016-08-16 16:52:23,122 - robin.utils - INFO - Command adduser --home /var/lib/robin robin completed with return code 0.
+2016-08-16 16:52:24,146 - robin.utils - INFO - Executing command service postgresql-9.5 restart with timeout 60 seconds
+2016-08-16 16:52:26,091 - robin.utils - INFO - Command service postgresql-9.5 restart completed with return code 0.
+2016-08-16 16:52:26,091 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl restart  postgresql-9.5.service
+
+2016-08-16 16:52:26,091 - robin.utils - INFO - Executing command sudo -u postgres -i createuser -D -A robin with timeout 60 seconds
+2016-08-16 16:52:26,771 - robin.utils - INFO - Command sudo -u postgres -i createuser -D -A robin completed with return code 0.
+2016-08-16 16:52:26,771 - robin.rcm.setup.server_setup - DEBUG - Added database user robin
+2016-08-16 16:52:26,771 - robin.utils - INFO - Executing command sudo -u postgres -i psql -c ALTER USER robin PASSWORD 'hFUgsHdv'; with timeout 60 seconds
+2016-08-16 16:52:27,083 - robin.utils - INFO - Command sudo -u postgres -i psql -c ALTER USER robin PASSWORD 'hFUgsHdv'; completed with return code 0.
+2016-08-16 16:52:27,083 - robin.utils - DEBUG - Standard out: ALTER ROLE
+
+2016-08-16 16:52:27,083 - robin.rcm.setup.server_setup - DEBUG - Updated password for database user robin
+2016-08-16 16:52:27,083 - robin.rcm.setup.server_setup - DEBUG - Creating PGSQL replication user
+2016-08-16 16:52:27,156 - robin.utils - INFO - Executing command /opt/robin/install/scripts/check_db robin with timeout 60 seconds
+2016-08-16 16:52:27,290 - robin.utils - INFO - Command /opt/robin/install/scripts/check_db robin completed with return code 1.
+2016-08-16 16:52:27,290 - robin.utils - INFO - Executing command sudo -u postgres -i createdb -O robin robin with timeout 60 seconds
+2016-08-16 16:52:28,146 - robin.utils - INFO - Command sudo -u postgres -i createdb -O robin robin completed with return code 0.
+2016-08-16 16:52:28,146 - robin.rcm.setup.server_setup - DEBUG - Create postgres database robin
+2016-08-16 16:52:28,147 - robin.rcm.setup.server_setup - INFO - Postgres database setup completed successfully
+2016-08-16 16:52:28,147 - robin.utils - INFO - Executing command service robin-event-server status with timeout 600 seconds
+2016-08-16 16:52:28,194 - robin.utils - INFO - Command service robin-event-server status completed with return code 3.
+2016-08-16 16:52:28,194 - robin.utils - DEBUG - Standard out: ● robin-event-server.service - Robin Central Management Event Server
+   Loaded: loaded (/usr/lib/systemd/system/robin-event-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:28,194 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-event-server.service
+
+2016-08-16 16:52:28,194 - robin.utils - INFO - Executing command service robin-event-server start with timeout 60 seconds
+2016-08-16 16:52:28,254 - robin.utils - INFO - Command service robin-event-server start completed with return code 0.
+2016-08-16 16:52:28,254 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  robin-event-server.service
+
+2016-08-16 16:52:29,264 - robin.utils - INFO - Executing command service robin-server status with timeout 600 seconds
+2016-08-16 16:52:29,375 - robin.utils - INFO - Command service robin-server status completed with return code 3.
+2016-08-16 16:52:29,375 - robin.utils - DEBUG - Standard out: ● robin-server.service - Robin Central Management Server
+   Loaded: loaded (/usr/lib/systemd/system/robin-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:29,375 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-server.service
+
+2016-08-16 16:52:29,376 - robin.utils - INFO - Executing command service robin-server start with timeout 60 seconds
+2016-08-16 16:52:30,673 - robin.utils - INFO - Command service robin-server start completed with return code 0.
+2016-08-16 16:52:30,673 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  robin-server.service
+
+2016-08-16 16:52:35,677 - robin.utils - INFO - Executing command service robin-file-server status with timeout 600 seconds
+2016-08-16 16:52:35,714 - robin.utils - INFO - Command service robin-file-server status completed with return code 3.
+2016-08-16 16:52:35,715 - robin.utils - DEBUG - Standard out: ● robin-file-server.service - Robin Central Management File Server
+   Loaded: loaded (/usr/lib/systemd/system/robin-file-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:35,715 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-file-server.service
+
+2016-08-16 16:52:35,715 - robin.utils - INFO - Executing command service robin-file-server start with timeout 60 seconds
+2016-08-16 16:52:35,794 - robin.utils - INFO - Command service robin-file-server start completed with return code 0.
+2016-08-16 16:52:35,795 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  robin-file-server.service
+
+2016-08-16 16:52:36,811 - robin.utils - INFO - Executing command service robin-agent status with timeout 600 seconds
+2016-08-16 16:52:36,879 - robin.utils - INFO - Command service robin-agent status completed with return code 3.
+2016-08-16 16:52:36,879 - robin.utils - DEBUG - Standard out: ● robin-agent.service - Robin Central Management Agent
+   Loaded: loaded (/usr/lib/systemd/system/robin-agent.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:36,879 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-agent.service
+
+2016-08-16 16:52:36,880 - robin.utils - INFO - Executing command service robin-agent start with timeout 60 seconds
+2016-08-16 16:52:37,747 - robin.utils - INFO - Command service robin-agent start completed with return code 0.
+2016-08-16 16:52:37,747 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  robin-agent.service
+
+2016-08-16 16:52:47,758 - robin.utils - INFO - Executing command service robin-metrics status with timeout 600 seconds
+2016-08-16 16:52:48,007 - robin.utils - INFO - Command service robin-metrics status completed with return code 3.
+2016-08-16 16:52:48,008 - robin.utils - DEBUG - Standard out: ● robin-metrics.service - Robin Metrics Collection Service
+   Loaded: loaded (/usr/lib/systemd/system/robin-metrics.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:48,008 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-metrics.service
+
+2016-08-16 16:52:48,008 - robin.utils - INFO - Executing command service robin-metrics start with timeout 60 seconds
+2016-08-16 16:52:48,045 - robin.utils - INFO - Command service robin-metrics start completed with return code 0.
+2016-08-16 16:52:48,046 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  robin-metrics.service
+
+2016-08-16 16:52:48,046 - robin.utils - INFO - Executing command service nfs-server status with timeout 600 seconds
+2016-08-16 16:52:48,085 - robin.utils - INFO - Command service nfs-server status completed with return code 3.
+2016-08-16 16:52:48,085 - robin.utils - DEBUG - Standard out: ● nfs-server.service - NFS server and services
+   Loaded: loaded (/usr/lib/systemd/system/nfs-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:48,085 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  nfs-server.service
+
+2016-08-16 16:52:48,086 - robin.utils - INFO - Executing command service nfs-server start with timeout 60 seconds
+2016-08-16 16:52:51,369 - robin.utils - INFO - Command service nfs-server start completed with return code 0.
+2016-08-16 16:52:51,369 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  nfs-server.service
+
+2016-08-16 16:52:51,382 - robin.utils - INFO - Executing command systemctl enable robin-event-server.service with timeout 60 seconds
+2016-08-16 16:52:52,394 - robin.utils - INFO - Command systemctl enable robin-event-server.service completed with return code 0.
+2016-08-16 16:52:52,395 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/robin-event-server.service to /usr/lib/systemd/system/robin-event-server.service.
+
+2016-08-16 16:52:52,395 - robin.utils - INFO - Executing command systemctl enable robin-server.service with timeout 60 seconds
+2016-08-16 16:52:53,619 - robin.utils - INFO - Command systemctl enable robin-server.service completed with return code 0.
+2016-08-16 16:52:53,619 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/robin-server.service to /usr/lib/systemd/system/robin-server.service.
+
+2016-08-16 16:52:53,620 - robin.utils - INFO - Executing command systemctl enable robin-file-server.service with timeout 60 seconds
+2016-08-16 16:52:54,949 - robin.utils - INFO - Command systemctl enable robin-file-server.service completed with return code 0.
+2016-08-16 16:52:54,949 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/robin-file-server.service to /usr/lib/systemd/system/robin-file-server.service.
+
+2016-08-16 16:52:54,950 - robin.utils - INFO - Executing command systemctl enable robin-agent.service with timeout 60 seconds
+2016-08-16 16:52:56,444 - robin.utils - INFO - Command systemctl enable robin-agent.service completed with return code 0.
+2016-08-16 16:52:56,445 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/robin-agent.service to /usr/lib/systemd/system/robin-agent.service.
+
+2016-08-16 16:52:56,445 - robin.utils - INFO - Executing command systemctl enable robin-metrics.service with timeout 60 seconds
+2016-08-16 16:52:57,725 - robin.utils - INFO - Command systemctl enable robin-metrics.service completed with return code 0.
+2016-08-16 16:52:57,725 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/robin-metrics.service to /usr/lib/systemd/system/robin-metrics.service.
+
+2016-08-16 16:52:57,726 - robin.utils - INFO - Executing command systemctl enable nfs-server.service with timeout 60 seconds
+2016-08-16 16:52:59,020 - robin.utils - INFO - Command systemctl enable nfs-server.service completed with return code 0.
+2016-08-16 16:52:59,020 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/nfs-server.service to /usr/lib/systemd/system/nfs-server.service.
+
+2016-08-16 16:52:59,020 - robin.rcm.setup.install_utils - INFO - Setting up storage
+2016-08-16 16:52:59,021 - robin.utils - INFO - Executing command service stormgr-server status with timeout 600 seconds
+2016-08-16 16:52:59,061 - robin.utils - INFO - Command service stormgr-server status completed with return code 3.
+2016-08-16 16:52:59,061 - robin.utils - DEBUG - Standard out: ● stormgr-server.service - Storage Manager
+   Loaded: loaded (/usr/lib/systemd/system/stormgr-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:52:59,061 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  stormgr-server.service
+
+2016-08-16 16:52:59,061 - robin.utils - INFO - Executing command service stormgr-server start with timeout 60 seconds
+2016-08-16 16:53:00,626 - robin.utils - INFO - Command service stormgr-server start completed with return code 0.
+2016-08-16 16:53:00,626 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  stormgr-server.service
+
+2016-08-16 16:53:00,627 - robin.utils - INFO - Executing command systemctl enable stormgr-server.service with timeout 60 seconds
+2016-08-16 16:53:01,660 - robin.utils - INFO - Command systemctl enable stormgr-server.service completed with return code 0.
+2016-08-16 16:53:01,660 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/stormgr-server.service to /usr/lib/systemd/system/stormgr-server.service.
+
+2016-08-16 16:53:01,660 - robin.rcm.setup.install_utils - DEBUG - Checking to see if stormgr-server responds commands
+2016-08-16 16:53:01,661 - robin.rcm.setup.upgrade_utils - DEBUG - Connecting to REST API at: http://localhost:6001/vols, attempt (1/5)...
+2016-08-16 16:53:01,661 - robin.rcm.setup.upgrade_utils - DEBUG - Header: {'content-type': 'application/json'}
+2016-08-16 16:53:01,671 - robin.rcm.setup.upgrade_utils - DEBUG - Connection error, sleeping for 30 seconds before retrying.
+2016-08-16 16:53:31,700 - robin.rcm.setup.upgrade_utils - DEBUG - Connecting to REST API at: http://localhost:6001/vols, attempt (2/5)...
+2016-08-16 16:53:31,701 - robin.rcm.setup.upgrade_utils - DEBUG - Header: {'content-type': 'application/json'}
+2016-08-16 16:53:31,709 - robin.rcm.setup.upgrade_utils - DEBUG - Status: 200
+2016-08-16 16:53:31,709 - robin.rcm.setup.upgrade_utils - DEBUG - Text: []
+2016-08-16 16:53:31,709 - robin.rcm.setup.upgrade_utils - INFO - JSON object retrieved for: 
+2016-08-16 16:53:31,709 - robin.rcm.setup.install_utils - DEBUG - stormgr-server service has responded
+2016-08-16 16:53:31,710 - robin.utils - INFO - Executing command rio-server -r 10.207.39.12 with timeout 60 seconds
+2016-08-16 16:53:32,139 - robin.utils - INFO - Command rio-server -r 10.207.39.12 completed with return code 0.
+2016-08-16 16:53:32,140 - robin.utils - DEBUG - Standard out: This node has successfully registered with Storage Manager running on '10.207.39.12:5001'
+
+2016-08-16 16:53:32,140 - robin.utils - INFO - Executing command service rio-server status with timeout 600 seconds
+2016-08-16 16:53:32,187 - robin.utils - INFO - Command service rio-server status completed with return code 3.
+2016-08-16 16:53:32,187 - robin.utils - DEBUG - Standard out: ● rio-server.service - Robin I/O Server
+   Loaded: loaded (/usr/lib/systemd/system/rio-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:53:32,188 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  rio-server.service
+
+2016-08-16 16:53:32,188 - robin.utils - INFO - Executing command service rio-server start with timeout 60 seconds
+2016-08-16 16:53:32,366 - robin.utils - INFO - Command service rio-server start completed with return code 0.
+2016-08-16 16:53:32,366 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  rio-server.service
+
+2016-08-16 16:53:32,366 - robin.utils - INFO - Executing command rdvm-server -r 10.207.39.12 with timeout 60 seconds
+2016-08-16 16:53:32,565 - robin.utils - INFO - Command rdvm-server -r 10.207.39.12 completed with return code 0.
+2016-08-16 16:53:32,565 - robin.utils - DEBUG - Standard out: RDVM has successfully registered with Storage Manager running on '10.207.39.12:5001'
+2016-08-16 16:53:32,565 - robin.utils - INFO - Executing command service rdvm-server status with timeout 600 seconds
+2016-08-16 16:53:32,603 - robin.utils - INFO - Command service rdvm-server status completed with return code 3.
+2016-08-16 16:53:32,604 - robin.utils - DEBUG - Standard out: ● rdvm-server.service - Robin Distributed Volume Manager
+   Loaded: loaded (/usr/lib/systemd/system/rdvm-server.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:53:32,604 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  rdvm-server.service
+
+2016-08-16 16:53:32,604 - robin.utils - INFO - Executing command service rdvm-server start with timeout 60 seconds
+2016-08-16 16:53:33,889 - robin.utils - INFO - Command service rdvm-server start completed with return code 0.
+2016-08-16 16:53:33,889 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  rdvm-server.service
+
+2016-08-16 16:53:33,890 - robin.utils - INFO - Executing command systemctl enable rio-server.service with timeout 60 seconds
+2016-08-16 16:53:35,461 - robin.utils - INFO - Command systemctl enable rio-server.service completed with return code 0.
+2016-08-16 16:53:35,461 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/rio-server.service to /usr/lib/systemd/system/rio-server.service.
+
+2016-08-16 16:53:35,462 - robin.utils - INFO - Executing command systemctl enable rdvm-server.service with timeout 60 seconds
+2016-08-16 16:53:36,812 - robin.utils - INFO - Command systemctl enable rdvm-server.service completed with return code 0.
+2016-08-16 16:53:36,812 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/rdvm-server.service to /usr/lib/systemd/system/rdvm-server.service.
+
+2016-08-16 16:53:36,812 - robin.rcm.setup.install_utils - INFO - Setting up UI
+2016-08-16 16:53:36,834 - robin.utils - INFO - Executing command service httpd status with timeout 600 seconds
+2016-08-16 16:53:36,877 - robin.utils - INFO - Command service httpd status completed with return code 0.
+2016-08-16 16:53:36,878 - robin.utils - DEBUG - Standard out: ● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:51:42 CDT; 1min 54s ago
+     Docs: man:httpd(8)
+           man:apachectl(8)
+ Main PID: 6165 (httpd)
+   Status: "Total requests: 0; Current requests/sec: 0; Current traffic:   0 B/sec"
+   CGroup: /system.slice/httpd.service
+           ├─6165 /usr/sbin/httpd -DFOREGROUND
+           ├─6166 /usr/sbin/httpd -DFOREGROUND
+           ├─6167 /usr/sbin/httpd -DFOREGROUND
+           ├─6168 /usr/sbin/httpd -DFOREGROUND
+           ├─6169 /usr/sbin/httpd -DFOREGROUND
+           └─6170 /usr/sbin/httpd -DFOREGROUND
+
+Aug 16 16:51:42 centos-72a systemd[1]: Starting The Apache HTTP Server...
+Aug 16 16:51:42 centos-72a systemd[1]: Started The Apache HTTP Server.
+
+2016-08-16 16:53:36,878 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  httpd.service
+
+2016-08-16 16:53:36,878 - robin.utils - INFO - Executing command service httpd graceful with timeout 60 seconds
+2016-08-16 16:53:39,856 - robin.utils - INFO - Command service httpd graceful completed with return code 0.
+2016-08-16 16:53:39,857 - robin.utils - INFO - Executing command systemctl enable httpd.service with timeout 60 seconds
+2016-08-16 16:53:40,788 - robin.utils - INFO - Command systemctl enable httpd.service completed with return code 0.
+2016-08-16 16:53:40,788 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
+
+2016-08-16 16:53:40,788 - robin.utils - INFO - Executing command service gui-cli status with timeout 600 seconds
+2016-08-16 16:53:40,833 - robin.utils - INFO - Command service gui-cli status completed with return code 3.
+2016-08-16 16:53:40,833 - robin.utils - DEBUG - Standard out: ● gui-cli.service - Robin GUI CLI Server
+   Loaded: loaded (/usr/lib/systemd/system/gui-cli.service; disabled; vendor preset: disabled)
+   Active: inactive (dead)
+
+2016-08-16 16:53:40,833 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  gui-cli.service
+
+2016-08-16 16:53:40,834 - robin.utils - INFO - Executing command service gui-cli start with timeout 60 seconds
+2016-08-16 16:53:42,933 - robin.utils - INFO - Command service gui-cli start completed with return code 0.
+2016-08-16 16:53:42,934 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl start  gui-cli.service
+
+2016-08-16 16:53:42,935 - robin.utils - INFO - Executing command systemctl enable gui-cli.service with timeout 60 seconds
+2016-08-16 16:53:43,935 - robin.utils - INFO - Command systemctl enable gui-cli.service completed with return code 0.
+2016-08-16 16:53:43,935 - robin.utils - DEBUG - Standard err: Created symlink from /etc/systemd/system/multi-user.target.wants/gui-cli.service to /usr/lib/systemd/system/gui-cli.service.
+
+2016-08-16 16:53:43,935 - robin.utils - INFO - Executing command /etc/robin-ui/setup-ui /var/www/html/console/application/config/config.php https://robin-server.service.robin http://robin-server.service.robin http://robin-analytics.service.robin https://centos-72a.robinsystems.com with timeout 60 seconds
+2016-08-16 16:53:44,282 - robin.utils - INFO - Command /etc/robin-ui/setup-ui /var/www/html/console/application/config/config.php https://robin-server.service.robin http://robin-server.service.robin http://robin-analytics.service.robin https://centos-72a.robinsystems.com completed with return code 0.
+2016-08-16 16:53:44,283 - robin.rcm.setup.server_setup - DEBUG - 
+************************************************************
+Successfully completed Robin Server Setup
+************************************************************
+2016-08-16 16:53:44,283 - robin.utils - INFO - Executing command service consul-server status with timeout 60 seconds
+2016-08-16 16:53:44,323 - robin.utils - INFO - Command service consul-server status completed with return code 0.
+2016-08-16 16:53:44,323 - robin.utils - DEBUG - Standard out: ● consul-server.service - Consul Server
+   Loaded: loaded (/usr/lib/systemd/system/consul-server.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:52:12 CDT; 1min 31s ago
+ Main PID: 8060 (consul)
+   CGroup: /system.slice/consul-server.service
+           └─8060 /usr/local/bin/consul agent -pid-file=/etc/consul/server/consul-server.pid -node=centos-72a.robinsystems.com -config-dir=/etc/consul/server
+
+Aug 16 16:53:40 centos-72a consul[8060]: 2016/08/16 16:53:40 [DEBUG] dns: request for {robin-analytics.service.robin. 28 1} (71.533µs) from client 127.0.0.1:48282 (udp)
+Aug 16 16:53:40 centos-72a consul[8060]: 2016/08/16 16:53:40 [DEBUG] dns: request for {robin-analytics.service.robin. 1 1} (41.805µs) from client 127.0.0.1:48282 (udp)
+Aug 16 16:53:42 centos-72a consul[8060]: agent: check 'service:robin-server' script '/usr/local/bin/http-service-check 10.207.39.12 39451 https /api/v1/robin_server' output:
+Aug 16 16:53:42 centos-72a consul[8060]: agent: Check 'service:robin-server' is passing
+Aug 16 16:53:42 centos-72a consul[8060]: 2016/08/16 16:53:42 [DEBUG] agent: check 'service:robin-server' script '/usr/local/bin/http-service-check 10.207.39.12 39451 https /api/v1/robin_server' output:
+Aug 16 16:53:42 centos-72a consul[8060]: 2016/08/16 16:53:42 [DEBUG] agent: Check 'service:robin-server' is passing
+Aug 16 16:53:43 centos-72a consul[8060]: http: Request GET /v1/catalog/nodes?index=32&wait=5s (5.024198756s) from=127.0.0.1:48488
+Aug 16 16:53:43 centos-72a consul[8060]: 2016/08/16 16:53:43 [DEBUG] http: Request GET /v1/catalog/nodes?index=32&wait=5s (5.024198756s) from=127.0.0.1:48488
+Aug 16 16:53:43 centos-72a consul[8060]: http: Request GET /v1/kv/robin/node?recurse=True (118.618µs) from=127.0.0.1:48506
+Aug 16 16:53:43 centos-72a consul[8060]: 2016/08/16 16:53:43 [DEBUG] http: Request GET /v1/kv/robin/node?recurse=True (118.618µs) from=127.0.0.1:48506
+
+2016-08-16 16:53:44,324 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  consul-server.service
+
+2016-08-16 16:53:44,324 - robin.utils - INFO - Executing command service postgresql-9.5 status with timeout 60 seconds
+2016-08-16 16:53:44,352 - robin.utils - INFO - Command service postgresql-9.5 status completed with return code 0.
+2016-08-16 16:53:44,352 - robin.utils - DEBUG - Standard out: ● postgresql-9.5.service - PostgreSQL 9.5 database server
+   Loaded: loaded (/usr/lib/systemd/system/postgresql-9.5.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:52:26 CDT; 1min 18s ago
+ Main PID: 8703 (postgres)
+   CGroup: /system.slice/postgresql-9.5.service
+           ├─8703 /usr/pgsql-9.5/bin/postgres -D /var/lib/pgsql/9.5/data
+           ├─8706 postgres: logger process                              
+           ├─8708 postgres: checkpointer process                        
+           ├─8709 postgres: writer process                              
+           ├─8710 postgres: wal writer process                          
+           ├─8711 postgres: autovacuum launcher process                 
+           ├─8712 postgres: stats collector process                     
+           ├─9267 postgres: robin robin 10.207.39.12(53714) idle        
+           ├─9281 postgres: robin robin 10.207.39.12(53722) idle in transactio
+           ├─9283 postgres: robin robin 10.207.39.12(53740) idle in transactio
+           └─9462 postgres: robin robin 10.207.39.12(53784) idle in transactio
+
+Aug 16 16:52:24 centos-72a systemd[1]: Starting PostgreSQL 9.5 database server...
+Aug 16 16:52:25 centos-72a pg_ctl[8629]: < 2016-08-16 16:52:25.112 CDT >LOG:  redirecting log output to logging collector process
+Aug 16 16:52:25 centos-72a pg_ctl[8629]: < 2016-08-16 16:52:25.112 CDT >HINT:  Future log output will appear in directory "pg_log".
+Aug 16 16:52:26 centos-72a systemd[1]: Started PostgreSQL 9.5 database server.
+
+2016-08-16 16:53:44,352 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  postgresql-9.5.service
+
+2016-08-16 16:53:44,352 - robin.utils - INFO - Executing command pgrep postgres with timeout 60 seconds
+2016-08-16 16:53:44,395 - robin.utils - INFO - Command pgrep postgres completed with return code 0.
+2016-08-16 16:53:44,396 - robin.utils - DEBUG - Standard out: 8703
+8706
+8708
+8709
+8710
+8711
+8712
+9267
+9281
+9283
+9462
+
+2016-08-16 16:53:44,420 - robin.utils - INFO - Executing command service robin-server status with timeout 60 seconds
+2016-08-16 16:53:44,445 - robin.utils - INFO - Command service robin-server status completed with return code 0.
+2016-08-16 16:53:44,445 - robin.utils - DEBUG - Standard out: ● robin-server.service - Robin Central Management Server
+   Loaded: loaded (/usr/lib/systemd/system/robin-server.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:52:34 CDT; 1min 10s ago
+ Main PID: 9274 (robin-server)
+   CGroup: /system.slice/robin-server.service
+           ├─9274 /bin/bash /usr/local/bin/robin-server
+           └─9276 python3.4 -m robin.rcm.server.server
+
+Aug 16 16:52:33 centos-72a systemd[1]: robin-server.service holdoff time over, scheduling restart.
+Aug 16 16:52:33 centos-72a systemd[1]: Starting Robin Central Management Server...
+Aug 16 16:52:34 centos-72a systemd[1]: Started Robin Central Management Server.
+
+2016-08-16 16:53:44,445 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-server.service
+
+2016-08-16 16:53:44,446 - robin.utils - INFO - Executing command service robin-event-server status with timeout 60 seconds
+2016-08-16 16:53:44,474 - robin.utils - INFO - Command service robin-event-server status completed with return code 0.
+2016-08-16 16:53:44,474 - robin.utils - DEBUG - Standard out: ● robin-event-server.service - Robin Central Management Event Server
+   Loaded: loaded (/usr/lib/systemd/system/robin-event-server.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:52:32 CDT; 1min 11s ago
+ Main PID: 9263 (robin-event-ser)
+   CGroup: /system.slice/robin-event-server.service
+           ├─9263 /bin/bash /usr/local/bin/robin-event-server
+           └─9265 python3.4 -m robin.rcm.event_server.server
+
+Aug 16 16:52:32 centos-72a systemd[1]: Starting Robin Central Management Event Server...
+Aug 16 16:52:32 centos-72a systemd[1]: Started Robin Central Management Event Server.
+
+2016-08-16 16:53:44,474 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-event-server.service
+
+2016-08-16 16:53:44,474 - robin.utils - INFO - Executing command service robin-file-server status with timeout 60 seconds
+2016-08-16 16:53:44,503 - robin.utils - INFO - Command service robin-file-server status completed with return code 0.
+2016-08-16 16:53:44,503 - robin.utils - DEBUG - Standard out: ● robin-file-server.service - Robin Central Management File Server
+   Loaded: loaded (/usr/lib/systemd/system/robin-file-server.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:52:35 CDT; 1min 8s ago
+ Main PID: 9320 (robin-file-serv)
+   CGroup: /system.slice/robin-file-server.service
+           ├─9320 /bin/bash /usr/local/bin/robin-file-server
+           └─9325 python3.4 -m robin.rcm.file_server.file_server
+
+Aug 16 16:52:35 centos-72a systemd[1]: Starting Robin Central Management File Server...
+Aug 16 16:52:35 centos-72a systemd[1]: Started Robin Central Management File Server.
+
+2016-08-16 16:53:44,503 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-file-server.service
+
+2016-08-16 16:53:44,503 - robin.utils - INFO - Executing command service robin-agent status with timeout 60 seconds
+2016-08-16 16:53:44,538 - robin.utils - INFO - Command service robin-agent status completed with return code 0.
+2016-08-16 16:53:44,538 - robin.utils - DEBUG - Standard out: ● robin-agent.service - Robin Central Management Agent
+   Loaded: loaded (/usr/lib/systemd/system/robin-agent.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:52:37 CDT; 1min 6s ago
+ Main PID: 9482 (robin-agent)
+   CGroup: /system.slice/robin-agent.service
+           ├─9482 /bin/bash /usr/local/bin/robin-agent
+           ├─9506 python3.4 -m robin.rcm.agent.agent
+           └─9607 python3.4 -m robin.rcm.agent.agent
+
+Aug 16 16:52:37 centos-72a systemd[1]: Starting Robin Central Management Agent...
+Aug 16 16:52:37 centos-72a systemd[1]: Started Robin Central Management Agent.
+Aug 16 16:52:40 centos-72a robin-agent[9482]: Starting the Robin Agent...
+
+2016-08-16 16:53:44,538 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-agent.service
+
+2016-08-16 16:53:44,538 - robin.utils - INFO - Executing command service robin-metrics status with timeout 60 seconds
+2016-08-16 16:53:44,564 - robin.utils - INFO - Command service robin-metrics status completed with return code 0.
+2016-08-16 16:53:44,564 - robin.utils - DEBUG - Standard out: ● robin-metrics.service - Robin Metrics Collection Service
+   Loaded: loaded (/usr/lib/systemd/system/robin-metrics.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:52:48 CDT; 56s ago
+ Main PID: 9649 (robin-metrics)
+   CGroup: /system.slice/robin-metrics.service
+           ├─ 9649 /bin/bash /usr/local/bin/robin-metrics
+           ├─ 9672 python3.4 -m robin.metrics.robin_metrics
+           ├─15597 iostat -x -y 1 1
+           ├─15598 grep sd
+           ├─15659 sudo docker ps --no-trunc -f="status=running"
+           ├─15684 docker ps --no-trunc -f="status=running"
+           └─15714 sudo hddtemp /dev/sda2
+
+Aug 16 16:53:32 centos-72a sudo[13556]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/lxc-ls
+Aug 16 16:53:32 centos-72a sudo[13561]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/docker ps --no-trunc -f="status=running"
+Aug 16 16:53:34 centos-72a sudo[14202]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/lxc-ls
+Aug 16 16:53:34 centos-72a sudo[14214]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/docker ps --no-trunc -f="status=running"
+Aug 16 16:53:37 centos-72a sudo[14711]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/lxc-ls
+Aug 16 16:53:37 centos-72a sudo[14719]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/docker ps --no-trunc -f="status=running"
+Aug 16 16:53:40 centos-72a sudo[15123]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/lxc-ls
+Aug 16 16:53:41 centos-72a sudo[15131]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/docker ps --no-trunc -f="status=running"
+Aug 16 16:53:43 centos-72a sudo[15582]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/lxc-ls
+Aug 16 16:53:44 centos-72a sudo[15659]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/docker ps --no-trunc -f="status=running"
+
+2016-08-16 16:53:44,564 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  robin-metrics.service
+
+2016-08-16 16:53:44,564 - robin.utils - INFO - Executing command service nfs-server status with timeout 60 seconds
+2016-08-16 16:53:44,597 - robin.utils - INFO - Command service nfs-server status completed with return code 0.
+2016-08-16 16:53:44,597 - robin.utils - DEBUG - Standard out: ● nfs-server.service - NFS server and services
+   Loaded: loaded (/usr/lib/systemd/system/nfs-server.service; enabled; vendor preset: disabled)
+   Active: active (exited) since Tue 2016-08-16 16:52:51 CDT; 53s ago
+ Main PID: 9865 (code=exited, status=0/SUCCESS)
+   CGroup: /system.slice/nfs-server.service
+
+Aug 16 16:52:50 centos-72a systemd[1]: Starting NFS server and services...
+Aug 16 16:52:51 centos-72a systemd[1]: Started NFS server and services.
+
+2016-08-16 16:53:44,597 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  nfs-server.service
+
+2016-08-16 16:53:44,598 - robin.utils - INFO - Executing command service gui-cli status with timeout 60 seconds
+2016-08-16 16:53:44,630 - robin.utils - INFO - Command service gui-cli status completed with return code 0.
+2016-08-16 16:53:44,630 - robin.utils - DEBUG - Standard out: ● gui-cli.service - Robin GUI CLI Server
+   Loaded: loaded (/usr/lib/systemd/system/gui-cli.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:53:42 CDT; 1s ago
+ Main PID: 15394 (node)
+   CGroup: /system.slice/gui-cli.service
+           └─15394 node /usr/local/web-term/bin/web-term -b /usr/local/web-term/web-term-start-script.sh -C /etc/robin/rcm/ssl/robin_ssl.crt -K /etc/robin/rcm/ssl/robin_ssl.key > /dev/null 2>&1
+
+Aug 16 16:53:42 centos-72a systemd[1]: Starting Robin GUI CLI Server...
+Aug 16 16:53:42 centos-72a systemd[1]: Started Robin GUI CLI Server.
+
+2016-08-16 16:53:44,630 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  gui-cli.service
+
+2016-08-16 16:53:44,630 - robin.utils - INFO - Executing command service stormgr-server status with timeout 60 seconds
+2016-08-16 16:53:44,662 - robin.utils - INFO - Command service stormgr-server status completed with return code 0.
+2016-08-16 16:53:44,663 - robin.utils - DEBUG - Standard out: ● stormgr-server.service - Storage Manager
+   Loaded: loaded (/usr/lib/systemd/system/stormgr-server.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:53:00 CDT; 44s ago
+ Main PID: 11259 (stormgr-server)
+   CGroup: /system.slice/stormgr-server.service
+           └─11259 /usr/local/sbin/stormgr-server -d /etc/robin/stormgr/
+
+Aug 16 16:53:00 centos-72a systemd[1]: Starting Storage Manager...
+Aug 16 16:53:00 centos-72a systemd[1]: Started Storage Manager.
+
+2016-08-16 16:53:44,663 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  stormgr-server.service
+
+2016-08-16 16:53:44,663 - robin.utils - INFO - Executing command service rio-server status with timeout 60 seconds
+2016-08-16 16:53:44,696 - robin.utils - INFO - Command service rio-server status completed with return code 0.
+2016-08-16 16:53:44,696 - robin.utils - DEBUG - Standard out: ● rio-server.service - Robin I/O Server
+   Loaded: loaded (/usr/lib/systemd/system/rio-server.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:53:32 CDT; 12s ago
+ Main PID: 13633 (rio-server)
+   CGroup: /system.slice/rio-server.service
+           └─13633 /usr/local/sbin/rio-server
+
+Aug 16 16:53:32 centos-72a systemd[1]: Starting Robin I/O Server...
+Aug 16 16:53:32 centos-72a systemd[1]: Started Robin I/O Server.
+
+2016-08-16 16:53:44,696 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  rio-server.service
+
+2016-08-16 16:53:44,696 - robin.utils - INFO - Executing command service rdvm-server status with timeout 60 seconds
+2016-08-16 16:53:44,724 - robin.utils - INFO - Command service rdvm-server status completed with return code 0.
+2016-08-16 16:53:44,724 - robin.utils - DEBUG - Standard out: ● rdvm-server.service - Robin Distributed Volume Manager
+   Loaded: loaded (/usr/lib/systemd/system/rdvm-server.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2016-08-16 16:53:33 CDT; 10s ago
+ Main PID: 13929 (rdvm-server)
+   CGroup: /system.slice/rdvm-server.service
+           └─13929 /usr/local/sbin/rdvm-server
+
+Aug 16 16:53:33 centos-72a systemd[1]: Starting Robin Distributed Volume Manager...
+Aug 16 16:53:33 centos-72a systemd[1]: Started Robin Distributed Volume Manager.
+
+2016-08-16 16:53:44,724 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  rdvm-server.service
+
+2016-08-16 16:53:44,724 - robin.utils - INFO - Executing command service docker status with timeout 60 seconds
+2016-08-16 16:53:44,756 - robin.utils - INFO - Command service docker status completed with return code 0.
+2016-08-16 16:53:44,756 - robin.utils - DEBUG - Standard out: ● docker.service - Docker Application Container Engine
+   Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; vendor preset: disabled)
+  Drop-In: /etc/systemd/system/docker.service.d
+           └─docker.conf
+   Active: active (running) since Tue 2016-08-16 16:52:10 CDT; 1min 33s ago
+     Docs: https://docs.docker.com
+ Main PID: 7618 (dockerd)
+   CGroup: /system.slice/docker.service
+           ├─7618 dockerd --log-opt max-size=50m --log-opt max-file=2 --live-restore
+           └─7695 docker-containerd -l unix:///var/run/docker/libcontainerd/docker-containerd.sock --shim docker-containerd-shim --metrics-interval=0 --start-timeout 2m --state-dir /var/run/docker/libcontainerd/containerd --runtime docker-runc
+
+Aug 16 16:52:10 centos-72a docker[7618]: time="2016-08-16T16:52:10.630688021-05:00" level=info msg="Graph migration to content-addressability took 0.00 seconds"
+Aug 16 16:52:10 centos-72a docker[7618]: time="2016-08-16T16:52:10.631571214-05:00" level=warning msg="mountpoint for pids not found"
+Aug 16 16:52:10 centos-72a docker[7618]: time="2016-08-16T16:52:10.631752066-05:00" level=info msg="Loading containers: start."
+Aug 16 16:52:10 centos-72a docker[7618]: time="2016-08-16T16:52:10.640558661-05:00" level=info msg="Firewalld running: false"
+Aug 16 16:52:10 centos-72a docker[7618]: time="2016-08-16T16:52:10.757543460-05:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Aug 16 16:52:10 centos-72a docker[7618]: time="2016-08-16T16:52:10.797288486-05:00" level=info msg="Loading containers: done."
+Aug 16 16:52:10 centos-72a docker[7618]: time="2016-08-16T16:52:10.797357538-05:00" level=info msg="Daemon has completed initialization"
+Aug 16 16:52:10 centos-72a docker[7618]: time="2016-08-16T16:52:10.797375099-05:00" level=info msg="Docker daemon" commit=8eab29e graphdriver=devicemapper version=1.12.0
+Aug 16 16:52:10 centos-72a docker[7618]: time="2016-08-16T16:52:10.803243032-05:00" level=info msg="API listen on /var/run/docker.sock"
+Aug 16 16:52:10 centos-72a systemd[1]: Started Docker Application Container Engine.
+
+2016-08-16 16:53:44,756 - robin.utils - DEBUG - Standard err: Redirecting to /bin/systemctl status  docker.service
+
+2016-08-16 16:53:44,756 - robin.rcm.setup.install_utils - DEBUG - 
+[0mService Name       | Status | PID  
+[0m-------------------+--------+-------
+[0mconsul-server      | active | 8060 [0m
+[0mpostgresql-9.5     | active | 8703 [0m
+[0mrobin-server       | active | 9274 [0m
+[0mrobin-event-server | active | 9263 [0m
+[0mrobin-file-server  | active | 9320 [0m
+[0mrobin-agent        | active | 9482 [0m
+[0mrobin-metrics      | active | 9649 [0m
+[0mnfs-server         | active | 9865 [0m
+[0mgui-cli            | active | 15394[0m
+[0mstormgr-server     | active | 11259[0m
+[0mrio-server         | active | 13633[0m
+[0mrdvm-server        | active | 13929[0m
+[0mdocker             | active | 7618 [0m
+
+2016-08-16 16:53:44,757 - robin.rcm.setup.install_utils - DEBUG - Adding user "None" as default tenant and admin role.
+2016-08-16 16:54:09,397 - robin.rcm.setup.upgrade_utils - DEBUG - Connecting to REST API at: https://localhost:39451/api/v1/robin_server/users, attempt (1/5)...
+2016-08-16 16:54:09,398 - robin.rcm.setup.upgrade_utils - DEBUG - Data: {'action': 'add', 'user_info': {'role': 'admin', 'username': 'robin', 'tenant': 'default', 'password': '<REDACTED>'}}
+2016-08-16 16:54:09,676 - robin.rcm.setup.upgrade_utils - DEBUG - Status: 200.
+2016-08-16 16:54:09,677 - robin.rcm.setup.upgrade_utils - DEBUG - Text: 
+Successfully added user robin.
+

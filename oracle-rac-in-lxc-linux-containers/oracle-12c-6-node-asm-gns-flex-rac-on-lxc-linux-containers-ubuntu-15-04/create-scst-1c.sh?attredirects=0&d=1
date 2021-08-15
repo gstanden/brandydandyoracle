@@ -1,0 +1,6 @@
+cd ~/Downloads/linux-3.19.0/
+sudo fakeroot debian/rules clean
+sudo debian/rules updateconfigs
+sudo debian/rules editconfigs
+sudo fakeroot debian/rules clean
+sudo fakeroot debian/rules binary-headers binary-scst

@@ -1,0 +1,66 @@
+#!/bin/bash
+# Requires use of Upstart Script /etc/init/my-network-up.conf to ensure interfaces are up before running.
+ 
+ovs-vsctl add-br sw1
+
+ip link set up dev sw1
+ip addr add 10.207.39.1/24 dev sw1
+ip route replace 10.207.39.0/24 dev sw1
+
+ovs-vsctl set port sw1 trunks=10
+ovs-vsctl set port sw1 tag=10
+
+# VirtualBox Ports
+# Reference:  https://www.mylinuxplace.com/create-taptun-device-centos-7/
+
+# VirtualBox VM CentOS-72A
+ip tuntap add CentOS-72A mode tap
+ip link set CentOS-72A up
+ovs-vsctl add-port sw1 CentOS-72A tag=10
+
+# GLS 20140825 Get active external interface dynamically at boot.  Tested & works with {wlan0, eth0, bnep0} on Ubuntu 14.04.1 Desktop x86_64.
+# GLS 20140825 Interface "bnep0" is Blackberry Z30 OS10 Bluetooth Tether.
+# GLS 20160814 Added support for enp and wlp devices (CentOS7).
+
+### BEGIN Get Active EXTIF Dynamcially. ###
+
+function GetInterface
+{
+ifconfig | egrep -A1 'enp|wlp' | grep -B1 inet | egrep 'wlan|eth|bnep|wlp|enp' | cut -f1 -d':'
+}
+function GetIP
+{
+ifconfig | egrep -A1 'enp|wlp' | grep -B1 inet | grep -v flags | sed 's/^[ \t]*//;s/[ \t]*$//' | cut -f2 -d' '
+}
+### END Get Active EXTIF Dynamically. ###
+
+echo '       IP: '$(GetIP)
+echo 'Interface: '$(GetInterface)
+
+INTIF="sw1"
+EXTIF=$(GetInterface)
+# EXTIF="wlan0"
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# clear existing iptable rules, set a default policy
+
+iptables -P INPUT ACCEPT
+iptables -F INPUT 
+iptables -P OUTPUT ACCEPT
+iptables -F OUTPUT 
+iptables -P FORWARD DROP
+iptables -F FORWARD 
+iptables -t nat -F
+
+# set forwarding and nat rules
+# iptables -A FORWARD -i $EXTIF -o $INTIF -j ACCEPT
+# iptables -A FORWARD -i $INTIF -o $EXTIF -j ACCEPT
+# iptables -t nat -A POSTROUTING -o $EXTIF -j MASQUERADE
+
+iptables -A FORWARD -s 10.207.39.0/24 -o $EXTIF -j ACCEPT
+iptables -A FORWARD -d 10.207.39.0/24 -m state --state ESTABLISHED,RELATED -i $EXTIF -j ACCEPT
+iptables -t nat -A POSTROUTING -s 10.207.39.0/24 -o $EXTIF -j MASQUERADE
+
+service dhcpd restart
+service named restart

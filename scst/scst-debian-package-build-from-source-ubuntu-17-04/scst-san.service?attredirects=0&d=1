@@ -1,0 +1,15 @@
+[Unit]
+Description=SCST SAN Service
+After=scst.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/sudo /usr/sbin/iscsi-scstd
+ExecStart=/usr/bin/sudo /usr/local/sbin/scstadmin -config /etc/scst.conf
+RemainAfterExit=true
+ExecStop=/usr/bin/sudo /bin/kill -9 /usr/sbin/iscsi-scstd
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
+

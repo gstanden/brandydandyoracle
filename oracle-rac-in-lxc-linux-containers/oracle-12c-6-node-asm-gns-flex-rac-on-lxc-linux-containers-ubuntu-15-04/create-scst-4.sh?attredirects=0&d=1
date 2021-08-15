@@ -1,0 +1,48 @@
+sudo mkdir /asm
+cd /asm
+
+# Create Target and Groups
+sudo scstadmin -add_target iqn.2015-08.org.vmem:w520.san.asm.luns -drive iscsi
+sudo scstadmin -add_group lxc1_systemdg -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns
+sudo scstadmin -add_group lxc1_data1    -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns
+sudo scstadmin -add_group lxc1_fra1     -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns
+sudo scstadmin -add_init iqn.2014-09.org.vmem1:oracle.asm.luns -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc_systemdg
+sudo scstadmin -add_init iqn.2014-09.org.vmem1:oracle.asm.luns -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc_data1
+sudo scstadmin -add_init iqn.2014-09.org.vmem1:oracle.asm.luns -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc_fra1
+sudo scstadmin -write_config /etc/scst.conf
+
+# Create File Devices and LUNs
+sudo fallocate -l 10G /asm/systemdg_00.img
+sudo fallocate -l 10G /asm/systemdg_01.img
+sudo fallocate -l 10G /asm/systemdg_02.img
+sudo fallocate -l 20G /asm/data1_00.img
+sudo fallocate -l 20G /asm/data1_01.img
+sudo fallocate -l 20G /asm/data1_02.img
+sudo fallocate -l 20G /asm/fra1_00.img
+sudo fallocate -l 20G /asm/fra1_01.img
+sudo fallocate -l 20G /asm/fra1_02.img
+sudo scstadmin -open_dev systemdg_00 -handler vdisk_fileio -attributes filename=/asm/systemdg_00.img
+sudo scstadmin -open_dev systemdg_01 -handler vdisk_fileio -attributes filename=/asm/systemdg_01.img
+sudo scstadmin -open_dev systemdg_02 -handler vdisk_fileio -attributes filename=/asm/systemdg_02.img
+sudo scstadmin -open_dev data1_00    -handler vdisk_fileio -attributes filename=/asm/data1_00.img
+sudo scstadmin -open_dev data1_01    -handler vdisk_fileio -attributes filename=/asm/data1_01.img
+sudo scstadmin -open_dev data1_02    -handler vdisk_fileio -attributes filename=/asm/data1_02.img
+sudo scstadmin -open_dev fra1_00     -handler vdisk_fileio -attributes filename=/asm/fra1_00.img
+sudo scstadmin -open_dev fra1_01     -handler vdisk_fileio -attributes filename=/asm/fra1_01.img
+sudo scstadmin -open_dev fra1_02     -handler vdisk_fileio -attributes filename=/asm/fra1_02.img
+sudo scstadmin -add_lun 0 -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc1_systemdg -device systemdg_00
+sudo scstadmin -add_lun 1 -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc1_systemdg -device systemdg_01
+sudo scstadmin -add_lun 2 -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc1_systemdg -device systemdg_02
+sudo scstadmin -add_lun 0 -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc1_data1    -device data1_00
+sudo scstadmin -add_lun 1 -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc1_data1    -device data1_01
+sudo scstadmin -add_lun 2 -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc1_data1    -device data1_02
+sudo scstadmin -add_lun 0 -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc1_fra1     -device fra1_00
+sudo scstadmin -add_lun 1 -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc1_fra1     -device fra1_01
+sudo scstadmin -add_lun 2 -driver iscsi -target iqn.2015-08.org.vmem:w520.san.asm.luns -group lxc1_fra1     -device fra1_02
+sudo scstadmin -write_config /etc/scst.conf
+
+sudo scstadmin -enable_target iqn.2015-08.org.vmem:w520.san.asm.luns -driver iscs
+sudo scstadmin -set_drv_attr iscsi -attributes enabled=1
+sudo scstadmin -write_config /etc/scst.conf
+sudo scstadmin -list_group
+

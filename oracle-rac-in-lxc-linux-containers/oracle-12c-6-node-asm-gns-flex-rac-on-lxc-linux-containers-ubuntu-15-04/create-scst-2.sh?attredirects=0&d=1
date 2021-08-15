@@ -1,0 +1,15 @@
+cd ~/Downloads/scst
+pwd
+sleep 10
+sudo make scst
+sleep 5
+sudo make scst_install
+sleep 5
+sudo make iscsi
+sleep 5
+sudo make iscsi_install
+sleep 5
+sudo make scstadm
+sleep 5
+sudo make scstadm_install
+sleep 5

@@ -1,0 +1,95 @@
+# Template used to create this container: /usr/share/lxc/templates/lxc-oracle
+# Parameters passed to the template:
+# For additional config options, please look at lxc.container.conf(5)
+# Networking
+lxc.network.type = veth
+lxc.network.flags = up
+lxc.network.script.up = /etc/network/if-up.d/openvswitch/lxcora01-pub-ifup-sw1
+lxc.network.script.down = /etc/network/if-down.d/openvswitch/lxcora01-pub-ifdown-sw1
+lxc.network.veth.pair = lxcora01
+lxc.network.name = eth0
+lxc.network.mtu = 1500
+lxc.network.hwaddr = 00:16:3e:07:12:24
+lxc.network.type = veth
+lxc.network.flags = up
+lxc.network.script.up = /etc/network/if-up.d/openvswitch/lxcora01-priv1-ifup-sw4
+lxc.network.script.down = /etc/network/if-down.d/openvswitch/lxcora01-priv1-ifdown-sw4
+lxc.network.veth.pair = lxcora01-priv1
+lxc.network.name = eth1
+lxc.network.mtu = 9000
+lxc.network.ipv4 = 192.210.39.10
+lxc.network.hwaddr = 00:16:3e:e3:f6:ea
+lxc.network.type = veth
+lxc.network.flags = up
+lxc.network.script.up = /etc/network/if-up.d/openvswitch/lxcora01-priv2-ifup-sw5
+lxc.network.script.down = /etc/network/if-down.d/openvswitch/lxcora01-priv2-ifdown-sw5
+lxc.network.veth.pair = lxcora01-priv2
+lxc.network.name = eth2
+lxc.network.mtu = 9000
+lxc.network.ipv4 = 192.211.39.10
+lxc.network.hwaddr = 00:16:3e:ea:12:d5
+lxc.network.type = veth
+lxc.network.flags = up
+lxc.network.script.up = /etc/network/if-up.d/openvswitch/lxcora01-priv3-ifup-sw6
+lxc.network.script.down = /etc/network/if-down.d/openvswitch/lxcora01-priv3-ifdown-sw6
+lxc.network.veth.pair = lxcora01-priv3
+lxc.network.name = eth3
+lxc.network.mtu = 9000
+lxc.network.ipv4 = 192.212.39.10
+lxc.network.hwaddr = 00:16:3e:ba:ae:85
+lxc.network.type = veth
+lxc.network.flags = up
+lxc.network.script.up = /etc/network/if-up.d/openvswitch/lxcora01-priv4-ifup-sw7
+lxc.network.script.down = /etc/network/if-down.d/openvswitch/lxcora01-priv4-ifdown-sw7
+lxc.network.veth.pair = lxcora01-priv4
+lxc.network.name = eth4
+lxc.network.mtu = 9000
+lxc.network.ipv4 = 192.213.39.10
+lxc.network.hwaddr = 00:16:3e:6b:f7:8c
+lxc.network.type = veth
+lxc.network.flags = up
+lxc.network.script.up = /etc/network/if-up.d/openvswitch/lxcora01-asm1-ifup-sw8
+lxc.network.script.down = /etc/network/if-down.d/openvswitch/lxcora01-asm1-ifdown-sw8
+lxc.network.veth.pair = lxcora01-asm1
+lxc.network.name = eth5
+lxc.network.mtu = 9000
+lxc.network.ipv4 = 172.220.40.10
+lxc.network.hwaddr = 00:16:3e:55:38:b0
+lxc.network.type = veth
+lxc.network.flags = up
+lxc.network.script.up = /etc/network/if-up.d/openvswitch/lxcora01-asm2-ifup-sw9
+lxc.network.script.down = /etc/network/if-down.d/openvswitch/lxcora01-asm2-ifdown-sw9
+lxc.network.veth.pair = lxcora01-asm2
+lxc.network.name = eth6
+lxc.network.mtu = 9000
+lxc.network.ipv4 = 172.221.40.10
+lxc.network.hwaddr = 00:16:3e:f7:e4:d8
+#lxc.network.type = veth
+#lxc.network.flags = up
+#lxc.network.link = lxcbr0
+#lxc.network.name = eth1
+#lxc.network.mtu = 1500
+#lxc.network.hwaddr = 00:16:3e:3e:a6:b4
+# Common configuration
+lxc.include = /usr/share/lxc/config/oracle.common.conf
+# Container configuration for Oracle Linux 6.5
+lxc.arch = x86_64
+lxc.cap.drop = sys_resource
+lxc.cap.drop = setfcap setpcap
+# Devices, Filesystems, Mounts
+lxc.cgroup.devices.allow = a # Allow access to all devices
+lxc.cgroup.devices.allow = a 10:236 rwm
+lxc.cgroup.devices.allow = a 252:* rwm
+lxc.cgroup.devices.allow = a 8:* rwm
+lxc.mount.entry = /dev/mapper /var/lib/lxc/lxcora01/rootfs/dev/mapper none defaults,bind,create=dir 0 0
+lxc.mount.entry = shm dev/shm tmpfs size=3500m,nosuid,nodev,noexec,create=dir 0 0
+lxc.mount.auto = proc sys cgroup
+lxc.mount.auto = proc:rw sys:rw cgroup-full:rw
+lxc.aa_allow_incomplete = 1
+# Autostart at boot
+lxc.start.auto = 1
+lxc.group = onboot
+# GLS 2014-10-23 NFS
+lxc.aa_profile = unconfined
+lxc.rootfs = /var/lib/lxc/lxcora01/rootfs
+lxc.utsname = lxcora01

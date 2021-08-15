@@ -1,0 +1,18 @@
+$ORIGIN .
+$TTL 86400	; 1 day
+39.207.10.in-addr.arpa	IN SOA	stlns01.robinsystems.com. postmaster.robinsystems.com. (
+				1512181477 ; serial
+				60         ; refresh (1 minute)
+				1800       ; retry (30 minutes)
+				604800     ; expire (1 week)
+				86400      ; minimum (1 day)
+				)
+			NS	stlns01.robinsystems.com.
+$ORIGIN 39.207.10.in-addr.arpa.
+1			PTR	stlns01.robinsystems.com.
+$TTL 3600	; 1 hour
+10			PTR	cos72.robinsystems.com.
+$TTL 86400	; 1 day
+3			PTR	lxc1-gns-vip.robinsystems.com.
+39.207.10.in-addr.arpa	NS	stlns01.robinsystems.com.
+stlns01			A	10.207.39.1
